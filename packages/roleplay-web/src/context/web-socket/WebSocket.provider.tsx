@@ -73,7 +73,7 @@ export function WebSocketContextProvider({children}: ContextProvidersProps) {
 
   return (
     <webSocketContext.Provider
-      value={{onEvent, sendEvent, getConnectionStatus, retry}}
+      value={{onEvent, sendEvent, getConnectionStatus, retry} as any}
     >
       {children}
     </webSocketContext.Provider>

@@ -17,7 +17,7 @@ export function useWebSocketEventListener<K extends WebSocketIncomingEvent>(
 
   useEffect(() => {
     function registerEventListener() {
-      onEvent(incomingEvent, callback);
+      onEvent(incomingEvent, callback as any);
     }
 
     if (online && config.websocketEnabled) {

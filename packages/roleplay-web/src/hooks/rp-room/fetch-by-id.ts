@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {RPRoom} from '@instinct-plugin/roleplay-types';
-import {rpRoomService} from '@instinct-plugin/roleplay-web';
+import {rpRoomService} from '../../services/rp-room';
 
 export function useFetchRPRoomByID(rpRoomID: string): RPRoom | undefined {
   const [rpRoom, setRPRoom] = useState<RPRoom>();
