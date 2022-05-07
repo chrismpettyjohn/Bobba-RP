@@ -3,10 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@instinct-theme/bobba-rp": ["packages/bobba-rp-theme/src"],
-      "@instinct-plugin/bobba-rp-api":  ["packages/bobba-rp-api/src"],
-      "@instinct-plugin/bobba-rp-types":  ["packages/bobba-rp-types/src"],
-      "@instinct-plugin/bobba-rp-web": ["packages/bobba-rp-web/src"]
+      "@instinct-theme/bobba-rp": ["packages/roleplay-theme/src"],
+      "@instinct-plugin/bobba-rp-api":  ["packages/roleplay-api/src"],
+      "@instinct-plugin/bobba-rp-types":  ["packages/roleplay-types/src"],
+      "@instinct-plugin/bobba-rp-web": ["packages/roleplay-web/src"]
     },
     "noEmit": true
   },
