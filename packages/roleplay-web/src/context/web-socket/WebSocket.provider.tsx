@@ -11,7 +11,7 @@ import {
   WebSocketIncomingEvents,
   WebSocketOutgoingEvent,
   WebSocketOutgoingEvents,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export function WebSocketContextProvider({children}: ContextProvidersProps) {
   const {sso} = useContext(sessionContext);

@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import {webSocketContext} from '@instinct-plugin/roleplay-web';
+import {webSocketContext} from '@instinct-plugin/bobba-rp-web';
 import {BaseError, configContext, Icon} from '@instinct-web/core';
 
 export function WebSocketError() {

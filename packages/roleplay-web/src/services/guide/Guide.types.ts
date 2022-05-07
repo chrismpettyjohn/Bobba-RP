@@ -1,4 +1,4 @@
-import {Guide, GuideDTO, GuideReaction} from '@instinct-plugin/roleplay-types';
+import {Guide, GuideDTO, GuideReaction} from '@instinct-plugin/bobba-rp-types';
 
 export interface GuideService {
   getAll(): Promise<Guide[]>;

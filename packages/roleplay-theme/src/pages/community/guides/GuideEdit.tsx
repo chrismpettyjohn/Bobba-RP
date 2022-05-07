@@ -7,10 +7,10 @@ import {UserLayout} from '../../../components/layout/user';
 import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import Moment from 'moment';
-import {GuideDTO, GuideReaction} from '@instinct-plugin/roleplay-types';
-import {useFetchGuideByID} from '@instinct-plugin/roleplay-web';
+import {GuideDTO, GuideReaction} from '@instinct-plugin/bobba-rp-types';
+import {useFetchGuideByID} from '@instinct-plugin/bobba-rp-web';
 import {GuideEditor} from './guide-editor/GuideEditor';
-import {guideService} from '@instinct-plugin/roleplay-web';
+import {guideService} from '@instinct-plugin/bobba-rp-web';
 import {toast} from 'react-toastify';
 
 setURL('guides/edit/:guideID', <GuideEdit />);

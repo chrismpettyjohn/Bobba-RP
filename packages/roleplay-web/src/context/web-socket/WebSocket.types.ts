@@ -2,7 +2,7 @@ import {
   WebSocketIncomingEvent,
   WebSocketOutgoingEvent,
   WebSocketOutgoingEvents,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 import {WebSocketSubscriber} from '../../services/web-socket';
 
 export interface WebSocketContext {

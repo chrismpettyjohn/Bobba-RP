@@ -4,7 +4,7 @@ import React, {useContext, useState} from 'react';
 import {configContext, Icon} from '@instinct-web/core';
 import {Row} from '../../../../components/generic/row/Row';
 import {Card} from '../../../../components/generic/card/Card';
-import {businessService} from '@instinct-plugin/roleplay-web';
+import {businessService} from '@instinct-plugin/bobba-rp-web';
 import {BusinessPositionCardProps} from './BusinessPositionCard.types';
 
 export function BusinessPositionCard({

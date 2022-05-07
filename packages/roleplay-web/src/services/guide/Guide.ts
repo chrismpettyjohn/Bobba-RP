@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {GuideService} from './Guide.types';
 import {backendAPI} from '@instinct-web/core';
-import {Guide, GuideDTO, GuideReaction} from '@instinct-plugin/roleplay-types';
+import {Guide, GuideDTO, GuideReaction} from '@instinct-plugin/bobba-rp-types';
 
 export class GuideServiceImplementation implements GuideService {
   async getAll() {

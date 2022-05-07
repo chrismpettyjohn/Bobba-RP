@@ -1,7 +1,7 @@
 import {
   PoliticalParty,
   PoliticalPartyDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export interface PoliticalPartyService {
   getAll(): Promise<PoliticalParty[]>;

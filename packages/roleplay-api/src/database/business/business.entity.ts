@@ -8,7 +8,7 @@ import {
   OneToMany,
   ManyToOne,
 } from 'typeorm';
-import {BusinessType, GovernmentBranch} from '@instinct-plugin/roleplay-types';
+import {BusinessType, GovernmentBranch} from '@instinct-plugin/bobba-rp-types';
 import {RPUserEntity} from '../user/user.entity';
 import {IsGovernment} from './business.types';
 

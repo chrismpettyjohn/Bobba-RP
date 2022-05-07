@@ -4,7 +4,7 @@ import {setURL, Icon} from '@instinct-web/core';
 import {GangScoreCard} from './gang-score-card/GangScoreCard';
 import {Row} from '../../../components/generic/row/Row';
 import {UserLayout} from '../../../components/layout/user';
-import {useFetchTopGangs} from '@instinct-plugin/roleplay-web';
+import {useFetchTopGangs} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 

@@ -4,7 +4,7 @@ import {
   BidOnPropertyDTO,
   RespondOnPropertyBidDTO,
   PropertyPhotoDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class PropertyDTOImplementation implements PropertyDTO {
   @IsNumber()

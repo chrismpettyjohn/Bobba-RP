@@ -1,14 +1,14 @@
 import Moment from 'moment';
 import {toast} from 'react-toastify';
 import React, {useContext, useState} from 'react';
-import {PropertyDTO} from '@instinct-plugin/roleplay-types';
+import {PropertyDTO} from '@instinct-plugin/bobba-rp-types';
 import {Icon, sessionContext, Select} from '@instinct-web/core';
 import {EditPropertyModalProps} from './EditPropertyModal.types';
 import {PhotoSlider} from '../../../../components/templates/photo-slider/PhotoSlider';
 import {
   propertyService,
   useFetchPhotosByUsername,
-} from '@instinct-plugin/roleplay-web';
+} from '@instinct-plugin/bobba-rp-web';
 import {
   Modal,
   ModalBody,

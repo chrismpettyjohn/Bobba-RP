@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {Icon} from '@instinct-web/core';
-import {lawService} from '@instinct-plugin/roleplay-web';
+import {lawService} from '@instinct-plugin/bobba-rp-web';
 import {VoteOnLawModalProps} from './VoteOnLawModal.types';
-import {LawVoteStatus} from '@instinct-plugin/roleplay-types';
+import {LawVoteStatus} from '@instinct-plugin/bobba-rp-types';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import {RPPermissionGuard} from '../../../../../components/templates/permission-guard';
 

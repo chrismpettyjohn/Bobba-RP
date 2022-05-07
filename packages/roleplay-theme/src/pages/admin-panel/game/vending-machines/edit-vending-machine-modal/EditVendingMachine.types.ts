@@ -1,4 +1,4 @@
-import {VendingMachine} from '@instinct-plugin/roleplay-types';
+import {VendingMachine} from '@instinct-plugin/bobba-rp-types';
 
 export interface EditVendingMachineProps {
   vendingMachine: VendingMachine;

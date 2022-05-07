@@ -1,4 +1,4 @@
-import {Property} from '@instinct-plugin/roleplay-types';
+import {Property} from '@instinct-plugin/bobba-rp-types';
 
 export interface MakeOfferOnPropertyModalProps {
   property: Property;

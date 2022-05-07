@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Business} from '@instinct-plugin/roleplay-types';
+import {Business} from '@instinct-plugin/bobba-rp-types';
 import {configContext, Skeleton} from '@instinct-web/core';
 import {MiniJumbotron} from '../../../../../components/generic/mini-jumbotron/MiniJumbotron';
 

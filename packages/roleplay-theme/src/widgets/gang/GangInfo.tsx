@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import Draggable from 'react-draggable';
-import {gangService} from '@instinct-plugin/roleplay-web';
+import {gangService} from '@instinct-plugin/bobba-rp-web';
 import {Avatar} from '@instinct-web/core';
-import {useWebSocketEventListener} from '@instinct-plugin/roleplay-web';
+import {useWebSocketEventListener} from '@instinct-plugin/bobba-rp-web';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import {
   Gang,
   WebSocketIncomingGangInfoEvent,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export function GangInfoWidget() {
   const [gang, setGang] = useState<Gang>();

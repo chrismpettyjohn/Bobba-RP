@@ -1,7 +1,7 @@
 import {GangPipe} from './gang.pipe';
 import {GangService} from './gang.service';
 import {Controller, Get, Param} from '@nestjs/common';
-import {Gang, RPUser} from '@instinct-plugin/roleplay-types';
+import {Gang, RPUser} from '@instinct-plugin/bobba-rp-types';
 import {GangEntity, GangRepository, gangWire} from '../database/gang';
 import {HasSession} from '@instinct-api/session';
 

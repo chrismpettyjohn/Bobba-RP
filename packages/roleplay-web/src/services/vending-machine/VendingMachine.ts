@@ -4,7 +4,7 @@ import {VendingMachineService} from './VendingMachine.types';
 import {
   VendingMachine,
   VendingMachineDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class VendingMachineImplementation implements VendingMachineService {
   async create(vendingMachineDTO: VendingMachineDTO) {

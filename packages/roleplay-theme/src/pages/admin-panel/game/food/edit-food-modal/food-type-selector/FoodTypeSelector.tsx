@@ -1,6 +1,6 @@
 import React from 'react';
 import {Icon} from '@instinct-web/core';
-import {FoodType} from '@instinct-plugin/roleplay-types';
+import {FoodType} from '@instinct-plugin/bobba-rp-types';
 import {FoodTypeSelectorProps} from './FoodTypeSelector.types';
 
 export function FoodTypeSelector({foodType, onChange}: FoodTypeSelectorProps) {

@@ -1,5 +1,5 @@
 import {Injectable} from '@nestjs/common';
-import {UserRPStats} from '@instinct-plugin/roleplay-types';
+import {UserRPStats} from '@instinct-plugin/bobba-rp-types';
 import {RPUserEntityStruct} from '../database/user/user.types';
 import {GangRankRepository, GangRepository} from '../database/gang';
 import {BusinessRepository} from '../database/business/business.repository';

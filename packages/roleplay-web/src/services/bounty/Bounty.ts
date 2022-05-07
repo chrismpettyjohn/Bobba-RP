@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {BountyService} from './Bounty.types';
 import {backendAPI} from '@instinct-web/core';
-import {Bounty, BountyDTO} from '@instinct-plugin/roleplay-types';
+import {Bounty, BountyDTO} from '@instinct-plugin/bobba-rp-types';
 
 export class BountyServiceImplementation implements BountyService {
   async create(bountyDTO: BountyDTO) {

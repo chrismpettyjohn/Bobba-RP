@@ -3,7 +3,7 @@ import {Col, Input} from 'reactstrap';
 import {Card} from '../components/card/Card';
 import {setURL, Icon} from '@instinct-web/core';
 import {Jumbotron} from '../components/jumbotron/Jumbotron';
-import {useFetchAllCrimes, useFilter} from '@instinct-plugin/roleplay-web';
+import {useFetchAllCrimes, useFilter} from '@instinct-plugin/bobba-rp-web';
 import {AdminLayout} from '../components/admin-layout/AdminLayout';
 import {DeleteCrimeModal} from './delete-crime-modal/DeleteCrimeModal';
 import {EditCrimeModal} from './edit-crime-modal/EditCrimeModal';

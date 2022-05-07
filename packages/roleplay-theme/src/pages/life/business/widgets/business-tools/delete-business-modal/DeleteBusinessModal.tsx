@@ -3,7 +3,7 @@ import {toast} from 'react-toastify';
 import React, {useState} from 'react';
 import {Icon} from '@instinct-web/core';
 import {BusinessToolsProps} from '../BusinessTools.types';
-import {businessService} from '@instinct-plugin/roleplay-web';
+import {businessService} from '@instinct-plugin/bobba-rp-web';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 
 export function DeleteBusinessModal({business}: BusinessToolsProps) {

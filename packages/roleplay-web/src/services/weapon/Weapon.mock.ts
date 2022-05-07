@@ -1,5 +1,5 @@
 import {WeaponService} from './Weapon.types';
-import {exampleWeapon, WeaponDTO} from '@instinct-plugin/roleplay-types';
+import {exampleWeapon, WeaponDTO} from '@instinct-plugin/bobba-rp-types';
 
 export class WeaponServiceMock implements WeaponService {
   async create(weaponDTO: WeaponDTO) {

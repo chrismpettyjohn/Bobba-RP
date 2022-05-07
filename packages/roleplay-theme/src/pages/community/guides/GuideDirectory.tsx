@@ -6,7 +6,7 @@ import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {Link} from 'wouter';
 import {RPPermissionGuard} from '../../../components/templates/permission-guard';
-import {useFetchAllGuides} from '@instinct-plugin/roleplay-web';
+import {useFetchAllGuides} from '@instinct-plugin/bobba-rp-web';
 import {GuideCard} from '../../../components/templates/guide-card/GuideCard';
 
 setURL('guides', <GuideDirectory />);

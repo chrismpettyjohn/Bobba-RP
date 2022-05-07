@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {guideService} from '../../services/guide';
-import {Guide} from '@instinct-plugin/roleplay-types';
+import {Guide} from '@instinct-plugin/bobba-rp-types';
 
 export function useFetchGuideByID(
   guideID: string,

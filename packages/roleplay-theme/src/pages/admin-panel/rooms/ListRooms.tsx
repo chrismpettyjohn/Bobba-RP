@@ -3,10 +3,10 @@ import React, {useState} from 'react';
 import {Card} from '../components/card/Card';
 import {setURL, Icon} from '@instinct-web/core';
 import {roomPermissionToLabel} from './rooms.const';
-import {RPRoom} from '@instinct-plugin/roleplay-types';
+import {RPRoom} from '@instinct-plugin/bobba-rp-types';
 import {Jumbotron} from '../components/jumbotron/Jumbotron';
 import {AdminLayout} from '../components/admin-layout/AdminLayout';
-import {useFetchAllRPRooms, useFilter} from '@instinct-plugin/roleplay-web';
+import {useFetchAllRPRooms, useFilter} from '@instinct-plugin/bobba-rp-web';
 import {EditRoomModal} from './edit-room-modal/EditRoomModal';
 
 setURL('rp-admin/rooms', <ListRooms />);

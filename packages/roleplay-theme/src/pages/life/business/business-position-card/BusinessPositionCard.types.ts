@@ -1,4 +1,4 @@
-import {Business, BusinessPosition} from '@instinct-plugin/roleplay-types';
+import {Business, BusinessPosition} from '@instinct-plugin/bobba-rp-types';
 
 export interface BusinessPositionCardProps {
   business: Business;

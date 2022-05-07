@@ -4,7 +4,7 @@ import {GamblingMachineService} from './GamblingMachine.types';
 import {
   GamblingMachine,
   GamblingMachineDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class GamblingMachineServiceImplementation
   implements GamblingMachineService

@@ -1,5 +1,5 @@
 import {PropertyBidsEntity} from './property-bids.entity';
-import {PropertyBid, RPUser} from '@instinct-plugin/roleplay-types';
+import {PropertyBid, RPUser} from '@instinct-plugin/bobba-rp-types';
 
 export function propertyBidWire(
   entity: PropertyBidsEntity,

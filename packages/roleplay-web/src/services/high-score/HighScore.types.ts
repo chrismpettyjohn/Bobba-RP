@@ -1,4 +1,4 @@
-import {GangHighScores, UserHighScores} from '@instinct-plugin/roleplay-types';
+import {GangHighScores, UserHighScores} from '@instinct-plugin/bobba-rp-types';
 
 export interface HighScoreService {
   getTopUsers(): Promise<UserHighScores>;

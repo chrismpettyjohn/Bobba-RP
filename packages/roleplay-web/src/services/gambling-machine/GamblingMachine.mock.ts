@@ -2,7 +2,7 @@ import {GamblingMachineService} from './GamblingMachine.types';
 import {
   exampleGamblingMachine,
   GamblingMachineDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class GamblingMachineServiceMock implements GamblingMachineService {
   async create(gamblingMachineDTO: GamblingMachineDTO) {

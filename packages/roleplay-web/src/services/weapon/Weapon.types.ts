@@ -1,4 +1,4 @@
-import {Weapon, WeaponDTO} from '@instinct-plugin/roleplay-types';
+import {Weapon, WeaponDTO} from '@instinct-plugin/bobba-rp-types';
 
 export interface WeaponService {
   create(weaponDTO: WeaponDTO): Promise<Weapon>;

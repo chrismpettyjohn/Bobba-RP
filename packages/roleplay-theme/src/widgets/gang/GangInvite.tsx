@@ -1,9 +1,9 @@
 import Draggable from 'react-draggable';
 import React, {useContext, useState} from 'react';
-import {webSocketContext} from '@instinct-plugin/roleplay-web';
-import {useWebSocketEventListener} from '@instinct-plugin/roleplay-web';
+import {webSocketContext} from '@instinct-plugin/bobba-rp-web';
+import {useWebSocketEventListener} from '@instinct-plugin/bobba-rp-web';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
-import {WebSocketIncomingGangInviteReceivedEvent} from '@instinct-plugin/roleplay-types';
+import {WebSocketIncomingGangInviteReceivedEvent} from '@instinct-plugin/bobba-rp-types';
 
 export function GangInviteWidget() {
   const {sendEvent} = useContext(webSocketContext);

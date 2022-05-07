@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {backendAPI} from '@instinct-web/core';
 import {RPSessionService} from './Session.types';
-import {RPUser} from '@instinct-plugin/roleplay-types';
+import {RPUser} from '@instinct-plugin/bobba-rp-types';
 
 class RPSessionServiceImplementation implements RPSessionService {
   async getRPUser() {

@@ -3,7 +3,7 @@ import {uniqBy} from 'lodash';
 import {RPUserService} from '../user/user.service';
 import {rpUserWire} from '../database/user/user.wire';
 import {RoomRepository} from '@instinct-api/database';
-import {Property} from '@instinct-plugin/roleplay-types';
+import {Property} from '@instinct-plugin/bobba-rp-types';
 import {RPUserEntityStruct} from '../database/user/user.types';
 import {Injectable, BadRequestException} from '@nestjs/common';
 import {RPUserRepository} from '../database/user/user.repository';

@@ -8,7 +8,7 @@ import {
 } from 'typeorm';
 import {RPUserEntity} from '../user/user.entity';
 import {RPUserEntityStruct} from '../user/user.types';
-import {PoliticalIdeology} from '@instinct-plugin/roleplay-types';
+import {PoliticalIdeology} from '@instinct-plugin/bobba-rp-types';
 import {PoliticalPartyMemberEntity} from './political-party-member.entity';
 
 @Entity('instinct_rp_political_parties')

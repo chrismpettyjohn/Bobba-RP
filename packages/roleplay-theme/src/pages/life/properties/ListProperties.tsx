@@ -7,7 +7,7 @@ import {UserLayout} from '../../../components/layout/user';
 import {setURL, Avatar, Icon, sessionContext} from '@instinct-web/core';
 import {Container} from '../../../components/generic/container/Container';
 import {SellPropertyModal} from './sell-property-modal/SellPropertyModal';
-import {useFetchAllProperties, useFilter} from '@instinct-plugin/roleplay-web';
+import {useFetchAllProperties, useFilter} from '@instinct-plugin/bobba-rp-web';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 
 setURL('properties', <ListProperties />);

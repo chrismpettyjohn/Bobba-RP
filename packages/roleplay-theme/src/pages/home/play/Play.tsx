@@ -2,7 +2,7 @@
 import Flash from 'swfobject';
 import React, {useContext, useEffect} from 'react';
 import {ClientWidgets} from '../../../widgets/ClientWidgets';
-import {webSocketContext} from '@instinct-plugin/roleplay-web';
+import {webSocketContext} from '@instinct-plugin/bobba-rp-web';
 import {WebSocketError} from '../../../components/templates/error/WebSocketError';
 import {
   configContext,

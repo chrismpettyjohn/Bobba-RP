@@ -1,4 +1,4 @@
-import {LawDTO} from '@instinct-plugin/roleplay-types';
+import {LawDTO} from '@instinct-plugin/bobba-rp-types';
 
 export interface EditLawProps {
   baseLawDTO?: LawDTO;

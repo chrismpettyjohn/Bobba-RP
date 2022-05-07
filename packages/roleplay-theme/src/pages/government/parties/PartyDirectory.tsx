@@ -6,7 +6,7 @@ import {Icon, Input, sessionContext, setURL} from '@instinct-web/core';
 import {Container} from '../../../components/generic/container/Container';
 import {RPPermissionGuard} from '../../../components/templates/permission-guard';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
-import {useFetchPoliticalParties} from '@instinct-plugin/roleplay-web';
+import {useFetchPoliticalParties} from '@instinct-plugin/bobba-rp-web';
 import {PoliticalPartyCard} from '../../../components/templates/political-party-card/PoliticalPartyCard';
 
 setURL('government/parties', <PartyDirectory />);

@@ -2,7 +2,7 @@ import {
   BusinessDTO,
   BusinessPositionDTO,
   exampleBusinessDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 import {ReactNode} from 'react';
 
 export interface BusinessEditorContext {

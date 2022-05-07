@@ -6,7 +6,7 @@ import {rpUserWire} from '../database/user/user.wire';
 import {guideWire} from '../database/guide/guide.wire';
 import {GuideEntity} from '../database/guide/guide.entity';
 import {RPUserEntityStruct} from '../database/user/user.types';
-import {Guide, GuideDTO, GuideReaction} from '@instinct-plugin/roleplay-types';
+import {Guide, GuideDTO, GuideReaction} from '@instinct-plugin/bobba-rp-types';
 import {HasRPScope} from '../session/permission-scope.decorator';
 import {GuideRepository} from '../database/guide/guide.repository';
 import {

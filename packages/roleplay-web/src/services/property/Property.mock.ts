@@ -5,7 +5,7 @@ import {
   PropertyDTO,
   PropertyPhotoDTO,
   RespondOnPropertyBidDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class PropertyServiceMock implements PropertyService {
   async create(propertyDTO: PropertyDTO) {

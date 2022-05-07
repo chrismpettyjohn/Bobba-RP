@@ -1,7 +1,7 @@
 import {toast} from 'react-toastify';
 import React, {useContext, useState} from 'react';
 import {Icon, sessionContext} from '@instinct-web/core';
-import {propertyService} from '@instinct-plugin/roleplay-web';
+import {propertyService} from '@instinct-plugin/bobba-rp-web';
 import {MakeOfferOnPropertyModalProps} from './MakeOfferOnPropertyModal.types';
 import {
   Modal,

@@ -2,13 +2,13 @@ import Moment from 'moment';
 import {Link, useRoute} from 'wouter';
 import React, {useContext, useState} from 'react';
 import ReactMarkdown from 'react-markdown';
-import {guideService} from '@instinct-plugin/roleplay-web';
+import {guideService} from '@instinct-plugin/bobba-rp-web';
 import {Row} from '../../../components/generic/row/Row';
 import {Card} from '../../../components/generic/card/Card';
 import {UserLayout} from '../../../components/layout/user';
 import {Avatar, Icon, sessionContext, setURL} from '@instinct-web/core';
-import {GuideReaction} from '@instinct-plugin/roleplay-types';
-import {useFetchGuideByID} from '@instinct-plugin/roleplay-web';
+import {GuideReaction} from '@instinct-plugin/bobba-rp-types';
+import {useFetchGuideByID} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 

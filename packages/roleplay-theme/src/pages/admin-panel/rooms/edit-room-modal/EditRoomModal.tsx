@@ -3,10 +3,10 @@ import {toast} from 'react-toastify';
 import React, {useState} from 'react';
 import {Icon} from '@instinct-web/core';
 import {roomPermissionToLabel} from '../rooms.const';
-import {RPRoom} from '@instinct-plugin/roleplay-types';
+import {RPRoom} from '@instinct-plugin/bobba-rp-types';
 import {Form, FormGroup, Input, Label} from 'reactstrap';
 import {EditRoomModalProps} from './EditRoomModal.types';
-import {rpRoomService} from '@instinct-plugin/roleplay-web';
+import {rpRoomService} from '@instinct-plugin/bobba-rp-web';
 import {EditModal} from '../../components/edit-modal/EditModal';
 
 export function EditRoomModal({rpRoom, onChange}: EditRoomModalProps) {

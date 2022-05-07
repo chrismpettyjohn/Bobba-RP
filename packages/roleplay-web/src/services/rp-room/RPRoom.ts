@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {RPRoomService} from './RPRoom.types';
 import {backendAPI} from '@instinct-web/core';
-import {RPRoom, RPRoomDTO} from '@instinct-plugin/roleplay-types';
+import {RPRoom, RPRoomDTO} from '@instinct-plugin/bobba-rp-types';
 
 export class RPRoomServiceImplementation implements RPRoomService {
   async getAll() {

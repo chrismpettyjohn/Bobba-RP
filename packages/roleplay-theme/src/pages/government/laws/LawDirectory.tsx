@@ -2,11 +2,11 @@ import './LawDirectory.scss';
 import {Link} from 'wouter';
 import {uniqBy} from 'lodash';
 import React, {useContext, useState} from 'react';
-import {Law} from '@instinct-plugin/roleplay-types';
+import {Law} from '@instinct-plugin/bobba-rp-types';
 import {Row} from '../../../components/generic/row/Row';
 import {Card} from '../../../components/generic/card/Card';
 import {UserLayout} from '../../../components/layout/user';
-import {useFetchLaws} from '@instinct-plugin/roleplay-web';
+import {useFetchLaws} from '@instinct-plugin/bobba-rp-web';
 import {
   Icon,
   Input,

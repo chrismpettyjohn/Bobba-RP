@@ -7,7 +7,7 @@ import {VoteOnLawModal} from './vote-on-law-modal/VoteOnLawModal';
 import {DismissLawModal} from './dismiss-law-modal/DismissLawModal';
 import {OpenVotingModal} from './open-voting-modal/OpenVotingModal';
 import {CloseVotingModal} from './close-voting-modal/CloseVotingModal';
-import {LawStatus, LawVoteStatus} from '@instinct-plugin/roleplay-types';
+import {LawStatus, LawVoteStatus} from '@instinct-plugin/bobba-rp-types';
 import {RPPermissionGuard} from '../../../../components/templates/permission-guard';
 import {PresidentialReviewModal} from './presidential-review-modal/PresidentialReviewModal';
 

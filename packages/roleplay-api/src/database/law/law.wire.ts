@@ -1,5 +1,5 @@
 import {LawEntity} from './law.entity';
-import {Law, RPUser} from '@instinct-plugin/roleplay-types';
+import {Law, RPUser} from '@instinct-plugin/bobba-rp-types';
 
 export function lawWire(lawEntity: LawEntity, users: RPUser[]): Law {
   return {

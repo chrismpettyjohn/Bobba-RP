@@ -17,7 +17,7 @@ import {
   RPUser,
   UserHighScores,
   UserRPStats,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 import {GangRepository} from '../../database/gang';
 import {GangService} from '../../gang/gang.service';
 

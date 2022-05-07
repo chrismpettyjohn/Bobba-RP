@@ -1,5 +1,5 @@
 import {RPRoomEntity, RPRoomFeature} from './rp-room.entity';
-import {RPRoom} from '@instinct-plugin/roleplay-types';
+import {RPRoom} from '@instinct-plugin/bobba-rp-types';
 
 export function rpRoomWire(entity: RPRoomEntity): RPRoom {
   return {

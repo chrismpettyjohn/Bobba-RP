@@ -10,7 +10,7 @@ import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumb
 import {
   useFetchAllBusinesses,
   useFetchOpenPositions,
-} from '@instinct-plugin/roleplay-web';
+} from '@instinct-plugin/bobba-rp-web';
 
 setURL('businesses/jobs', <JobMarket />);
 

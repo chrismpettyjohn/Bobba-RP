@@ -2,7 +2,7 @@ import {PoliticalPartyService} from './PoliticalParty.types';
 import {
   examplePoliticalParty,
   PoliticalPartyDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class PoliticalPartyMockImplementation implements PoliticalPartyService {
   async getAll() {

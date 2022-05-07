@@ -2,11 +2,11 @@ import Toggle from 'react-toggle';
 import {toast} from 'react-toastify';
 import React, {useState} from 'react';
 import {Icon} from '@instinct-web/core';
-import {Crime} from '@instinct-plugin/roleplay-types';
+import {Crime} from '@instinct-plugin/bobba-rp-types';
 import {Form, FormGroup, Input, Label} from 'reactstrap';
 import {EditCrimeModalProps} from './EditCrimeModal.types';
 import {EditModal} from '../../components/edit-modal/EditModal';
-import {crimeService} from '@instinct-plugin/roleplay-web';
+import {crimeService} from '@instinct-plugin/bobba-rp-web';
 
 export function EditCrimeModal({crime, onChange}: EditCrimeModalProps) {
   const [crimeDTO, setCrimeDTO] = useState(crime);

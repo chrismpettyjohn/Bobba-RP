@@ -1,5 +1,5 @@
 import {createFetchHook} from '@instinct-web/core';
-import {UserHighScores} from '@instinct-plugin/roleplay-types';
+import {UserHighScores} from '@instinct-plugin/bobba-rp-types';
 import {highScoreService} from '../../services/high-score';
 
 export const useFetchTopUsers = () =>

@@ -1,4 +1,4 @@
-import {Food} from '@instinct-plugin/roleplay-types';
+import {Food} from '@instinct-plugin/bobba-rp-types';
 import {FoodEntity, FoodServable} from './food.entity';
 
 export function foodWire(entity: FoodEntity): Food {

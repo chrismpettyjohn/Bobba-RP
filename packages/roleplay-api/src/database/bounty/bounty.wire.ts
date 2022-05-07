@@ -1,5 +1,5 @@
 import {BountyEntity} from './bounty.entity';
-import {Bounty, RPUser} from '@instinct-plugin/roleplay-types';
+import {Bounty, RPUser} from '@instinct-plugin/bobba-rp-types';
 
 export function bountyWire(
   entity: BountyEntity,

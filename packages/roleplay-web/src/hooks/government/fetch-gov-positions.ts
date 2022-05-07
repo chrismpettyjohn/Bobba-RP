@@ -1,5 +1,5 @@
 import {createFetchHook} from '@instinct-web/core';
-import {BusinessPosition} from '@instinct-plugin/roleplay-types';
+import {BusinessPosition} from '@instinct-plugin/bobba-rp-types';
 import {governmentService} from '../../services/government';
 
 export const useFetchGovPositions = () =>

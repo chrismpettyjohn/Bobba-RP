@@ -3,7 +3,7 @@ import {IsNull} from 'typeorm';
 import {PropertyPipe} from './property.pipe';
 import {PropertyModule} from './property.module';
 import {PropertyService} from './property.service';
-import {Property} from '@instinct-plugin/roleplay-types';
+import {Property} from '@instinct-plugin/bobba-rp-types';
 import {PropertyDTOImplementation} from './property.dto';
 import {PropertyOwnerGuard} from './property-owner.guard';
 import {GetSession, HasSession} from '@instinct-api/session';

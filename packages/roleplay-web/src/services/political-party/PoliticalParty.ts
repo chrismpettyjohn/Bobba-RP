@@ -4,7 +4,7 @@ import {PoliticalPartyService} from './PoliticalParty.types';
 import {
   PoliticalParty,
   PoliticalPartyDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class PoliticalPartyServiceImplementation
   implements PoliticalPartyService

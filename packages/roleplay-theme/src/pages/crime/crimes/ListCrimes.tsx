@@ -6,7 +6,7 @@ import {Row} from '../../../components/generic/row/Row';
 import {Card} from '../../../components/generic/card/Card';
 import {UserLayout} from '../../../components/layout/user';
 import {Container} from '../../../components/generic/container/Container';
-import {useFetchAllCrimes, useFilter} from '@instinct-plugin/roleplay-web';
+import {useFetchAllCrimes, useFilter} from '@instinct-plugin/bobba-rp-web';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {CrimeDetailsModal} from './crime-details-modal/CrimeDetailsModal';
 

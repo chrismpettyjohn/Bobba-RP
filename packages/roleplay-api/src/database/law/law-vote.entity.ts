@@ -1,7 +1,7 @@
 import {LawEntity} from './law.entity';
 import {RPUserEntity} from '../user/user.entity';
 import {RPUserEntityStruct} from '../user/user.types';
-import {LawVoteStatus} from '@instinct-plugin/roleplay-types';
+import {LawVoteStatus} from '@instinct-plugin/bobba-rp-types';
 import {
   Entity,
   Column,

@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {crimeService} from '../../services/crime';
-import {Crime} from '@instinct-plugin/roleplay-types';
+import {Crime} from '@instinct-plugin/bobba-rp-types';
 
 export function useFetchCrimeByID(crimeID: string): Crime | undefined {
   const [crime, setCrime] = useState<Crime>();

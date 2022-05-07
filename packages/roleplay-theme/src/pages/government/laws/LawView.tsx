@@ -7,12 +7,12 @@ import {Row} from '../../../components/generic/row/Row';
 import {Icon} from '../../../components/generic/icon/Icon';
 import {Card} from '../../../components/generic/card/Card';
 import {UserLayout} from '../../../components/layout/user';
-import {useFetchLawByID} from '@instinct-plugin/roleplay-web';
+import {useFetchLawByID} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';
 import {
   LawPresidentialStatus,
   LawVoteStatus,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 import {LawActions} from './law-actions/LawActions';
 import {getPrettyLawStatus, getPrettyPresidentialStatus} from './bill.const';
 

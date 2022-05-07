@@ -2,7 +2,7 @@ import React, {useContext, useState} from 'react';
 import {businessEditorContext} from '../../context';
 import {Form, Icon, Input, sessionContext} from '@instinct-web/core';
 import {FormGroup, Modal, ModalHeader, ModalBody} from 'reactstrap';
-import {BusinessPositionDTO} from '@instinct-plugin/roleplay-types';
+import {BusinessPositionDTO} from '@instinct-plugin/bobba-rp-types';
 import {EditPositionModalProps} from './EditPostionModal.types';
 
 export function EditPositionModal({positionIndex}: EditPositionModalProps) {

@@ -4,7 +4,7 @@ import {setURL, Icon} from '@instinct-web/core';
 import {
   useFetchAllVendingMachines,
   useFilter,
-} from '@instinct-plugin/roleplay-web';
+} from '@instinct-plugin/bobba-rp-web';
 import {RPPermissionGuard} from '../../../../components/templates/permission-guard';
 import {DeleteVendingMachineModal} from './delete-vending-machine-modal/DeleteVendingMachineModal';
 import {EditVendingMachineModal} from './edit-vending-machine-modal/EditVendingMachineModal';

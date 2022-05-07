@@ -3,7 +3,7 @@ import {toast} from 'react-toastify';
 import {Icon} from '@instinct-web/core';
 import {DeleteModal} from '../../../../../components/templates/delete-modal/DeleteModal';
 import {DeleteVendingMachineModalProps} from './DeleteVendingMachineModal.types';
-import {vendingMachineService} from '@instinct-plugin/roleplay-web';
+import {vendingMachineService} from '@instinct-plugin/bobba-rp-web';
 
 export function DeleteVendingMachineModal({
   vendingMachine,

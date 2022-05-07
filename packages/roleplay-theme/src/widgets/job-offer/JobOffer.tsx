@@ -1,9 +1,9 @@
 import './JobOffer.scss';
 import React, {useState} from 'react';
 import Draggable from 'react-draggable';
-import {useWebSocketEventListener} from '@instinct-plugin/roleplay-web';
+import {useWebSocketEventListener} from '@instinct-plugin/bobba-rp-web';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
-import {WebSocketIncomingJobOfferEvent} from '@instinct-plugin/roleplay-types';
+import {WebSocketIncomingJobOfferEvent} from '@instinct-plugin/bobba-rp-types';
 
 export function JobOfferWidget() {
   useWebSocketEventListener('user_offered_something', handleOffer);

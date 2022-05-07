@@ -3,7 +3,7 @@ import {toast} from 'react-toastify';
 import {Icon} from '@instinct-web/core';
 import {DeleteModal} from '../../../../../components/templates/delete-modal/DeleteModal';
 import {DeleteGamblingMachineProps} from './DeleteGamblingMachine.types';
-import {gamblingMachineService} from '@instinct-plugin/roleplay-web';
+import {gamblingMachineService} from '@instinct-plugin/bobba-rp-web';
 
 export function DeleteGamblingMachine({
   gamblingMachine,

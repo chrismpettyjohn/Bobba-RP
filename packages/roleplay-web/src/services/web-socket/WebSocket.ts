@@ -5,7 +5,7 @@ import {
   WebSocketIncomingEvents,
   WebSocketOutgoingEvent,
   WebSocketOutgoingEvents,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class WebSocketService implements WebSocketServiceBase {
   readonly connection: WebSocketRetry;

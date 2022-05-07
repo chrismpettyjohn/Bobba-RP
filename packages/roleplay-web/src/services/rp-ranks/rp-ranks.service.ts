@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {backendAPI} from '@instinct-web/core';
 import {RPRanksService} from './rp-ranks.types';
-import {RPRank} from '@instinct-plugin/roleplay-types';
+import {RPRank} from '@instinct-plugin/bobba-rp-types';
 
 export class RPRanksServiceImplementation implements RPRanksService {
   async getStaffRanks() {

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {GameLayout} from '../Game';
 import {setURL, Icon} from '@instinct-web/core';
-import {useFetchAllFood, useFilter} from '@instinct-plugin/roleplay-web';
+import {useFetchAllFood, useFilter} from '@instinct-plugin/bobba-rp-web';
 import {RPPermissionGuard} from '../../../../components/templates/permission-guard';
 import {DeleteFoodModal} from './delete-food-modal/DeleteFoodModal';
 import {EditFoodModal} from './edit-food-modal/EditFoodModal';

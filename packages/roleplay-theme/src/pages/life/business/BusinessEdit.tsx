@@ -8,8 +8,8 @@ import {UserLayout} from '../../../components/layout/user';
 import {
   businessService,
   useFetchBusinessByID,
-} from '@instinct-plugin/roleplay-web';
-import {BusinessDTO} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-web';
+import {BusinessDTO} from '@instinct-plugin/bobba-rp-types';
 import {Container} from '../../../components/generic/container/Container';
 import {RPPermissionGuard} from '../../../components/templates/permission-guard';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';

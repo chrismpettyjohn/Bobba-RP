@@ -3,7 +3,7 @@ import {
   Law,
   LawPresidentialStatus,
   LawStatus,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export function getPrettyLawStatus(law: Law) {
   const lawStatusText: Record<LawStatus, [string, string]> = {

@@ -2,7 +2,7 @@ import {useLocation} from 'wouter';
 import {toast} from 'react-toastify';
 import React, {useContext, useState} from 'react';
 import {Icon, sessionContext} from '@instinct-web/core';
-import {propertyService} from '@instinct-plugin/roleplay-web';
+import {propertyService} from '@instinct-plugin/bobba-rp-web';
 import {BuyPropertyModalProps} from './BuyPropertyModal.types';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 

@@ -1,5 +1,5 @@
 import {ReactNode} from 'react';
-import {Gang} from '@instinct-plugin/roleplay-types';
+import {Gang} from '@instinct-plugin/bobba-rp-types';
 
 export interface GangScoreCardProps {
   header: ReactNode;

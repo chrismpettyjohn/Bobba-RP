@@ -1,4 +1,4 @@
-import {Bounty, BountyDTO} from '@instinct-plugin/roleplay-types';
+import {Bounty, BountyDTO} from '@instinct-plugin/bobba-rp-types';
 
 export interface BountyService {
   create(bountyDTO: BountyDTO): Promise<Bounty>;

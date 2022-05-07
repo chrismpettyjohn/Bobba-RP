@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {backendAPI} from '@instinct-web/core';
 import {GovernmentService} from './Government.types';
-import {BusinessPosition} from '@instinct-plugin/roleplay-types';
+import {BusinessPosition} from '@instinct-plugin/bobba-rp-types';
 
 export class GovernmentServiceImplementation implements GovernmentService {
   async getAll() {

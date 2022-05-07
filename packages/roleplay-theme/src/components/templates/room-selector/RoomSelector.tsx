@@ -2,7 +2,7 @@ import React from 'react';
 import {Select} from '@instinct-web/core';
 import {OnChangeValue} from 'react-select';
 import {RoomSelectorProps} from './RoomSelector.types';
-import {RPRoom} from '@instinct-plugin/roleplay-types';
+import {RPRoom} from '@instinct-plugin/bobba-rp-types';
 
 export function RoomSelector({rooms, roomID, onChange}: RoomSelectorProps) {
   function onNewRoom(event: OnChangeValue<RPRoom, any>) {

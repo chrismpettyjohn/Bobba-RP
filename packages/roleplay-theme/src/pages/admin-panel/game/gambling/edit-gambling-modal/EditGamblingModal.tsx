@@ -2,10 +2,10 @@ import {toast} from 'react-toastify';
 import React, {useState} from 'react';
 import {Icon} from '@instinct-web/core';
 import {Form, FormGroup, Input, Label} from 'reactstrap';
-import {GamblingMachine} from '@instinct-plugin/roleplay-types';
+import {GamblingMachine} from '@instinct-plugin/bobba-rp-types';
 import {EditGamblingModalProps} from './EditGamblingModal.types';
 import {EditModal} from '../../../components/edit-modal/EditModal';
-import {gamblingMachineService} from '@instinct-plugin/roleplay-web';
+import {gamblingMachineService} from '@instinct-plugin/bobba-rp-web';
 
 export function EditGamblingModal({
   gamblingMachine,

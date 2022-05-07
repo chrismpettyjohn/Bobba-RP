@@ -1,7 +1,7 @@
 import {
   VendingMachine,
   VendingMachineDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export interface VendingMachineService {
   create(vendingMachineDTO: VendingMachineDTO): Promise<VendingMachine>;

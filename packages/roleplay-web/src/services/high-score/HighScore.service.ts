@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {backendAPI} from '@instinct-web/core';
 import {HighScoreService} from './HighScore.types';
-import {GangHighScores, UserHighScores} from '@instinct-plugin/roleplay-types';
+import {GangHighScores, UserHighScores} from '@instinct-plugin/bobba-rp-types';
 
 export class HighScoreServiceImplementation implements HighScoreService {
   async getTopUsers() {

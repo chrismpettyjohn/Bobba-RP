@@ -1,4 +1,4 @@
-import {BusinessDTO} from '@instinct-plugin/roleplay-types';
+import {BusinessDTO} from '@instinct-plugin/bobba-rp-types';
 
 export interface BusinessEditorProps {
   defaultBusiness?: BusinessDTO;

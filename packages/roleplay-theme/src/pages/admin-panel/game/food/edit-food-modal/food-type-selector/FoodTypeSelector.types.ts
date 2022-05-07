@@ -1,4 +1,4 @@
-import {FoodType} from '@instinct-plugin/roleplay-types';
+import {FoodType} from '@instinct-plugin/bobba-rp-types';
 
 export interface FoodTypeSelectorProps {
   foodType: FoodType;

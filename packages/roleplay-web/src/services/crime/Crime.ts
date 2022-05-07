@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {CrimeService} from './Crime.types';
 import {backendAPI} from '@instinct-web/core';
-import {Crime, CrimeDTO} from '@instinct-plugin/roleplay-types';
+import {Crime, CrimeDTO} from '@instinct-plugin/bobba-rp-types';
 
 export class CrimeServiceImplementation implements CrimeService {
   async create(crimeDTO: CrimeDTO) {

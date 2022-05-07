@@ -1,6 +1,6 @@
 import {HasSession} from '@instinct-api/session';
 import {VendingMachinePipe} from './vending-machine.pipe';
-import {VendingMachine} from '@instinct-plugin/roleplay-types';
+import {VendingMachine} from '@instinct-plugin/bobba-rp-types';
 import {HasRPScope} from '../session/permission-scope.decorator';
 import {VendingMachineDTOImplementation} from './vending-machine.dto';
 import {

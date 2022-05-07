@@ -1,6 +1,6 @@
 import {AxiosResponse} from 'axios';
 import {GangService} from './Gang.types';
-import {Gang} from '@instinct-plugin/roleplay-types';
+import {Gang} from '@instinct-plugin/bobba-rp-types';
 import {backendAPI} from '@instinct-web/core';
 
 export class GangServiceImplementation implements GangService {

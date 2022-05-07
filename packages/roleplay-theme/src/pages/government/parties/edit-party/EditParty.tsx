@@ -6,7 +6,7 @@ import {EditPoliticalPartyProps} from './EditParty.types';
 import {
   PoliticalIdeology,
   PoliticalPartyDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 import {BadgeSelectorModal} from '../../../../components/templates/badge-selector-modal';
 
 const PARTY_TYPES = [

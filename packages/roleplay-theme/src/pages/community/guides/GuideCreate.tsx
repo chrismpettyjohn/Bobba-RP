@@ -6,8 +6,8 @@ import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {Link, useLocation} from 'wouter';
 import {GuideEditor} from './guide-editor/GuideEditor';
-import {GuideDTO} from '@instinct-plugin/roleplay-types';
-import {guideService} from '@instinct-plugin/roleplay-web';
+import {GuideDTO} from '@instinct-plugin/bobba-rp-types';
+import {guideService} from '@instinct-plugin/bobba-rp-web';
 import {toast} from 'react-toastify';
 
 setURL('guides/create', <GuideCreate />);

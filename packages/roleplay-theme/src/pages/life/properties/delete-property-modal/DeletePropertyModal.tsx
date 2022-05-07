@@ -2,7 +2,7 @@ import React from 'react';
 import {useLocation} from 'wouter';
 import {toast} from 'react-toastify';
 import {Icon} from '@instinct-web/core';
-import {propertyService} from '@instinct-plugin/roleplay-web';
+import {propertyService} from '@instinct-plugin/bobba-rp-web';
 import {DeletePropertyModalProps} from './DeletePropertyModal.types';
 import {DeleteModal} from '../../../../components/templates/delete-modal/DeleteModal';
 

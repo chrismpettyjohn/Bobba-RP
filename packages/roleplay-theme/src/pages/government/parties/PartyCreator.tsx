@@ -7,8 +7,8 @@ import {Card} from '../../../components/generic/card/Card';
 import {Row} from '../../../components/generic/row/Row';
 import {EditPoliticalParty} from './edit-party/EditParty';
 import {UserLayout} from '../../../components/layout/user';
-import {PoliticalPartyDTO} from '@instinct-plugin/roleplay-types';
-import {politicalPartyService} from '@instinct-plugin/roleplay-web';
+import {PoliticalPartyDTO} from '@instinct-plugin/bobba-rp-types';
+import {politicalPartyService} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 

@@ -1,4 +1,4 @@
-import {PoliticalPartyDTO} from '@instinct-plugin/roleplay-types';
+import {PoliticalPartyDTO} from '@instinct-plugin/bobba-rp-types';
 
 export interface EditPoliticalPartyProps {
   basePoliticalPartyDTO?: PoliticalPartyDTO;

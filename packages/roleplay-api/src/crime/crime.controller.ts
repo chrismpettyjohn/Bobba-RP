@@ -1,7 +1,7 @@
 import {CrimePipe} from './crime.pipe';
 import {CrimeModule} from './crime.module';
 import {HasSession} from '@instinct-api/session';
-import {Crime} from '@instinct-plugin/roleplay-types';
+import {Crime} from '@instinct-plugin/bobba-rp-types';
 import {crimeWire} from '../database/crime/crime.wire';
 import {
   CrimeEntity,

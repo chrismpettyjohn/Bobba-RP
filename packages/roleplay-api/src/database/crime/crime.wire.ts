@@ -1,4 +1,4 @@
-import {Crime} from '@instinct-plugin/roleplay-types';
+import {Crime} from '@instinct-plugin/bobba-rp-types';
 import {CrimeEntity, CrimeStackable, CrimeTicketable} from './crime.entity';
 
 export function crimeWire(entity: CrimeEntity): Crime {

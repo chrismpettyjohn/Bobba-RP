@@ -2,7 +2,7 @@ import {
   Business,
   BusinessDTO,
   BusinessPosition,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export interface BusinessService {
   create(businessDTO: BusinessDTO): Promise<Business>;

@@ -5,7 +5,7 @@ import {Link, useRoute} from 'wouter';
 import {Row} from '../../../components/generic/row/Row';
 import {Card} from '../../../components/generic/card/Card';
 import {UserLayout} from '../../../components/layout/user';
-import {useFetchBusinessByID} from '@instinct-plugin/roleplay-web';
+import {useFetchBusinessByID} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';
 import {UserContainer} from '../../../components/templates/user-container/UserContainer';
 import {Avatar, Icon, setURL, Skeleton} from '@instinct-web/core';

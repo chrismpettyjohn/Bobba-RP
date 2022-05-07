@@ -1,6 +1,6 @@
 import {BusinessEntity} from './business.entity';
 import {businessPositionWire} from './business-position.wire';
-import {Business, RPUser} from '@instinct-plugin/roleplay-types';
+import {Business, RPUser} from '@instinct-plugin/bobba-rp-types';
 
 export function businessWire(
   entity: BusinessEntity,

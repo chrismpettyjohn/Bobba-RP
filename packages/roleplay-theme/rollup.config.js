@@ -34,7 +34,7 @@ export default {
 
     // // Bundle CSS and SASS files
     scss({
-      output: './dist/public/css/roleplay-theme.css',
+      output: './dist/public/css/bobba-rp-theme.css',
       failOnError: true,
       includePaths: ['node_modules/'],
       sass: require('sass'),

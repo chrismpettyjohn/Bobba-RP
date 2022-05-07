@@ -1,6 +1,6 @@
 import Moment from 'moment';
 import {Injectable} from '@nestjs/common';
-import {RPUser} from '@instinct-plugin/roleplay-types';
+import {RPUser} from '@instinct-plugin/bobba-rp-types';
 import {RPUserEntityStruct} from '../database/user/user.types';
 import {uniqBy} from 'lodash';
 import {LawRepository} from '../database/law/law.repository';

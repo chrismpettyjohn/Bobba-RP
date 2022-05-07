@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {FoodService} from './Food.types';
 import {backendAPI} from '@instinct-web/core';
-import {Food, FoodDTO} from '@instinct-plugin/roleplay-types';
+import {Food, FoodDTO} from '@instinct-plugin/bobba-rp-types';
 
 export class FoodServiceImplementation implements FoodService {
   async create(foodDTO: FoodDTO) {

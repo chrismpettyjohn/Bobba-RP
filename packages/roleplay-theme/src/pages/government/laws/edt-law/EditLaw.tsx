@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import {Input} from '@instinct-web/core';
 import MDEditor from '@uiw/react-md-editor';
 import {EditLawProps} from './EditLaw.types';
-import {LawDTO} from '@instinct-plugin/roleplay-types';
+import {LawDTO} from '@instinct-plugin/bobba-rp-types';
 import {Card} from '../../../../components/generic/card/Card';
 import {SubmitLawModal} from './submit-law-modal/SubmitLawModal';
 

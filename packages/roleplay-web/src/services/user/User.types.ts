@@ -1,4 +1,4 @@
-import {UserRPStats} from '@instinct-plugin/roleplay-types';
+import {UserRPStats} from '@instinct-plugin/bobba-rp-types';
 
 export interface UserService {
   getRPStats(username: string): Promise<UserRPStats>;

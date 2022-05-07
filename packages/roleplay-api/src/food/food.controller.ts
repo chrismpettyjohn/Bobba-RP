@@ -2,7 +2,7 @@ import {FoodPipe} from './food.pipe';
 import {FoodDTOImplementation} from './food.dto';
 import {HasSession} from '@instinct-api/session';
 import {foodWire} from '../database/food/food.wire';
-import {Food} from '@instinct-plugin/roleplay-types';
+import {Food} from '@instinct-plugin/bobba-rp-types';
 import {FoodRepository} from '../database/food/food.repository';
 import {HasRPScope} from '../session/permission-scope.decorator';
 import {FoodEntity, FoodServable} from '../database/food/food.entity';

@@ -8,7 +8,7 @@ import {
   Business,
   BusinessPosition,
   RPUser,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 import {HasSession} from '@instinct-api/session';
 
 @Controller('government')

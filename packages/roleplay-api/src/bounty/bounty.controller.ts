@@ -3,7 +3,7 @@ import {uniqBy} from 'lodash';
 import {MoreThan} from 'typeorm';
 import {BountyPipe} from './bounty.pipe';
 import {HasSession} from '@instinct-api/session';
-import {Bounty} from '@instinct-plugin/roleplay-types';
+import {Bounty} from '@instinct-plugin/bobba-rp-types';
 import {bountyWire} from '../database/bounty/bounty.wire';
 import {BountyEntity} from '../database/bounty/bounty.entity';
 import {BountyRepository} from '../database/bounty/bounty.repository';

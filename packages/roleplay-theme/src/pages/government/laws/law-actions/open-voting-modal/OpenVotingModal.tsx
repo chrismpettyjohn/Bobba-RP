@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {OpenVotingModalProps} from './OpenVotingModal.types';
-import {lawService} from '@instinct-plugin/roleplay-web';
+import {lawService} from '@instinct-plugin/bobba-rp-web';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import {Icon} from '@instinct-web/core';
 import {RPPermissionGuard} from '../../../../../components/templates/permission-guard';
-import {LawStatus} from '@instinct-plugin/roleplay-types';
+import {LawStatus} from '@instinct-plugin/bobba-rp-types';
 
 export function OpenVotingModal({law, onFinish}: OpenVotingModalProps) {
   const [spinner, setSpinner] = useState(false);

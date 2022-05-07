@@ -1,4 +1,4 @@
-import {Law} from '@instinct-plugin/roleplay-types';
+import {Law} from '@instinct-plugin/bobba-rp-types';
 
 export interface LawActionsProps {
   law: Law;

@@ -4,7 +4,7 @@ import {Row} from '../../generic/row/Row';
 import {Avatar, Icon} from '@instinct-web/core';
 import {Card} from '../../generic/card/Card';
 import {GuideCardProps} from './GuideCard.types';
-import {GuideReaction} from '@instinct-plugin/roleplay-types';
+import {GuideReaction} from '@instinct-plugin/bobba-rp-types';
 
 export function GuideCard({guide}: GuideCardProps) {
   return (

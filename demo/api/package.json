@@ -25,7 +25,7 @@
     "@instinct-plugin/findretros-api": "^3.0.3",
     "@instinct-plugin/forgot-password-api": "^3.0.3",
     "@instinct-plugin/manage-users-api": "^3.0.3",
-    "@instinct-plugin/roleplay-api": "^1.0.0",
+    "@instinct-plugin/bobba-rp-api": "^1.0.0",
     "@instinct-plugin/user-guestbook-api": "^3.0.3",
     "@instinct-prj/interface": "^3.0.1",
     "@instinct-web/admin": "^3.0.3",

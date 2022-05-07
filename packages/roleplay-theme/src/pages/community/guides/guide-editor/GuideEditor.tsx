@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import MDEditor from '@uiw/react-md-editor';
 import {Icon, Input} from '@instinct-web/core';
 import {GuideEditorProps} from './GuideEditor.types';
-import {GuideDTO} from '@instinct-plugin/roleplay-types';
+import {GuideDTO} from '@instinct-plugin/bobba-rp-types';
 import {RPPermissionGuard} from '../../../../components/templates/permission-guard';
 
 export function GuideEditor({baseGuideDTO, onSubmit}: GuideEditorProps) {

@@ -6,7 +6,7 @@ import {
   LawDTO,
   LawPresidentialDecisionDTO,
   LawVoteDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class LawServiceImplementation implements LawService {
   async getAll() {

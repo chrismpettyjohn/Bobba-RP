@@ -4,7 +4,7 @@ import {setURL, Icon} from '@instinct-web/core';
 import {
   useFetchAllGamblingMachines,
   useFilter,
-} from '@instinct-plugin/roleplay-web';
+} from '@instinct-plugin/bobba-rp-web';
 import {RPPermissionGuard} from '../../../../components/templates/permission-guard';
 import {DeleteGamblingMachine} from './delete-gambling-machine-modal/DeleteGamblingMachine';
 import {EditGamblingModal} from './edit-gambling-modal/EditGamblingModal';

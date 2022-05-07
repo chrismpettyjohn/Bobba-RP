@@ -3,14 +3,14 @@ import {toast} from 'react-toastify';
 import {Photo} from '@instinct-prj/interface';
 import React, {useContext, useState} from 'react';
 import {Icon, sessionContext} from '@instinct-web/core';
-import {PropertyDTO, RPRoom} from '@instinct-plugin/roleplay-types';
+import {PropertyDTO, RPRoom} from '@instinct-plugin/bobba-rp-types';
 import {RoomSelector} from '../../../../components/templates/room-selector/RoomSelector';
 import {
   propertyService,
   useFetchPhotosByUsername,
   useFetchPropertiesByUsername,
   useFetchRPRoomsByUsername,
-} from '@instinct-plugin/roleplay-web';
+} from '@instinct-plugin/bobba-rp-web';
 import {PhotoSelector} from '../../../../components/templates/photo-selector/PhotoSelector';
 import {
   Modal,

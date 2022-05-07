@@ -3,7 +3,7 @@ import {toast} from 'react-toastify';
 import {Icon} from '@instinct-web/core';
 import {DeleteFoodModalProps} from './DeleteFoodModal.types';
 import {DeleteModal} from '../../../../../components/templates/delete-modal/DeleteModal';
-import {foodService} from '@instinct-plugin/roleplay-web';
+import {foodService} from '@instinct-plugin/bobba-rp-web';
 
 export function DeleteFoodModal({food, onDelete}: DeleteFoodModalProps) {
   async function onConfirmDelete() {

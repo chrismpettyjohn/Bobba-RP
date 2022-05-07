@@ -2,10 +2,10 @@ import {toast} from 'react-toastify';
 import React, {useState} from 'react';
 import {Icon} from '@instinct-web/core';
 import {Form, FormGroup, Input, Label} from 'reactstrap';
-import {VendingMachine} from '@instinct-plugin/roleplay-types';
+import {VendingMachine} from '@instinct-plugin/bobba-rp-types';
 import {EditVendingMachineProps} from './EditVendingMachine.types';
 import {EditModal} from '../../../components/edit-modal/EditModal';
-import {vendingMachineService} from '@instinct-plugin/roleplay-web';
+import {vendingMachineService} from '@instinct-plugin/bobba-rp-web';
 
 export function EditVendingMachineModal({
   vendingMachine,

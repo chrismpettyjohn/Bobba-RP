@@ -1,6 +1,6 @@
 import {HasSession} from '@instinct-api/session';
 import {GamblingMachinePipe} from './gambling-machine.pipe';
-import {GamblingMachine} from '@instinct-plugin/roleplay-types';
+import {GamblingMachine} from '@instinct-plugin/bobba-rp-types';
 import {HasRPScope} from '../session/permission-scope.decorator';
 import {GamblingMachineDTOImplementation} from './gambling-machine.dto';
 import {gamblingMachineWire} from '../database/gambling-machine/gambling.wire';

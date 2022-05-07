@@ -1,6 +1,6 @@
 import {Link} from 'wouter';
 import React, {useState} from 'react';
-import {useFetchAllGangs} from '@instinct-plugin/roleplay-web';
+import {useFetchAllGangs} from '@instinct-plugin/bobba-rp-web';
 import {Row} from '../../../components/generic/row/Row';
 import {UserLayout} from '../../../components/layout/user';
 import {Card} from '../../../components/generic/card/Card';

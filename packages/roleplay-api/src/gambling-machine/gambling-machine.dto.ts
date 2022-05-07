@@ -1,5 +1,5 @@
 import {IsString, IsNumber} from 'class-validator';
-import {GamblingMachineDTO} from '@instinct-plugin/roleplay-types';
+import {GamblingMachineDTO} from '@instinct-plugin/bobba-rp-types';
 
 export class GamblingMachineDTOImplementation implements GamblingMachineDTO {
   @IsString()

@@ -1,5 +1,5 @@
 import {createFetchHook} from '@instinct-web/core';
-import {Property} from '@instinct-plugin/roleplay-types';
+import {Property} from '@instinct-plugin/bobba-rp-types';
 import {propertyService} from '../../services/property';
 
 export const useFetchAllProperties = (refresh = 0) =>

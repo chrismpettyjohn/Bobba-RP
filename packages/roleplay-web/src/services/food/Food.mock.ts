@@ -1,5 +1,5 @@
 import {FoodService} from './Food.types';
-import {exampleFood, FoodDTO} from '@instinct-plugin/roleplay-types';
+import {exampleFood, FoodDTO} from '@instinct-plugin/bobba-rp-types';
 
 export class FoodServiceMock implements FoodService {
   async create(foodDTO: FoodDTO) {

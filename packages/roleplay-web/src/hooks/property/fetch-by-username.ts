@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {propertyService} from '../../services/property';
-import {Property} from '@instinct-plugin/roleplay-types';
+import {Property} from '@instinct-plugin/bobba-rp-types';
 
 export function useFetchPropertiesByUsername(
   username: string,

@@ -3,7 +3,7 @@ import {toast} from 'react-toastify';
 import {Icon} from '@instinct-web/core';
 import {DeleteCrimeModalProps} from './DeleteCrimeModal.types';
 import {DeleteModal} from '../../../../components/templates/delete-modal/DeleteModal';
-import {crimeService} from '@instinct-plugin/roleplay-web';
+import {crimeService} from '@instinct-plugin/bobba-rp-web';
 
 export function DeleteCrimeModal({crime, onDelete}: DeleteCrimeModalProps) {
   async function onConfirmDelete() {

@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {businessEditorContext} from '../../context';
 import {businessTypes} from './BusinessTypes.const';
-import {BusinessType} from '@instinct-plugin/roleplay-types';
+import {BusinessType} from '@instinct-plugin/bobba-rp-types';
 import {Row} from '../../../../../../components/generic/row/Row';
 import {BusinessTypeOption} from './business-type-option/BusinessTypeOption';
 

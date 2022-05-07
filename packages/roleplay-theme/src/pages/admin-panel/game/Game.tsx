@@ -5,7 +5,7 @@ import {Card} from '../components/card/Card';
 import {Jumbotron} from '../components/jumbotron/Jumbotron';
 import {AdminLayout} from '../components/admin-layout/AdminLayout';
 import {AdminLayoutProps} from '../components/admin-layout/AdminLayout.types';
-import {RPPermissions} from '@instinct-plugin/roleplay-types';
+import {RPPermissions} from '@instinct-plugin/bobba-rp-types';
 import {RPPermissionGuard} from '../../../components/templates/permission-guard';
 
 const userLinks: Array<{

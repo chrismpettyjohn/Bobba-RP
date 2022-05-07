@@ -2,12 +2,12 @@ import Toggle from 'react-toggle';
 import {toast} from 'react-toastify';
 import React, {useState} from 'react';
 import {Icon} from '@instinct-web/core';
-import {Food} from '@instinct-plugin/roleplay-types';
+import {Food} from '@instinct-plugin/bobba-rp-types';
 import {EditFoodModalProps} from './EditFoodModal.types';
 import {Form, FormGroup, Input, Label} from 'reactstrap';
 import {EditModal} from '../../../components/edit-modal/EditModal';
 import {FoodTypeSelector} from './food-type-selector/FoodTypeSelector';
-import {foodService} from '@instinct-plugin/roleplay-web';
+import {foodService} from '@instinct-plugin/bobba-rp-web';
 
 export function EditFoodModal({food, onChange}: EditFoodModalProps) {
   const [foodDTO, setFoodDTO] = useState(food);

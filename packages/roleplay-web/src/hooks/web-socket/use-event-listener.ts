@@ -5,7 +5,7 @@ import {configContext, sessionContext} from '@instinct-web/core';
 import {
   WebSocketIncomingEvent,
   WebSocketIncomingEvents,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export function useWebSocketEventListener<K extends WebSocketIncomingEvent>(
   incomingEvent: K,

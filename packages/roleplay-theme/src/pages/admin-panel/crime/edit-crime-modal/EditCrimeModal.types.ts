@@ -1,4 +1,4 @@
-import {Crime} from '@instinct-plugin/roleplay-types';
+import {Crime} from '@instinct-plugin/bobba-rp-types';
 
 export interface EditCrimeModalProps {
   crime: Crime;

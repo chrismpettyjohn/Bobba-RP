@@ -1,7 +1,7 @@
 import {Injectable} from '@nestjs/common';
 import {RPUserService} from '../user/user.service';
 import {rpUserWire} from '../database/user/user.wire';
-import {RPUser} from '@instinct-plugin/roleplay-types';
+import {RPUser} from '@instinct-plugin/bobba-rp-types';
 import {RPUserEntityStruct} from '../database/user/user.types';
 import {PoliticalPartyEntity} from '../database/political-party/political-party.entity';
 

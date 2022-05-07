@@ -2,7 +2,7 @@ import {IsEnum, IsString} from 'class-validator';
 import {
   PoliticalIdeology,
   PoliticalPartyDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class PoliticalPartyDTOImplementation implements PoliticalPartyDTO {
   @IsString()

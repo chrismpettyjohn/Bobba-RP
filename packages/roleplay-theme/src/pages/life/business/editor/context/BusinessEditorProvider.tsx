@@ -5,7 +5,7 @@ import {
   BusinessDTO,
   BusinessPositionDTO,
   exampleBusinessDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 import {BusinessEditorContextProviderProps} from './BusinessEditor.types';
 
 export function BusinessEditorProvider({

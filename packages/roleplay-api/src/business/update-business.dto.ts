@@ -1,5 +1,5 @@
 import {IsString, IsNumber, IsNotEmpty} from 'class-validator';
-import {UpdateBusinessDTO as UpdateBusinessDTOI} from '@instinct-plugin/roleplay-types';
+import {UpdateBusinessDTO as UpdateBusinessDTOI} from '@instinct-plugin/bobba-rp-types';
 
 export class UpdateBusinessDTO implements UpdateBusinessDTOI {
   @IsString()

@@ -1,5 +1,5 @@
 import {rpUserContext} from './RPUser';
-import {RPUser} from '@instinct-plugin/roleplay-types';
+import {RPUser} from '@instinct-plugin/bobba-rp-types';
 import {rpSessionService} from '../../services/session';
 import React, {useContext, useEffect, useState} from 'react';
 import {ContextProvidersProps, sessionContext} from '@instinct-web/core';

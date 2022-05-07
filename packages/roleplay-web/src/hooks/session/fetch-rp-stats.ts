@@ -1,4 +1,4 @@
-import {UserRPStats} from '@instinct-plugin/roleplay-types';
+import {UserRPStats} from '@instinct-plugin/bobba-rp-types';
 import {createFetchHook} from '@instinct-web/core';
 import {rpSessionService} from '../../services/session';
 

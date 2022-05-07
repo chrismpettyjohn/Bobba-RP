@@ -4,13 +4,13 @@ import {Row} from '../../components/generic/row/Row';
 import {Card} from '../../components/generic/card/Card';
 import {UserLayout} from '../../components/layout/user';
 import {Container} from '../../components/generic/container/Container';
-import {useFetchGovPositions} from '@instinct-plugin/roleplay-web';
+import {useFetchGovPositions} from '@instinct-plugin/bobba-rp-web';
 import {MiniJumbotron} from '../../components/generic/mini-jumbotron/MiniJumbotron';
 import {UserContainer} from '../../components/templates/user-container/UserContainer';
 import {
   BusinessPosition,
   GovernmentBranch,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 setURL('government/assembly', <GovernmentAssembly />);
 

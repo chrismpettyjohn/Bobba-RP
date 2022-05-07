@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {bountyService} from '../../services/bounty';
-import {Bounty} from '@instinct-plugin/roleplay-types';
+import {Bounty} from '@instinct-plugin/bobba-rp-types';
 
 export function useFetchBountyByID(bountyID: string): Bounty | undefined {
   const [bounty, setBounty] = useState<Bounty>();

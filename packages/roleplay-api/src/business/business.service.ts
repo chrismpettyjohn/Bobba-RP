@@ -3,7 +3,7 @@ import {Injectable} from '@nestjs/common';
 import {RPUserService} from '../user/user.service';
 import {UserRPStatRepository} from '../database/user';
 import {rpUserWire} from '../database/user/user.wire';
-import {RPUser} from '@instinct-plugin/roleplay-types';
+import {RPUser} from '@instinct-plugin/bobba-rp-types';
 import {RPUserRepository} from '../database/user/user.repository';
 import {BusinessEntity} from '../database/business/business.entity';
 import {BusinessPositionEntity} from '../database/business/business-position.entity';

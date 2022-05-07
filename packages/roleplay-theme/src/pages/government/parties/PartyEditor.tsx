@@ -6,11 +6,11 @@ import {Row} from '../../../components/generic/row/Row';
 import {UserLayout} from '../../../components/layout/user';
 import {Card} from '../../../components/generic/card/Card';
 import {EditPoliticalParty} from './edit-party/EditParty';
-import {PoliticalPartyDTO} from '@instinct-plugin/roleplay-types';
+import {PoliticalPartyDTO} from '@instinct-plugin/bobba-rp-types';
 import {
   politicalPartyService,
   useFetchPoliticalPartyByID,
-} from '@instinct-plugin/roleplay-web';
+} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 

@@ -5,7 +5,7 @@ import {setURL, Icon} from '@instinct-web/core';
 import useWindowSize from 'react-use/lib/useWindowSize';
 import {Row} from '../../../components/generic/row/Row';
 import {UserLayout} from '../../../components/layout/user';
-import {useFetchPropertyByID} from '@instinct-plugin/roleplay-web';
+import {useFetchPropertyByID} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';
 
 setURL('properties/:propertyID/congratulations', <JustPurchasedProperty />);

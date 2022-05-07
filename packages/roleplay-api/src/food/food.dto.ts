@@ -1,4 +1,4 @@
-import {FoodDTO, FoodType} from '@instinct-plugin/roleplay-types';
+import {FoodDTO, FoodType} from '@instinct-plugin/bobba-rp-types';
 import {IsString, IsBoolean, IsEnum, IsNumber} from 'class-validator';
 
 export class FoodDTOImplementation implements FoodDTO {

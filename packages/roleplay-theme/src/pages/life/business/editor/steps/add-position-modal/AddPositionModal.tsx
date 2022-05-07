@@ -11,7 +11,7 @@ import {
 import {
   BusinessPositionDTO,
   exampleBusinessPositionDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export function AddPositionModal() {
   const {user} = useContext(sessionContext);

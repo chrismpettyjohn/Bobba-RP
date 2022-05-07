@@ -1,12 +1,12 @@
 import {toast} from 'react-toastify';
 import React, {useState} from 'react';
 import {Icon} from '@instinct-web/core';
-import {Weapon} from '@instinct-plugin/roleplay-types';
+import {Weapon} from '@instinct-plugin/bobba-rp-types';
 
 import {Form, FormGroup, Input, Label} from 'reactstrap';
 import {EditWeaponModalProps} from './EditWeaponModal.types';
 import {EditModal} from '../../../components/edit-modal/EditModal';
-import {weaponService} from '@instinct-plugin/roleplay-web';
+import {weaponService} from '@instinct-plugin/bobba-rp-web';
 
 export function EditWeaponModal({weapon, onChange}: EditWeaponModalProps) {
   const [weaponDTO, setWeaponDTO] = useState(weapon);

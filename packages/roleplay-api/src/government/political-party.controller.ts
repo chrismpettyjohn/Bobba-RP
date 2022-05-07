@@ -5,7 +5,7 @@ import {RPUserEntityStruct} from '../database/user/user.types';
 import {PoliticalPartyService} from './political-party.service';
 import {HasRPScope} from '../session/permission-scope.decorator';
 import {PoliticalPartyDTOImplementation} from './political-party.dto';
-import {PoliticalParty, RPUser} from '@instinct-plugin/roleplay-types';
+import {PoliticalParty, RPUser} from '@instinct-plugin/bobba-rp-types';
 import {politicalPartyWire} from '../database/political-party/political-party.wire';
 import {PoliticalPartyEntity} from '../database/political-party/political-party.entity';
 import {PoliticalPartyRepository} from '../database/political-party/political-party.repository';

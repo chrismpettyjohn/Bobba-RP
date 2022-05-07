@@ -1,5 +1,5 @@
 import {UserProfile} from '@instinct-prj/interface';
-import {UserRPStats} from '@instinct-plugin/roleplay-types';
+import {UserRPStats} from '@instinct-plugin/bobba-rp-types';
 
 export interface UserProfileWidgetProps {
   profile?: UserProfile;

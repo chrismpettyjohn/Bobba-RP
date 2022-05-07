@@ -6,7 +6,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import {GovernmentBranch} from '@instinct-plugin/roleplay-types';
+import {GovernmentBranch} from '@instinct-plugin/bobba-rp-types';
 
 @Entity('rp_jobs_ranks')
 export class BusinessPositionEntity {

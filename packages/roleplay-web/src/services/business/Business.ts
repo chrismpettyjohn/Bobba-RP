@@ -5,7 +5,7 @@ import {
   Business,
   BusinessDTO,
   BusinessPosition,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export class BusinessServiceImplementation implements BusinessService {
   async create(businessDTO: BusinessDTO) {

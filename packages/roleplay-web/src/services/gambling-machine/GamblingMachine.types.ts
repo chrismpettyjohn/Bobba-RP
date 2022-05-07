@@ -1,7 +1,7 @@
 import {
   GamblingMachine,
   GamblingMachineDTO,
-} from '@instinct-plugin/roleplay-types';
+} from '@instinct-plugin/bobba-rp-types';
 
 export interface GamblingMachineService {
   create(gamblingMachineDTO: GamblingMachineDTO): Promise<GamblingMachine>;

@@ -23,7 +23,7 @@ import {ForgotPasswordModule} from '@instinct-plugin/forgot-password-api';
 import {
   InstinctRPModule,
   rpDatabaseEntities,
-} from '@instinct-plugin/roleplay-api';
+} from '@instinct-plugin/bobba-rp-api';
 import {
   CommonModule,
   databaseHost,
