@@ -15171,6 +15171,14 @@ randomstring@^1.2.1:
     array-uniq "1.0.2"
     randombytes "2.0.3"
 
+randomstring@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/randomstring/-/randomstring-1.2.2.tgz#61b3d42624c7b1fcaaaba161c53452eb3d8fef1c"
+  integrity sha512-9FByiB8guWZLbE+akdQiWE3I1I6w7Vn5El4o4y7o5bWQ6DWPcEOp+aLG7Jezc8BVRKKpgJd2ppRX0jnKu1YCfg==
+  dependencies:
+    array-uniq "1.0.2"
+    randombytes "2.0.3"
+
 range-parser@^1.2.1, range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"

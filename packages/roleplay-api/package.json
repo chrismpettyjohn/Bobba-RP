@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
-    "cache-manager": "^3.6.0"
+    "cache-manager": "^3.6.0",
+    "randomstring": "^1.2.2"
   },
   "devDependencies": {
     "@instinct-api/common": "^3.0.3",

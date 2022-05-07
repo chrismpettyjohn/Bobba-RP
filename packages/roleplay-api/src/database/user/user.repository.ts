@@ -1,3 +1,4 @@
+import Random from 'randomstring';
 import {Repository} from 'typeorm';
 import {Injectable} from '@nestjs/common';
 import {RPUserEntity} from './user.entity';
@@ -37,5 +38,12 @@ export class RPUserRepository extends BaseRepository<RPUserEntityStruct> {
 
   getAll(): Promise<RPUserEntityStruct[]> {
     return this.find({}, {id: 'DESC'});
+  }
+
+  async createSSO(userID: number): Promise<string> {
+    const authTicket: string =
+      'instinct_rp' + Random.generate(50) + '_' + userID;
+    await this.update({id: userID}, {authTicket});
+    return authTicket;
   }
 }

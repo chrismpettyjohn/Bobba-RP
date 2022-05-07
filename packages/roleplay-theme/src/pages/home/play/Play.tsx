@@ -15,7 +15,7 @@ setURL('play', <PlayPage />);
 
 export function PlayPage() {
   const {config} = useContext(configContext);
-  const {online} = useContext(sessionContext);
+  const {user, online, setUser} = useContext(sessionContext);
   const {setStore} = useContext(themeContext);
   const {getConnectionStatus} = useContext(webSocketContext);
   const flashEnabled: boolean = Flash.getFlashPlayerVersion().major > 0;
