@@ -48,7 +48,9 @@ export function EditVendingMachineModal({
           <Label>Name</Label>
           <Input
             value={vendingMachineDTO.name}
-            onChange={_ => updateVendingMachineDTO({name: _.target.value})}
+            onChange={(_: any) =>
+              updateVendingMachineDTO({name: _.target.value})
+            }
           />
         </FormGroup>
         <FormGroup>
@@ -56,7 +58,7 @@ export function EditVendingMachineModal({
           <Input
             type="number"
             value={vendingMachineDTO.cost}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateVendingMachineDTO({cost: Number(_.target.value)})
             }
           />
@@ -66,7 +68,7 @@ export function EditVendingMachineModal({
           <Input
             type="number"
             value={vendingMachineDTO.healthGained}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateVendingMachineDTO({healthGained: Number(_.target.value)})
             }
           />
@@ -76,7 +78,7 @@ export function EditVendingMachineModal({
           <Input
             type="number"
             value={vendingMachineDTO.hungerRestored}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateVendingMachineDTO({hungerRestored: Number(_.target.value)})
             }
           />
@@ -86,7 +88,7 @@ export function EditVendingMachineModal({
           <Input
             type="number"
             value={vendingMachineDTO.energyGained}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateVendingMachineDTO({energyGained: Number(_.target.value)})
             }
           />

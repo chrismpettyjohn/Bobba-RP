@@ -43,14 +43,14 @@ export function EditCrimeModal({crime, onChange}: EditCrimeModalProps) {
           <Label>Name</Label>
           <Input
             value={crimeDTO.name}
-            onChange={_ => updateCrimeDTO({name: _.target.value})}
+            onChange={(_: any) => updateCrimeDTO({name: _.target.value})}
           />
         </FormGroup>
         <FormGroup>
           <Label>Alias</Label>
           <Input
             value={crimeDTO.aliases}
-            onChange={_ => updateCrimeDTO({aliases: _.target.value})}
+            onChange={(_: any) => updateCrimeDTO({aliases: _.target.value})}
           />
         </FormGroup>
         <FormGroup>
@@ -59,7 +59,7 @@ export function EditCrimeModal({crime, onChange}: EditCrimeModalProps) {
           <Input
             type="number"
             value={crimeDTO.jailTimeInMinutes}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateCrimeDTO({jailTimeInMinutes: Number(_.target.value)})
             }
           />
@@ -71,7 +71,7 @@ export function EditCrimeModal({crime, onChange}: EditCrimeModalProps) {
               <br />
               <Toggle
                 checked={crimeDTO.ticketable}
-                onChange={_ =>
+                onChange={(_: any) =>
                   updateCrimeDTO({ticketable: !crimeDTO.ticketable})
                 }
               />
@@ -84,7 +84,7 @@ export function EditCrimeModal({crime, onChange}: EditCrimeModalProps) {
                 disabled={!crimeDTO.ticketable}
                 type="number"
                 value={crimeDTO.ticketCost}
-                onChange={_ =>
+                onChange={(_: any) =>
                   updateCrimeDTO({ticketCost: Number(_.target.value)})
                 }
               />
@@ -96,7 +96,9 @@ export function EditCrimeModal({crime, onChange}: EditCrimeModalProps) {
           <br />
           <Toggle
             checked={crimeDTO.stackable}
-            onChange={_ => updateCrimeDTO({stackable: !crimeDTO.stackable})}
+            onChange={(_: any) =>
+              updateCrimeDTO({stackable: !crimeDTO.stackable})
+            }
           />
         </FormGroup>
       </Form>

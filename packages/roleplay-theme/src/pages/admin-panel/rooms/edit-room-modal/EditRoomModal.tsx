@@ -48,7 +48,9 @@ export function EditRoomModal({rpRoom, onChange}: EditRoomModalProps) {
           <Label>Enter Message</Label>
           <Input
             value={rpRoomDTO.enterMessage}
-            onChange={_ => updateRPRoomDTO({enterMessage: _.target.value})}
+            onChange={(_: any) =>
+              updateRPRoomDTO({enterMessage: _.target.value})
+            }
           />
         </FormGroup>
         <h4>Abilities</h4>
@@ -65,7 +67,7 @@ export function EditRoomModal({rpRoom, onChange}: EditRoomModalProps) {
                   // @ts-ignore
                   checked={rpRoomDTO[_]}
                   // @ts-ignore
-                  onChange={_ => updateRPRoomDTO({[_]: !rpRoomDTO[_]})}
+                  onChange={(_: any) => updateRPRoomDTO({[_]: !rpRoomDTO[_]})}
                 />
               </FormGroup>
             </div>

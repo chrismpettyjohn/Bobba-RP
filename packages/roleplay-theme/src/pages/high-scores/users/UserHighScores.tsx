@@ -42,7 +42,7 @@ export function UserHighScores() {
                   header="Most Kills"
                   headerIcon="skull"
                   users={userHighScores.mostKills}
-                  userStat={_ => _.rpStats.kills.total}
+                  userStat={(_: any) => _.rpStats.kills.total}
                   userStatLabel="kills"
                 />
               </div>
@@ -51,7 +51,7 @@ export function UserHighScores() {
                   header="Most Deaths"
                   headerIcon="dizzy"
                   users={userHighScores.mostDeaths}
-                  userStat={_ => _.rpStats.deaths.total}
+                  userStat={(_: any) => _.rpStats.deaths.total}
                   userStatLabel="deaths"
                 />
               </div>
@@ -60,7 +60,7 @@ export function UserHighScores() {
                   header="Most Damage"
                   headerIcon="fire-alt"
                   users={userHighScores.mostDamageGiven}
-                  userStat={_ => _.rpStats.damage.damageGiven}
+                  userStat={(_: any) => _.rpStats.damage.damageGiven}
                   userStatLabel="damage"
                 />
               </div>
@@ -72,7 +72,7 @@ export function UserHighScores() {
                   header="Damage Taken"
                   headerIcon="fire-alt"
                   users={userHighScores.mostDamageReceived}
-                  userStat={_ => _.rpStats.damage.damageTaken}
+                  userStat={(_: any) => _.rpStats.damage.damageTaken}
                   userStatLabel="damage"
                 />
               </div>
@@ -81,7 +81,7 @@ export function UserHighScores() {
                   header="Most Arrests"
                   headerIcon="siren-on"
                   users={userHighScores.mostArrests}
-                  userStat={_ => _.rpStats.police.arrestsMade}
+                  userStat={(_: any) => _.rpStats.police.arrestsMade}
                   userStatLabel="arrests"
                 />
               </div>
@@ -90,7 +90,7 @@ export function UserHighScores() {
                   header="Jail Time"
                   headerIcon="angry"
                   users={userHighScores.mostJailTime}
-                  userStat={_ => _.rpStats.police.timesArrested}
+                  userStat={(_: any) => _.rpStats.police.timesArrested}
                   userStatLabel="times arrested"
                 />
               </div>

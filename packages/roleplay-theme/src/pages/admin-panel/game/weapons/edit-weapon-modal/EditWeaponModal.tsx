@@ -43,7 +43,7 @@ export function EditWeaponModal({weapon, onChange}: EditWeaponModalProps) {
           <Label>Name</Label>
           <Input
             value={weaponDTO.name}
-            onChange={_ => updateWeaponDTO({name: _.target.value})}
+            onChange={(_: any) => updateWeaponDTO({name: _.target.value})}
           />
         </FormGroup>
         <FormGroup>
@@ -51,7 +51,9 @@ export function EditWeaponModal({weapon, onChange}: EditWeaponModalProps) {
           <Input
             type="number"
             value={weaponDTO.cost}
-            onChange={_ => updateWeaponDTO({cost: Number(_.target.value)})}
+            onChange={(_: any) =>
+              updateWeaponDTO({cost: Number(_.target.value)})
+            }
           />
         </FormGroup>
         <FormGroup>
@@ -59,7 +61,9 @@ export function EditWeaponModal({weapon, onChange}: EditWeaponModalProps) {
           <Input
             type="number"
             value={weaponDTO.minDamage}
-            onChange={_ => updateWeaponDTO({minDamage: Number(_.target.value)})}
+            onChange={(_: any) =>
+              updateWeaponDTO({minDamage: Number(_.target.value)})
+            }
           />
         </FormGroup>
         <FormGroup>
@@ -67,7 +71,9 @@ export function EditWeaponModal({weapon, onChange}: EditWeaponModalProps) {
           <Input
             type="number"
             value={weaponDTO.maxDamage}
-            onChange={_ => updateWeaponDTO({maxDamage: Number(_.target.value)})}
+            onChange={(_: any) =>
+              updateWeaponDTO({maxDamage: Number(_.target.value)})
+            }
           />
         </FormGroup>
         <FormGroup>
@@ -75,7 +81,9 @@ export function EditWeaponModal({weapon, onChange}: EditWeaponModalProps) {
           <Input
             type="number"
             value={weaponDTO.range}
-            onChange={_ => updateWeaponDTO({range: Number(_.target.value)})}
+            onChange={(_: any) =>
+              updateWeaponDTO({range: Number(_.target.value)})
+            }
           />
         </FormGroup>
         <FormGroup>
@@ -83,7 +91,7 @@ export function EditWeaponModal({weapon, onChange}: EditWeaponModalProps) {
           <Input
             type="number"
             value={weaponDTO.energyUsed}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateWeaponDTO({energyUsed: Number(_.target.value)})
             }
           />

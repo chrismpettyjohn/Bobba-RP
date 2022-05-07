@@ -54,6 +54,7 @@ export function BusinessEdit() {
       maleUniform: businessPosition.maleUniform,
       femaleUniform: businessPosition.femaleUniform,
       shiftWage: businessPosition.shiftWage,
+      openPositions: businessPosition.openPositions,
     })),
   };
 

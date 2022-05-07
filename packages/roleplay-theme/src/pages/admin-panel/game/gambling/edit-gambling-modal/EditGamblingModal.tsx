@@ -48,14 +48,16 @@ export function EditGamblingModal({
           <Label>Name</Label>
           <Input
             value={gamblingMachineDTO.name}
-            onChange={_ => updateGamblingMachineDTO({name: _.target.value})}
+            onChange={(_: any) =>
+              updateGamblingMachineDTO({name: _.target.value})
+            }
           />
         </FormGroup>
         <FormGroup>
           <Label>Type</Label>
           <Input
             value={gamblingMachineDTO.type}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateGamblingMachineDTO({type: _.target.value as any})
             }
           />
@@ -65,7 +67,7 @@ export function EditGamblingModal({
           <Input
             type="number"
             value={gamblingMachineDTO.minimumBet}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateGamblingMachineDTO({minimumBet: Number(_.target.value)})
             }
           />
@@ -75,7 +77,7 @@ export function EditGamblingModal({
           <Input
             type="number"
             value={gamblingMachineDTO.maximumBet}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateGamblingMachineDTO({maximumBet: Number(_.target.value)})
             }
           />
@@ -85,7 +87,7 @@ export function EditGamblingModal({
           <Input
             type="number"
             value={gamblingMachineDTO.multiplier}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateGamblingMachineDTO({multiplier: Number(_.target.value)})
             }
           />

@@ -12,8 +12,8 @@ export function RoomSelector({rooms, roomID, onChange}: RoomSelectorProps) {
   return (
     <Select
       options={rooms ?? []}
-      getOptionLabel={_ => _.roomName}
-      getOptionValue={_ => _.id as any}
+      getOptionLabel={(_: any) => _.roomName}
+      getOptionValue={(_: any) => _.id as any}
       value={rooms?.find(_ => _.id === roomID) ?? null}
       onChange={onNewRoom}
     />

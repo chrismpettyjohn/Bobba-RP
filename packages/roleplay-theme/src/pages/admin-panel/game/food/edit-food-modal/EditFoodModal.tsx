@@ -44,14 +44,14 @@ export function EditFoodModal({food, onChange}: EditFoodModalProps) {
           <Label>Name</Label>
           <Input
             value={foodDTO.name}
-            onChange={_ => updateFoodDTO({name: _.target.value})}
+            onChange={(_: any) => updateFoodDTO({name: _.target.value})}
           />
         </FormGroup>
         <FormGroup>
           <Label>Type</Label>
           <FoodTypeSelector
             foodType={foodDTO.type}
-            onChange={_ => updateFoodDTO({type: _})}
+            onChange={(_: any) => updateFoodDTO({type: _})}
           />
         </FormGroup>
         <FormGroup>
@@ -59,7 +59,7 @@ export function EditFoodModal({food, onChange}: EditFoodModalProps) {
           <Input
             type="number"
             value={foodDTO.healthGained}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateFoodDTO({healthGained: Number(_.target.value)})
             }
           />
@@ -69,7 +69,7 @@ export function EditFoodModal({food, onChange}: EditFoodModalProps) {
           <Input
             type="number"
             value={foodDTO.energyGained}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateFoodDTO({energyGained: Number(_.target.value)})
             }
           />
@@ -79,7 +79,7 @@ export function EditFoodModal({food, onChange}: EditFoodModalProps) {
           <Input
             type="number"
             value={foodDTO.hungerRestored}
-            onChange={_ =>
+            onChange={(_: any) =>
               updateFoodDTO({hungerRestored: Number(_.target.value)})
             }
           />
@@ -90,7 +90,7 @@ export function EditFoodModal({food, onChange}: EditFoodModalProps) {
           <br />
           <Toggle
             checked={foodDTO.servable}
-            onChange={_ => updateFoodDTO({servable: !foodDTO.servable})}
+            onChange={(_: any) => updateFoodDTO({servable: !foodDTO.servable})}
           />
         </FormGroup>
         <FormGroup>
@@ -98,14 +98,14 @@ export function EditFoodModal({food, onChange}: EditFoodModalProps) {
           <Input
             disabled={!foodDTO.servable}
             value={foodDTO.serveText}
-            onChange={_ => updateFoodDTO({serveText: _.target.value})}
+            onChange={(_: any) => updateFoodDTO({serveText: _.target.value})}
           />
         </FormGroup>
         <FormGroup>
           <Label>Text When Consuming</Label>
           <Input
             value={foodDTO.eatText}
-            onChange={_ => updateFoodDTO({eatText: _.target.value})}
+            onChange={(_: any) => updateFoodDTO({eatText: _.target.value})}
           />
         </FormGroup>
       </Form>

@@ -13,10 +13,10 @@ export function PhotoSelector({photos, photoID, onChange}: PhotoSelectorProps) {
   return (
     <Select
       options={photos ?? []}
-      getOptionLabel={_ =>
+      getOptionLabel={(_: any) =>
         `Photo ${Moment.unix(_.createdAt).format('MMM DD, YYYY')} #${_.id}`
       }
-      getOptionValue={_ => _.id as any}
+      getOptionValue={(_: any) => _.id as any}
       value={photos?.find(_ => _.id === photoID) ?? null}
       onChange={onNewPhoto}
     />

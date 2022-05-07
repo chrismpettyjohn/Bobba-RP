@@ -41,7 +41,7 @@ export function GangHighScores() {
                 header="Most Kills"
                 headerIcon="skull"
                 gangs={gangHighScores.mostKills}
-                gangStat={_ => _.stats.kills}
+                gangStat={(_: any) => _.stats.kills}
                 gangStatLabel="kills"
               />
             </div>
@@ -50,7 +50,7 @@ export function GangHighScores() {
                 header="Most Deaths"
                 headerIcon="dizzy"
                 gangs={gangHighScores.mostDeaths}
-                gangStat={_ => _.stats.deaths}
+                gangStat={(_: any) => _.stats.deaths}
                 gangStatLabel="deaths"
               />
             </div>
@@ -59,7 +59,7 @@ export function GangHighScores() {
                 header="Most Turfs"
                 headerIcon="exclamation-triangle"
                 gangs={gangHighScores.mostTurfs}
-                gangStat={_ => _.stats.turfs}
+                gangStat={(_: any) => _.stats.turfs}
                 gangStatLabel="turfs"
               />
             </div>
