@@ -28,15 +28,12 @@ body {
   .header-content {
     padding-top: 15px;
     width: 100%;
-    max-width: 1055px;
+    max-width: 1200px !important;
     margin: 0 auto;
   }
 
   .header-logo {
-    margin-left: -30px;
-    margin-top: -10px;
   }
-
 }
 
 .account-buttons {
@@ -226,3 +223,7 @@ input {
   background: #FF5722 !important;;
   color: white !important;
 }
+
+.rounded-button:hover {
+   background: lighten(rgb(0, 23, 38), 10%) !important;
+ }

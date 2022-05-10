@@ -33,20 +33,20 @@ export function NavBar() {
               <NavBarChildLink to="/high-scores/users">Users</NavBarChildLink>
               <NavBarChildLink to="/high-scores/gangs">Gangs</NavBarChildLink>
             </NavBarDropdown>
-            <NavBarDropdown text="Government" to="/government/executive">
-              <NavBarChildLink to="/government/executive">
-                Executive Cabinet
-              </NavBarChildLink>
-              <NavBarChildLink to="/government/assembly">
-                National Assembly
-              </NavBarChildLink>
-              <NavBarChildLink to="/government/laws">
-                Laws of {config.siteName}
-              </NavBarChildLink>
-              <NavBarChildLink to="/government/parties">
-                Political Parties
-              </NavBarChildLink>
-            </NavBarDropdown>
+            {/*<NavBarDropdown text="Government" to="/government/executive">*/}
+            {/*  <NavBarChildLink to="/government/executive">*/}
+            {/*    Executive Cabinet*/}
+            {/*  </NavBarChildLink>*/}
+            {/*  <NavBarChildLink to="/government/assembly">*/}
+            {/*    National Assembly*/}
+            {/*  </NavBarChildLink>*/}
+            {/*  <NavBarChildLink to="/government/laws">*/}
+            {/*    Laws of {config.siteName}*/}
+            {/*  </NavBarChildLink>*/}
+            {/*  <NavBarChildLink to="/government/parties">*/}
+            {/*    Political Parties*/}
+            {/*  </NavBarChildLink>*/}
+            {/*</NavBarDropdown>*/}
             <NavBarDropdown text="Crime" to="/crimes">
               <NavBarChildLink to="/crimes">Crimes</NavBarChildLink>
               <NavBarChildLink to="/crimes/bounties">Bounties</NavBarChildLink>

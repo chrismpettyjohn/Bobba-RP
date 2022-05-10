@@ -60,10 +60,6 @@ export function Staff() {
                     </>
                   }
                 >
-                  <p style={{marginLeft: 60, marginTop: -20}}>
-                    <Icon className="text-info mr-2" type="info-circle" />
-                    {(rank as any).desc}
-                  </p>
                   {rank.users!.map(user => (
                     <div key={user.id} className="mt-4">
                       <UserContainer
