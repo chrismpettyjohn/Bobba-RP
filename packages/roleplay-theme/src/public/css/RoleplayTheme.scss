@@ -227,3 +227,24 @@ input {
 .rounded-button:hover {
    background: lighten(rgb(0, 23, 38), 10%) !important;
  }
+
+body {
+  background: #121212 !important;
+}
+
+#header {
+  background: url(https://i.imgur.com/xkX8i5K.png);
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+}
+
+.header-container .header-content {
+  padding-top: 45px !important;
+}
+
+.page-container .page-content article.default-section, .page-container .page-content aside.default-section {
+  background: #000000 !important;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
