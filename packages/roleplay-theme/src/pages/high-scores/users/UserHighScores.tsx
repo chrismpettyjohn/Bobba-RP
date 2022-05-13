@@ -69,7 +69,7 @@ export function UserHighScores() {
             <Row>
               <div className="col-4">
                 <UserScoreCard
-                  header="Damage Taken"
+                  header="Damage Took"
                   headerIcon="fire-alt"
                   users={userHighScores.mostDamageReceived}
                   userStat={(_: any) => _.rpStats.damage.damageTaken}

@@ -34,7 +34,8 @@ export function UserScoreCard({
               <div className="col-8 text-right">
                 <h3>{user.username}</h3>
                 <h5 style={{marginTop: -10}}>
-                  <b>{userStat(user)}</b> {userStatLabel}
+                  <b>{Number(userStat(user)).toLocaleString()}</b>{' '}
+                  {userStatLabel}
                 </h5>
               </div>
             </div>
