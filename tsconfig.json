@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@bobba-rp/theme": ["packages/bobba-theme/src"],
       "@instinct-theme/bobba-rp": ["packages/roleplay-theme/src"],
       "@instinct-plugin/bobba-rp-api":  ["packages/roleplay-api/src"],
       "@instinct-plugin/bobba-rp-types":  ["packages/roleplay-types/src"],
