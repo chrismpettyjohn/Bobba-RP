@@ -1,4 +1,6 @@
-import {UserEntity} from '@instinct-api/database';
+import {RPUserEntity} from './user.entity';
+import {RPUserEntityStruct} from './user.types';
+import {PoliticalPartyMemberEntity} from '../political-party/political-party-member.entity';
 import {
   Column,
   Entity,
@@ -7,8 +9,6 @@ import {
   ManyToOne,
   OneToOne,
 } from 'typeorm';
-import {RPUserEntityStruct} from './user.types';
-import {PoliticalPartyMemberEntity} from '../political-party/political-party-member.entity';
 
 @Entity('rp_stats')
 export class UserRPStatEntity {
@@ -54,7 +54,7 @@ export class UserRPStatEntity {
   @Column({name: 'damages'})
   damageData!: string;
 
-  @OneToOne(() => UserEntity)
+  @OneToOne(() => RPUserEntity)
   @JoinColumn({name: 'id'})
   user?: RPUserEntityStruct;
 

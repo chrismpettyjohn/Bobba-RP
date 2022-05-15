@@ -10,12 +10,6 @@ export class RPRankEntity extends RankEntity implements RPRankEntityStruct {
   // @ts-ignore
   users?: RPUserEntityStruct[];
 
-  @Column()
-  description!: string;
-
-  @Column({name: 'badgeid'})
-  badge!: string;
-
   @Column({name: 'website_create_business', type: 'enum', default: '0'})
   websiteCreateBusiness!: PermissionStatus;
 
