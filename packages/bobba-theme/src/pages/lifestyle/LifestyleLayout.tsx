@@ -7,7 +7,7 @@ import {TabBarChild} from '../../components/tab-bar/TabBar.types';
 export function LifestyleLayout({children}: LifestyleLayoutProps) {
   const LIFESTYLE_TABS: TabBarChild[] = [
     {
-      path: '/lifestyle/jobs/',
+      path: '/lifestyle/jobs',
       text: 'Jobs',
     },
     {

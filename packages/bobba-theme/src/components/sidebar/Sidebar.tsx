@@ -19,7 +19,7 @@ export function Sidebar() {
       text: 'Lifestyle',
     },
     {
-      path: '/underground',
+      path: '/underground/gangs',
       text: 'Underground',
     },
   ];
