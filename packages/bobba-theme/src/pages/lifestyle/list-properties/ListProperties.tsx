@@ -5,5 +5,5 @@ import {LifestyleLayout} from '../LifestyleLayout';
 setURL('lifestyle/properties', <ListProperties />);
 
 export function ListProperties() {
-  return <LifestyleLayout>Properties</LifestyleLayout>;
+  return <LifestyleLayout results={0}>Properties</LifestyleLayout>;
 }

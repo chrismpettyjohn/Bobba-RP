@@ -5,5 +5,5 @@ import {LifestyleLayout} from '../LifestyleLayout';
 setURL('lifestyle/stocks', <ListStocks />);
 
 export function ListStocks() {
-  return <LifestyleLayout>Stcoks</LifestyleLayout>;
+  return <LifestyleLayout results={0}>Stocks</LifestyleLayout>;
 }

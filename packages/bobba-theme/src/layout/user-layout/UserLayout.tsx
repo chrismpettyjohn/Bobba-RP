@@ -8,7 +8,12 @@ export function UserLayout({children}: LayoutProps) {
       <div className="wrapper rel auto-h">
         <div className="home">
           <Sidebar />
-          <div className="marketplace" data-v-37a7da9c="" data-v-0632b20e="">
+          <div
+            className="marketplace"
+            data-v-37a7da9c=""
+            data-v-0632b20e=""
+            style={{marginTop: 40}}
+          >
             {children}
           </div>
         </div>

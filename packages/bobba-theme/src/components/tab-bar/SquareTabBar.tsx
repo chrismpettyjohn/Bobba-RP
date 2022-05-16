@@ -2,7 +2,7 @@ import React from 'react';
 import {Link, useLocation} from 'wouter';
 import {TabBarProps} from './TabBar.types';
 
-export function SquareTabBar({tabs}: TabBarProps) {
+export function SquareTabBar({tabs, results}: TabBarProps) {
   const [location] = useLocation();
 
   return (
@@ -25,6 +25,11 @@ export function SquareTabBar({tabs}: TabBarProps) {
               </div>
             </Link>
           ))}
+          {results !== undefined && (
+            <div className="results" data-v-11b1ccfe="">
+              {results} Result{results === 1 ? '' : 's'}
+            </div>
+          )}
         </div>
       </div>
     </div>

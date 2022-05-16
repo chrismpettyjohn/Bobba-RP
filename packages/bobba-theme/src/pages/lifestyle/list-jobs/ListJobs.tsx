@@ -7,7 +7,7 @@ setURL('lifestyle/jobs', <ListJobs />);
 
 export function ListJobs() {
   return (
-    <LifestyleLayout>
+    <LifestyleLayout results={1}>
       <div className="cards" data-v-581a1f10="">
         <ListingCard
           title="Police Officer"

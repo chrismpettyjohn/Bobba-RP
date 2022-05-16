@@ -7,4 +7,5 @@ export interface TabBarChild {
 
 export interface TabBarProps {
   tabs: TabBarChild[];
+  results?: number;
 }
