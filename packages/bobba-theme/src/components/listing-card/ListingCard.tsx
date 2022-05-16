@@ -47,7 +47,7 @@ export function ListingCard({
         )}
         {image && (
           <div
-            className="circle rare"
+            className="circle"
             data-v-526082a5=""
             style={{background: image.background}}
           >

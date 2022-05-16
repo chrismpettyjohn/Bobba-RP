@@ -13,7 +13,7 @@ export function SquareTabBar({tabs, results}: TabBarProps) {
             <Link to={tab.path} key={`square_tabs_${tab.path}`}>
               <div
                 className={`wrapper ${
-                  location === tab.path ? 'activeType' : ''
+                  location.includes(tab.path) ? 'activeType' : ''
                 }`}
                 data-v-11b1ccfe=""
               >

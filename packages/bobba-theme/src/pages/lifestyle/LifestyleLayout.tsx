@@ -4,7 +4,11 @@ import {LifestyleLayoutProps} from './LifestyleLayout.types';
 import {UserLayout} from '../../layout/user-layout/UserLayout';
 import {TabBarChild} from '../../components/tab-bar/TabBar.types';
 
-export function LifestyleLayout({children, results}: LifestyleLayoutProps) {
+export function LifestyleLayout({
+  children,
+  header,
+  results,
+}: LifestyleLayoutProps) {
   const LIFESTYLE_TABS: TabBarChild[] = [
     {
       path: '/lifestyle/jobs',
@@ -26,6 +30,7 @@ export function LifestyleLayout({children, results}: LifestyleLayoutProps) {
 
   return (
     <UserLayout>
+      {header}
       <SquareTabBar tabs={LIFESTYLE_TABS} results={results} />
       <div className="listings" data-v-37a7da9c="">
         <div data-v-040b2c98="">{children}</div>

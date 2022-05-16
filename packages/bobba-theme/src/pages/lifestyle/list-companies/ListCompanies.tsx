@@ -1,7 +1,9 @@
 import React from 'react';
+import {Link} from 'wouter';
 import {setURL} from '@instinct-web/core';
 import {LifestyleLayout} from '../LifestyleLayout';
-import {ListingCard} from '../../../components/listing-card/ListingCard';
+import {exampleBusiness} from '@instinct-plugin/bobba-rp-types';
+import {CompanyListingCard} from '../../../components/company-listing-card/CompanyListingCard';
 
 setURL('lifestyle/companies', <ListCompanies />);
 
@@ -9,26 +11,11 @@ export function ListCompanies() {
   return (
     <LifestyleLayout results={0}>
       <div className="cards" data-v-581a1f10="">
-        <ListingCard title="Police">
-          <div className="information" data-v-526082a5="">
-            <div className="info-segment" data-v-526082a5="">
-              <span className="tag" data-v-526082a5="">
-                CEO
-              </span>
-              <div className="value-field" data-v-526082a5="">
-                Chris
-              </div>
-            </div>
-            <div className="info-segment" data-v-526082a5="">
-              <span className="tag" data-v-526082a5="">
-                Employees
-              </span>
-              <div className="value-field" data-v-526082a5="">
-                1
-              </div>
-            </div>
-          </div>
-        </ListingCard>
+        <Link to="/lifestyle/companies/1">
+          <span style={{display: 'contents'}}>
+            <CompanyListingCard company={exampleBusiness} />
+          </span>
+        </Link>
       </div>
     </LifestyleLayout>
   );
