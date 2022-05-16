@@ -15,7 +15,7 @@ export function Sidebar() {
       text: 'Community',
     },
     {
-      path: '/lifestyle',
+      path: '/lifestyle/jobs',
       text: 'Lifestyle',
     },
     {
