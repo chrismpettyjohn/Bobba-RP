@@ -22,6 +22,9 @@ export function JobListingCard({job}: JobListingCardProps) {
         src: `https://www.habbo.com.br/habbo-imaging/avatarimage?figure=${job.maleUniform}&action=std,wav&gesture=eyb&direction=2&head_direction=2&size=n&img_format=png`,
       }}
     >
+      <span style={{fontSize: 20, color: 'white', textTransform: 'uppercase'}}>
+        {job.businessName}
+      </span>
       <div style={{flexWrap: 'wrap'}}>
         {jobInformation.map(infoBlock => (
           <div

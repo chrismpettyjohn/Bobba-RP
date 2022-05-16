@@ -38,6 +38,7 @@ export interface Business {
 export interface BusinessPosition {
   id: number;
   businessID: number;
+  businessName: string;
   name: string;
   employees: RPUser[];
   maleUniform: string;
@@ -51,10 +52,13 @@ export interface BusinessPosition {
 export const exampleBusinessPosition: BusinessPosition = {
   id: 1,
   businessID: 1,
-  name: 'Apprentice',
+  businessName: 'Bobba Army',
+  name: 'Recruit',
   employees: [],
-  maleUniform: '-',
-  femaleUniform: '-',
+  maleUniform:
+    'cc-3294-1429-1429.hr-3090-39.lg-3023-1429.ha-3415-1429-1336.sh-300-64.ch-215-1429.hd-209-8',
+  femaleUniform:
+    'cc-3294-1429-1429.hr-3090-39.lg-3023-1429.ha-3415-1429-1336.sh-300-64.ch-215-1429.hd-209-8',
   shiftWage: 20,
   order: 1,
   governmentBranch: GovernmentBranch.None,
