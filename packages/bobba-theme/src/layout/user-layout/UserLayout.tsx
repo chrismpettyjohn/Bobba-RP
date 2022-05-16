@@ -4,18 +4,13 @@ import {Sidebar} from '../../components/sidebar/Sidebar';
 
 export function UserLayout({children}: LayoutProps) {
   return (
-    <div id="app">
-      <div className="wrapper rel auto-h">
-        <div className="home">
+    <div className="container-fluid p-4">
+      <div className="row">
+        <div className="col-4">
           <Sidebar />
-          <div
-            className="marketplace"
-            data-v-37a7da9c=""
-            data-v-0632b20e=""
-            style={{marginTop: 40}}
-          >
-            {children}
-          </div>
+        </div>
+        <div className="col-8">
+          {children}
         </div>
       </div>
     </div>
