@@ -11,7 +11,7 @@ export function Sidebar() {
       text: 'Home',
     },
     {
-      path: '/community',
+      path: '/community/news',
       text: 'Community',
     },
     {
