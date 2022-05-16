@@ -1,6 +1,7 @@
 import {Link} from 'wouter';
 import React, {ReactNode, useContext} from 'react';
 import {configContext, Icon} from '@instinct-web/core';
+import {AboutInstinct} from '../about-instinct/AboutInstinct';
 
 export function Sidebar() {
   const {config} = useContext(configContext);
@@ -29,7 +30,7 @@ export function Sidebar() {
       <div
         className="wrapper rel auto-h"
         data-v-040b2c98=""
-        style={{background: 'rgb(35, 35, 47)'}}
+        style={{background: 'rgb(35, 35, 47)', position: 'relative'}}
       >
         <div
           className="navigation auto-wh"
@@ -55,6 +56,9 @@ export function Sidebar() {
                 </a>
               </Link>
             ))}
+            <div style={{position: 'absolute', bottom: 30, width: '100%'}}>
+              <AboutInstinct />
+            </div>
           </nav>
         </div>
       </div>
