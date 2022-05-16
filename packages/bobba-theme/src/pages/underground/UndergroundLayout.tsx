@@ -8,18 +8,22 @@ export function UndergroundLayout({children}: UndergroundLayoutProps) {
   const UNDERGROUND_TABS: TabBarChild[] = [
     {
       path: '/underground/gangs',
+      icon: 'mask',
       text: 'Gangs',
     },
     {
       path: '/underground/territory',
+      icon: 'city',
       text: 'Territory',
     },
     {
       path: '/underground/weapons',
+      icon: 'sword',
       text: 'Weapons',
     },
     {
       path: '/underground/bounties',
+      icon: 'skull',
       text: 'Bounties',
     },
   ];

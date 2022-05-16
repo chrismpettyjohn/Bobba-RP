@@ -2,6 +2,7 @@ import {ReactNode} from 'react';
 
 export interface TabBarChild {
   path: string;
+  icon?: string;
   text: ReactNode;
 }
 

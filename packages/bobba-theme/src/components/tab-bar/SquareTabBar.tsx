@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, useLocation} from 'wouter';
 import {TabBarProps} from './TabBar.types';
+import {Icon} from '@instinct-web/core';
 
 export function SquareTabBar({tabs, results}: TabBarProps) {
   const [location] = useLocation();
@@ -19,6 +20,9 @@ export function SquareTabBar({tabs, results}: TabBarProps) {
               >
                 <div className="box" data-v-11b1ccfe="">
                   <span className="box-label" data-v-11b1ccfe="">
+                    {tab.icon && (
+                      <Icon type={tab.icon} style={{marginRight: 8}} />
+                    )}
                     {tab.text}
                   </span>
                 </div>

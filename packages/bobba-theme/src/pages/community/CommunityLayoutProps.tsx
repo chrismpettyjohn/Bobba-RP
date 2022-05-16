@@ -8,18 +8,22 @@ export function CommunityLayout({children}: CommunityLayoutProps) {
   const COMMUNITY_TABS: TabBarChild[] = [
     {
       path: '/community/news',
+      icon: 'newspaper',
       text: 'News',
     },
     {
       path: '/community/staff',
+      icon: 'clipboard-user',
       text: 'Staff',
     },
     {
       path: '/community/high-scores',
+      icon: 'medal',
       text: 'High Scores',
     },
     {
       path: '/community/online',
+      icon: 'signal',
       text: 'Online',
     },
   ];

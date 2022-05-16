@@ -1,10 +1,9 @@
 import {Link} from 'wouter';
 import React, {ReactNode, useContext} from 'react';
+import {configContext, Icon} from '@instinct-web/core';
 import {AboutInstinct} from '../about-instinct/AboutInstinct';
-import {configContext, Avatar, sessionContext, Icon} from '@instinct-web/core';
 
 export function Sidebar() {
-  const {user} = useContext(sessionContext);
   const {config} = useContext(configContext);
 
   const navLinks: Array<{path: string; text: ReactNode; icon: string}> = [

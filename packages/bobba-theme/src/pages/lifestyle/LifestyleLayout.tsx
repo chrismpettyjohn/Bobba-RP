@@ -12,18 +12,22 @@ export function LifestyleLayout({
   const LIFESTYLE_TABS: TabBarChild[] = [
     {
       path: '/lifestyle/jobs',
+      icon: 'user-tie',
       text: 'Jobs',
     },
     {
       path: '/lifestyle/companies',
+      icon: 'building',
       text: 'Companies',
     },
     {
       path: '/lifestyle/properties',
+      icon: 'house',
       text: 'Properties',
     },
     {
       path: '/lifestyle/stocks',
+      icon: 'chart-line',
       text: 'Stocks',
     },
   ];
