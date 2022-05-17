@@ -12,7 +12,7 @@ export function UserLayout({children}: LayoutProps) {
             className="marketplace"
             data-v-37a7da9c=""
             data-v-0632b20e=""
-            style={{marginTop: 40}}
+            style={{marginTop: 55}}
           >
             {children}
           </div>

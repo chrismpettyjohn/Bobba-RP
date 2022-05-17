@@ -24,9 +24,10 @@ export function MePage() {
             <div
               style={{
                 background:
-                  'linear-gradient(264.06deg,#c63b3b -68.99%,#d174e0 40.01%,#70baff 130.88%)',
+                  'linear-gradient(264.06deg,#041214 -68.99%,rgb(64, 200, 215) 60.01%,#166068 130.88%)',
                 height: 250,
                 width: '100%',
+                borderRadius: 10,
               }}
             >
               <div className="container p-2">
