@@ -183,7 +183,7 @@ export function MePage() {
                         </span>
                         <br />
                         <span style={{color: 'white', fontSize: 25}}>
-                          hours played
+                          Hours Played
                         </span>
                       </div>
                     </div>
@@ -202,12 +202,37 @@ export function MePage() {
           <div className="col-6">
             <div className="row">
               <div className="col-12">
-                <div className="jumbotron">
-                  <h1>Hot Rooms</h1>
+                <div
+                  style={{
+                    background:
+                      'linear-gradient(264.06deg,#041214 -68.99%,rgb(64, 200, 215) 60.01%,#166068 130.88%)',
+                    padding: 5,
+                    color: 'white',
+                    fontSize: 30,
+                    borderTopLeftRadius: 5,
+                    borderTopRightRadius: 5,
+                  }}
+                >
+                  <span style={{fontWeight: 'bold'}}>Beta Notice</span>
+                </div>
+                <div
+                  style={{
+                    background: 'white',
+                    padding: 5,
+                    color: 'black',
+                    fontSize: 30,
+                    borderBottomLeftRadius: 5,
+                    borderBottomRightRadius: 5,
+                  }}
+                >
+                  <img
+                    src="https://bithotel.io/img/Elon%20Dusk.46693a93.png"
+                    height={400}
+                  />
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row mt-4">
               <div className="col-12">
                 <div className="jumbotron">
                   <h1>Friends Online</h1>

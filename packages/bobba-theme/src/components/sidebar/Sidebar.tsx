@@ -71,6 +71,27 @@ export function Sidebar() {
                 </a>
               </Link>
             ))}
+            <Link to="/logout">
+              <a
+                className="nav-item nav-logout"
+                data-v-65a92196=""
+                style={{marginTop: 50}}
+              >
+                <span className="nav-label" data-v-65a92196="">
+                  <Icon
+                    type="sign-out"
+                    style={{
+                      color: 'white',
+                      fontSize: 24,
+                      position: 'absolute',
+                      top: 13,
+                      left: 8,
+                    }}
+                  />
+                  Logout
+                </span>
+              </a>
+            </Link>
             <div style={{position: 'absolute', bottom: 30, width: '100%'}}>
               <AboutInstinct />
             </div>
