@@ -1,11 +1,19 @@
 import React, {useContext} from 'react';
-import {Avatar, sessionContext, setURL} from '@instinct-web/core';
+import {Card} from '../../../components/card/Card';
 import {UserLayout} from '../../../layout/user-layout/UserLayout';
+import {NewsSlider} from '../../../components/news-slider/NewsSlider';
+import {
+  Avatar,
+  configContext,
+  sessionContext,
+  setURL,
+} from '@instinct-web/core';
 
 setURL('me', <MePage />);
 
 export function MePage() {
   const {user} = useContext(sessionContext);
+  const {config} = useContext(configContext);
 
   return (
     <UserLayout>
@@ -193,50 +201,62 @@ export function MePage() {
             </div>
             <div className="row mt-4">
               <div className="col-12">
-                <div className="jumbotron">
-                  <h1>News Slider</h1>
-                </div>
+                <NewsSlider />
               </div>
             </div>
           </div>
           <div className="col-6">
             <div className="row">
               <div className="col-12">
-                <div
-                  style={{
-                    background:
-                      'linear-gradient(264.06deg,#041214 -68.99%,rgb(64, 200, 215) 60.01%,#166068 130.88%)',
-                    padding: 5,
-                    color: 'white',
-                    fontSize: 30,
-                    borderTopLeftRadius: 5,
-                    borderTopRightRadius: 5,
-                  }}
-                >
-                  <span style={{fontWeight: 'bold'}}>Beta Notice</span>
-                </div>
-                <div
-                  style={{
-                    background: 'white',
-                    padding: 5,
-                    color: 'black',
-                    fontSize: 30,
-                    borderBottomLeftRadius: 5,
-                    borderBottomRightRadius: 5,
-                  }}
-                >
-                  <img
-                    src="https://bithotel.io/img/Elon%20Dusk.46693a93.png"
-                    height={400}
-                  />
-                </div>
+                <Card title="Announcement" subtitle="Beta Notice">
+                  <p>
+                    {config.siteName} is still undergoing development and
+                    features may change suddenly without notice.
+                  </p>
+                  <p>
+                    Please report any bugs you encounter on Discord in{' '}
+                    <b>#feedback</b>
+                  </p>
+                </Card>
               </div>
             </div>
             <div className="row mt-4">
               <div className="col-12">
-                <div className="jumbotron">
-                  <h1>Friends Online</h1>
-                </div>
+                <Card title="Friends Online">
+                  <div className="container">
+                    <div className="row">
+                      {Array.from(new Array(6)).map((_, index) => (
+                        <div className="mb-4 col-2" key={`friend_${index}`}>
+                          <div
+                            style={{
+                              background:
+                                'linear-gradient(264.06deg, rgb(4, 18, 20) -68.99%, rgb(64, 200, 215) 60.01%, rgb(22, 96, 104) 130.88%)',
+                              border: '1px solid white',
+                              borderRadius: '100%',
+                              height: 125,
+                              width: 125,
+                              textAlign: 'center',
+                            }}
+                          >
+                            <img src="https://www.habbo.com.br/habbo-imaging/avatarimage?figure=hd-180-1.ch-3015-1426.lg-3023-110.sh-3252-91-1408.hr-802-40.cc-3246-1425.wa-3263-1325-66.ha-1021-110.&size=l&headonly=1" />
+                          </div>
+                          <div
+                            style={{
+                              background: '',
+                              color: 'white',
+                              marginTop: 10,
+                              borderRadius: 5,
+                              fontSize: 25,
+                              width: 125,
+                            }}
+                          >
+                            L{index}L TOE
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </Card>
               </div>
             </div>
           </div>
