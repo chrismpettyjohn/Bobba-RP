@@ -58,7 +58,7 @@ export function NewsSlider() {
             onExited={() => setAnimating(false)}
             onExiting={() => setAnimating(true)}
           >
-            <img className="w-100 h-100" src={item.src} alt={item.altText} />
+            <img className="w-100 h-100" src={item.src} alt={item.altText} style={{borderRadius: 10}} />
           </CarouselItem>
         );
       })}
