@@ -4,7 +4,11 @@ import {UserLayout} from '../../layout/user-layout/UserLayout';
 import {SquareTabBar} from '../../components/tab-bar/SquareTabBar';
 import {TabBarChild} from '../../components/tab-bar/TabBar.types';
 
-export function CommunityLayout({children}: CommunityLayoutProps) {
+export function CommunityLayout({
+  children,
+  header,
+  results,
+}: CommunityLayoutProps) {
   const COMMUNITY_TABS: TabBarChild[] = [
     {
       path: '/community/news',
@@ -30,7 +34,8 @@ export function CommunityLayout({children}: CommunityLayoutProps) {
 
   return (
     <UserLayout>
-      <SquareTabBar tabs={COMMUNITY_TABS} />
+      {header && header}
+      <SquareTabBar tabs={COMMUNITY_TABS} results={results} />
       <div className="listings" data-v-37a7da9c="">
         <div data-v-040b2c98="">{children}</div>
       </div>
