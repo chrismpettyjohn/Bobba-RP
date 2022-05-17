@@ -1,3 +1,4 @@
+import './Sidebar.scss';
 import {Link} from 'wouter';
 import React, {ReactNode, useContext} from 'react';
 import {configContext, Icon} from '@instinct-web/core';
@@ -33,7 +34,7 @@ export function Sidebar() {
   return (
     <>
       <img src={config.logoURL} />
-      <div className="bg-primary h-100 w-100 mt-4">
+      <div className="sidebar bg-primary">
         Sidebar
       </div>
     </>
