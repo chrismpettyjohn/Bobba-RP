@@ -1,3 +1,4 @@
+import {Link} from 'wouter';
 import React, {useContext} from 'react';
 import {Card} from '../../../components/card/Card';
 import {UserLayout} from '../../../layout/user-layout/UserLayout';
@@ -48,81 +49,109 @@ export function MePage() {
                     style={{marginTop: 40, width: 'fit-content'}}
                   >
                     <h2>{user!.username}</h2>
-                    <div
-                      className="bg-dark p-4"
-                      style={{
-                        borderRadius: 5,
-                        width: 'fit-content',
-                        overflow: 'auto',
-                        textAlign: 'left',
-                        fontSize: 20,
-                      }}
-                    >
-                      <div className="row">
-                        <div className="col badge badge-danger mr-2">
-                          <span
-                            style={{
-                              color: 'black',
-                              textTransform: 'uppercase',
-                              fontWeight: 'bold',
-                            }}
-                          >
-                            Health:
-                          </span>
-                          100/100
+                    <div className="row">
+                      <div
+                        className="col-6"
+                        style={{borderRight: '1px solid white'}}
+                      >
+                        <div
+                          style={{
+                            color: 'white',
+                            textAlign: 'left',
+                            fontWeight: 'bold',
+                          }}
+                        >
+                          Health
                         </div>
-                        <div className="col badge badge-success mr-2">
-                          <span
-                            style={{
-                              color: 'black',
-                              textTransform: 'uppercase',
-                              fontWeight: 'bold',
-                            }}
-                          >
-                            Energy:
-                          </span>
-                          100/100
-                        </div>
-                        <div className="col badge badge-primary mr-2">
-                          <span
-                            style={{
-                              color: 'black',
-                              textTransform: 'uppercase',
-                              fontWeight: 'bold',
-                            }}
-                          >
-                            Level:
-                          </span>
-                          100/100
+                        <div className="progress">
+                          <div
+                            className="progress-bar progress-bar-striped bg-danger"
+                            role="progressbar"
+                            style={{width: '75%'}}
+                            aria-valuenow={75}
+                            aria-valuemin={0}
+                            aria-valuemax={100}
+                          />
                         </div>
                       </div>
-                      <div className="row mt-2">
-                        <div className="col badge badge-secondary mr-2">
-                          <span
-                            style={{
-                              color: 'black',
-                              textTransform: 'uppercase',
-                              fontWeight: 'bold',
-                            }}
-                          >
-                            Company:
-                          </span>
-                          Bobba Government
-                        </div>
+                      <div className="col-6">
                         <div
-                          className="col badge badge-warning mr-2"
-                          style={{color: 'white'}}
+                          style={{
+                            color: 'white',
+                            textAlign: 'left',
+                            fontWeight: 'bold',
+                          }}
                         >
-                          <span
-                            style={{
-                              color: 'black',
-                              textTransform: 'uppercase',
-                              fontWeight: 'bold',
-                            }}
+                          Energy
+                        </div>
+                        <div className="progress">
+                          <div
+                            className="progress-bar progress-bar-striped bg-info"
+                            role="progressbar"
+                            style={{width: '75%'}}
+                            aria-valuenow={75}
+                            aria-valuemin={0}
+                            aria-valuemax={100}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="row mt-2">
+                      <div className="col h-100">
+                        <div
+                          className="mt-2 w-100"
+                          style={{
+                            background:
+                              'linear-gradient(180deg,#2e2e3c 55.66%,#23232f 90.9%)',
+                            border: '1px solid white',
+                            borderRadius: 10,
+                            color: 'white',
+                            width: 'fit-content',
+                            overflow: 'auto',
+                            float: 'left',
+                          }}
+                        >
+                          <Link to="/underworld/gangs/1">
+                            <img
+                              src="https://www.habborator.org/badges/badges/GLA.gif"
+                              width={65}
+                              height={65}
+                              style={{cursor: 'pointer'}}
+                            />
+                          </Link>
+                          <Link to="/lifestyle/jobs/1">
+                            <img
+                              className="ml-2"
+                              src="https://www.habborator.org/badges/badges/ADM.gif"
+                              width={65}
+                              height={65}
+                              style={{cursor: 'pointer'}}
+                            />
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="col h-100">
+                        <div
+                          className="p-4"
+                          style={{
+                            background:
+                              'linear-gradient(180deg,#2e2e3c 55.66%,#23232f 90.9%)',
+                            border: '1px solid white',
+                            borderRadius: '100%',
+                            color: 'white',
+                            width: 'fit-content',
+                            overflow: 'auto',
+                            float: 'left',
+                          }}
+                        >
+                          <div style={{fontWeight: 'bold', fontSize: 20}}>
+                            2
+                          </div>
+                          <div
+                            style={{fontSize: 15, textTransform: 'uppercase'}}
                           >
-                            Gang:
-                          </span>
-                          No Gang
+                            Level
+                          </div>
                         </div>
                       </div>
                     </div>
