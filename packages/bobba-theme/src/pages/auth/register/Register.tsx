@@ -1,43 +1,116 @@
-import React from 'react';
-import {Link} from 'wouter';
-import {setURL} from '@instinct-web/core';
+import {toast} from 'react-toastify';
+import {Link, useLocation} from 'wouter';
+import ReCAPTCHA from 'react-google-recaptcha';
+import {isUsernameTaken} from '../../../utility/is-username-taken';
+import React, {SyntheticEvent, useContext, useState} from 'react';
 import {GuestLayout} from '../../../layout/guest-layout/GuestLayout';
+import {
+  configContext,
+  sessionContext,
+  sessionService,
+  setURL,
+  userService,
+} from '@instinct-web/core';
 
 setURL('register', <RegisterPage />);
 
 export function RegisterPage() {
+  const {config} = useContext(configContext);
+  const {setUser} = useContext(sessionContext);
+  const [location, setLocation] = useLocation();
+  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
+  const [recaptcha, setRecaptcha] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordAgain, setPasswordAgain] = useState('');
+
+  const isValidCredentials =
+    username !== '' &&
+    password !== '' &&
+    passwordAgain == password &&
+    email !== '';
+
+  const onSubmitRegistration = async (event: SyntheticEvent) => {
+    event.preventDefault();
+    try {
+      if (!isValidCredentials) {
+        if (!username) toast.error('Username is required');
+        if (!password) toast.error('Password is required');
+        if (passwordAgain !== password)
+          toast.error('Password needs to be confirmed');
+        return;
+      }
+
+      const isUsernameInUse = await isUsernameTaken(username);
+
+      if (isUsernameInUse) {
+        toast.error('Username is taken!');
+      }
+
+      await userService.create(username, email, password, recaptcha);
+
+      const bearerToken = await sessionService.attemptCredentials(
+        username,
+        password
+      );
+      const userData = await sessionService.attemptBearerToken(bearerToken);
+      setUser(userData);
+
+      toast.success(`Welcome to ${config.siteName}, ${userData.username}`);
+
+      setLocation('/me');
+    } catch {
+      toast.error('Failed to create account');
+    }
+  };
+
   return (
     <GuestLayout>
       <h2 data-v-da0d1626="">Register</h2>
-      <form className="form w-100" data-v-da0d1626="">
+      <form
+        className="form w-100"
+        data-v-da0d1626=""
+        onSubmit={onSubmitRegistration}
+        style={{height: 700}}
+      >
         <input
           className="form-control mb-4"
           name="username"
           placeholder="Username"
           type="text"
+          onChange={e => setUsername(e.target.value)}
         />
         <input
           className="form-control mb-4"
           name="email"
           placeholder="Email Address"
           type="email"
+          onChange={e => setEmail(e.target.value)}
         />
         <input
           className="form-control mb-4"
           name="password"
           placeholder="Password"
           type="password"
+          onChange={e => setPassword(e.target.value)}
         />
         <input
           className="form-control mb-4"
           name="password_again"
           placeholder="Password Again"
           type="password"
+          onChange={e => setPasswordAgain(e.target.value)}
         />
+        <div className="mb-4" style={{height: 150}}>
+          <ReCAPTCHA
+            sitekey={config.googleRecaptchaClientKey}
+            onChange={x => setRecaptcha(x as string)}
+          />
+        </div>
         <div className="row mb-4">
           <div className="col-6" />
           <div className="col-6">
-            <button className="btn btn-primary btn-block">
+            <button className="btn btn-primary btn-block" type="submit">
               Finish Creating Account
             </button>
           </div>

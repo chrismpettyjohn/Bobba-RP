@@ -18,7 +18,8 @@ export function LoginPage() {
     event.preventDefault();
     try {
       if (!isValidCredentials) {
-        toast.error('Username and password required');
+        if (!username) toast.error('Username is required');
+        if (!password) toast.error('Password is required');
         return;
       }
 
