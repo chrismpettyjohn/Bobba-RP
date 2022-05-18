@@ -5,6 +5,7 @@ import {LifestyleLayout} from '../LifestyleLayout';
 import {exampleBusinessPosition} from '@instinct-plugin/bobba-rp-types';
 import {SearchFilters} from '../../../components/search-filters/SearchFilters';
 import {JobListingCard} from '../../../components/job-listing-card/JobListingCard';
+import {UserLayout} from '../../../layout/user-layout/UserLayout';
 
 setURL('lifestyle/jobs', <ListJobs />);
 
@@ -56,12 +57,14 @@ export function ListJobs() {
 
   return (
     <LifestyleLayout results={1} header={getSearchFilters()}>
-      <div className="cards" data-v-581a1f10="">
-        <Link to="/lifestyle/jobs/1">
-          <span style={{display: 'contents'}}>
-            <JobListingCard job={exampleBusinessPosition} />
-          </span>
-        </Link>
+      <div className="listings" data-v-37a7da9c="">
+        <div className="cards" data-v-581a1f10="">
+          <Link to="/lifestyle/jobs/1">
+            <span style={{display: 'contents'}}>
+              <JobListingCard job={exampleBusinessPosition} />
+            </span>
+          </Link>
+        </div>
       </div>
     </LifestyleLayout>
   );

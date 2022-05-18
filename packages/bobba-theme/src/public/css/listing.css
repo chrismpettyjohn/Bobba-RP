@@ -138,7 +138,7 @@
     object-fit: contain
 }
 .roomSingle .left .information-bar[data-v-b1f467f2], .roomSingle .right .information-bar[data-v-b1f467f2] {
-    width: 90%;
+    width: 100%;
     min-height: 85px;
     background: linear-gradient(180deg, #2e2e3c 55.66%, #23232f 125.89%);
     box-shadow: 0 4px 45px #00000026;
