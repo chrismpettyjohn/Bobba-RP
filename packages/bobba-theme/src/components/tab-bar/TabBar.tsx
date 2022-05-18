@@ -1,9 +1,9 @@
 import React from 'react';
+import {Icon} from '@instinct-web/core';
 import {Link, useLocation} from 'wouter';
 import {TabBarProps} from './TabBar.types';
-import {Icon} from '@instinct-web/core';
 
-export function SquareTabBar({tabs, results}: TabBarProps) {
+export function TabBar({tabs, results}: TabBarProps) {
   const [location] = useLocation();
 
   return (

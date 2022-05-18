@@ -1,5 +1,5 @@
 import React from 'react';
-import {SquareTabBar} from '../../components/tab-bar/SquareTabBar';
+import {TabBar} from '../../components/tab-bar/TabBar';
 import {LifestyleLayoutProps} from './LifestyleLayout.types';
 import {UserLayout} from '../../layout/user-layout/UserLayout';
 import {TabBarChild} from '../../components/tab-bar/TabBar.types';
@@ -35,7 +35,7 @@ export function LifestyleLayout({
   return (
     <UserLayout>
       {header}
-      <SquareTabBar tabs={LIFESTYLE_TABS} results={results} />
+      <TabBar tabs={LIFESTYLE_TABS} results={results} />
       {children}
     </UserLayout>
   );

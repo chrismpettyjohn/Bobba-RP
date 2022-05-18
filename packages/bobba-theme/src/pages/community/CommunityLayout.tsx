@@ -1,7 +1,7 @@
 import React from 'react';
 import {CommunityLayoutProps} from './CommunityLayout.types';
 import {UserLayout} from '../../layout/user-layout/UserLayout';
-import {SquareTabBar} from '../../components/tab-bar/SquareTabBar';
+import {TabBar} from '../../components/tab-bar/TabBar';
 import {TabBarChild} from '../../components/tab-bar/TabBar.types';
 
 export function CommunityLayout({
@@ -25,7 +25,7 @@ export function CommunityLayout({
   return (
     <UserLayout>
       {header && header}
-      <SquareTabBar tabs={COMMUNITY_TABS} results={results} />
+      <TabBar tabs={COMMUNITY_TABS} results={results} />
       <div className="listings" data-v-37a7da9c="">
         <div data-v-040b2c98="">{children}</div>
       </div>

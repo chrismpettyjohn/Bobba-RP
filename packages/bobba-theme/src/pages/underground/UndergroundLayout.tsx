@@ -2,7 +2,7 @@ import React from 'react';
 import {UserLayout} from '../../layout/user-layout/UserLayout';
 import {UndergroundLayoutProps} from './UndergroundLayout.types';
 import {TabBarChild} from '../../components/tab-bar/TabBar.types';
-import {SquareTabBar} from '../../components/tab-bar/SquareTabBar';
+import {TabBar} from '../../components/tab-bar/TabBar';
 
 export function UndergroundLayout({children}: UndergroundLayoutProps) {
   const UNDERGROUND_TABS: TabBarChild[] = [
@@ -30,7 +30,7 @@ export function UndergroundLayout({children}: UndergroundLayoutProps) {
 
   return (
     <UserLayout>
-      <SquareTabBar tabs={UNDERGROUND_TABS} />
+      <TabBar tabs={UNDERGROUND_TABS} />
       <div className="listings" data-v-37a7da9c="">
         <div data-v-040b2c98="">{children}</div>
       </div>
