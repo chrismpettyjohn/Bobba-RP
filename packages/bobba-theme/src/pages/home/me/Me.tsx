@@ -132,19 +132,22 @@ export function MePage() {
                       </div>
                       <div className="col">
                         <div
-                          className="p-4"
                           style={{
                             background:
                               'linear-gradient(180deg,#2e2e3c 55.66%,#23232f 90.9%)',
                             border: '1px solid white',
                             borderRadius: '100%',
                             color: 'white',
-                            width: 'fit-content',
+                            width: 90,
+                            height: 90,
                             overflow: 'auto',
                             float: 'left',
                           }}
                         >
-                          <div style={{fontWeight: 'bold', fontSize: 20}}>
+                          <div
+                            className="mt-3"
+                            style={{fontWeight: 'bold', fontSize: 20}}
+                          >
                             2
                           </div>
                           <div
