@@ -26,7 +26,7 @@ export function CommunityLayout({
     <UserLayout>
       {header && header}
       <TabBar tabs={COMMUNITY_TABS} results={results} />
-      <div className="listings" data-v-37a7da9c="">
+      <div className="listings mt-4" data-v-37a7da9c="">
         <div data-v-040b2c98="">{children}</div>
       </div>
     </UserLayout>
