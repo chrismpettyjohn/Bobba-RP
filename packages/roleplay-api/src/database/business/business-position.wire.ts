@@ -8,6 +8,7 @@ export function businessPositionWire(
   return {
     id: entity.jobRankID!,
     businessID: entity.jobID,
+    businessName: 'TO BE ADDED',
     name: entity.name,
     employees,
     order: entity.id!,
