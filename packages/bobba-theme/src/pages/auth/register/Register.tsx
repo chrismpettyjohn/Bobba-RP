@@ -19,6 +19,7 @@ export function RegisterPage() {
   const {setUser} = useContext(sessionContext);
   const [location, setLocation] = useLocation();
   const [email, setEmail] = useState('');
+  const [betaCode, setBetaCode] = useState('');
   const [username, setUsername] = useState('');
   const [recaptcha, setRecaptcha] = useState('');
   const [password, setPassword] = useState('');
@@ -27,7 +28,7 @@ export function RegisterPage() {
   const isValidCredentials =
     username !== '' &&
     password !== '' &&
-    passwordAgain == password &&
+    passwordAgain === password &&
     email !== '';
 
   const onSubmitRegistration = async (event: SyntheticEvent) => {
@@ -38,6 +39,7 @@ export function RegisterPage() {
         if (!password) toast.error('Password is required');
         if (passwordAgain !== password)
           toast.error('Password needs to be confirmed');
+        if (!betaCode) toast.error('A beta code is required');
         return;
       }
 
@@ -47,7 +49,7 @@ export function RegisterPage() {
         toast.error('Username is taken!');
       }
 
-      await userService.create(username, email, password, recaptcha);
+      await userService.create(username, email, password, recaptcha, betaCode);
 
       const bearerToken = await sessionService.attemptCredentials(
         username,
@@ -71,35 +73,42 @@ export function RegisterPage() {
         className="form w-100"
         data-v-da0d1626=""
         onSubmit={onSubmitRegistration}
-        style={{height: 700}}
+        style={{height: 750}}
       >
         <input
           className="form-control mb-4"
-          name="username"
           placeholder="Username"
           type="text"
+          value={username}
           onChange={e => setUsername(e.target.value)}
         />
         <input
           className="form-control mb-4"
-          name="email"
           placeholder="Email Address"
           type="email"
+          value={email}
           onChange={e => setEmail(e.target.value)}
         />
         <input
           className="form-control mb-4"
-          name="password"
           placeholder="Password"
           type="password"
+          value={password}
           onChange={e => setPassword(e.target.value)}
         />
         <input
           className="form-control mb-4"
-          name="password_again"
           placeholder="Password Again"
           type="password"
+          value={passwordAgain}
           onChange={e => setPasswordAgain(e.target.value)}
+        />
+        <input
+          className="form-control mb-4"
+          placeholder="Beta Code"
+          type="text"
+          value={betaCode}
+          onChange={e => setBetaCode(e.target.value)}
         />
         <div className="mb-4" style={{height: 150}}>
           <ReCAPTCHA

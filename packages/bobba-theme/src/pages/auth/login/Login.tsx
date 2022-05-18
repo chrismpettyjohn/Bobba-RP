@@ -46,12 +46,14 @@ export function LoginPage() {
           className="form-control mb-4"
           placeholder="Username"
           type="text"
+          value={username}
           onChange={e => setUsername(e.target.value)}
         />
         <input
           className="form-control mb-4"
           placeholder="Password"
           type="password"
+          value={password}
           onChange={e => setPassword(e.target.value)}
         />
         <div className="row mb-4">
