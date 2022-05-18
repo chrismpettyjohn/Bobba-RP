@@ -11,12 +11,12 @@ export function NewsSlider() {
   const items: Array<{caption: string; src: string; altText: string}> = [
     {
       caption: 'Sample Caption One',
-      src: 'https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png',
+      src: 'https://images.habbo.com/web_images/habbo-web-articles/lpromo_17052022.png',
       altText: 'Slide One',
     },
     {
       caption: 'Sample Caption Two',
-      src: 'https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png',
+      src: 'https://images.habbo.com/web_images/habbo-web-articles/lpromo_17052022.png',
       altText: 'Slide Two',
     },
   ];

@@ -12,6 +12,9 @@ export function GuestLayout({children}: LayoutProps) {
       style={{position: 'absolute', left: 0, top: 0}}
     >
       <div className="row" style={{width: '70%'}}>
+        <div className="col-12 mb-2">
+          <img src={config.logoURL} />
+        </div>
         <div
           className="col-6 p-4"
           style={{
