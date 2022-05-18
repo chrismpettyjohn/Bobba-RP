@@ -1,11 +1,11 @@
 import React from 'react';
-import {SelectSelectSearchFilterProps} from '../SearchFilters.types';
+import {SelectSearchFilterProps} from '../SearchFilters.types';
 
 export function SelectSearchFilter({
   label,
   options,
   type,
-}: SelectSelectSearchFilterProps) {
+}: SelectSearchFilterProps) {
   return (
     <>
       <select data-v-11b1ccfe="">
