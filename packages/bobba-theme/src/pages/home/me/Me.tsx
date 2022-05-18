@@ -34,7 +34,7 @@ export function MePage() {
               style={{
                 background:
                   'linear-gradient(264.06deg,#041214 -68.99%,rgb(64, 200, 215) 60.01%,#166068 130.88%)',
-                height: 250,
+                height: 'fit-content',
                 width: '100%',
                 borderRadius: 10,
               }}
@@ -130,7 +130,7 @@ export function MePage() {
                           </Link>
                         </div>
                       </div>
-                      <div className="col h-100">
+                      <div className="col">
                         <div
                           className="p-4"
                           style={{
