@@ -71,12 +71,29 @@ export function Sidebar() {
                 </a>
               </Link>
             ))}
-            <Link to="/logout">
+            <Link to="/play">
               <a
-                className="nav-item nav-logout"
+                className="nav-item nav-enter-hotel"
                 data-v-65a92196=""
-                style={{marginTop: 50}}
+                style={{marginTop: 100}}
               >
+                <span className="nav-label" data-v-65a92196="">
+                  <Icon
+                    type="gamepad-alt"
+                    style={{
+                      color: 'white',
+                      fontSize: 24,
+                      position: 'absolute',
+                      top: 13,
+                      left: 8,
+                    }}
+                  />
+                  Play
+                </span>
+              </a>
+            </Link>
+            <Link to="/logout">
+              <a className="nav-item nav-logout" data-v-65a92196="">
                 <span className="nav-label" data-v-65a92196="">
                   <Icon
                     type="sign-out"
