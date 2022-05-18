@@ -18,7 +18,7 @@ export function StaffTeam() {
               <div className="team-item" data-v-e1e4453e="" data-v-211add89="">
                 <img
                   className="bg-image"
-                  src="https://bithotel.io/assets/team_photo_2.838ac104.png"
+                  src="https://i.imgur.com/y5mIqkw.png"
                   data-v-e1e4453e=""
                 />
                 <div className="circle teamCircle" data-v-e1e4453e="">
