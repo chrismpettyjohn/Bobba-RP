@@ -34,8 +34,14 @@ export function LifestyleLayout({
 
   return (
     <UserLayout>
-      {header}
-      <TabBar tabs={LIFESTYLE_TABS} results={results} />
+      <div className="container-fluid mb-4">
+        <div className="row">
+          <div className="col-12 mb-4">{header}</div>
+          <div className="col-12">
+            <TabBar tabs={LIFESTYLE_TABS} results={results} />
+          </div>
+        </div>
+      </div>
       {children}
     </UserLayout>
   );

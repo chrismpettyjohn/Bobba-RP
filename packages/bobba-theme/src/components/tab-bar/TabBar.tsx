@@ -7,9 +7,9 @@ export function TabBar({tabs, results}: TabBarProps) {
   const [location] = useLocation();
 
   return (
-    <div className="filters" data-v-11b1ccfe="" data-v-37a7da9c="">
-      <div className="scroll" data-v-11b1ccfe="">
-        <div className="row" data-v-11b1ccfe="">
+    <div className="filters w-100" data-v-11b1ccfe="" data-v-37a7da9c="">
+      <div className="scroll w-100" data-v-11b1ccfe="">
+        <div className="row w-100" data-v-11b1ccfe="">
           {tabs.map(tab => (
             <Link to={tab.path} key={`square_tabs_${tab.path}`}>
               <div
@@ -30,7 +30,11 @@ export function TabBar({tabs, results}: TabBarProps) {
             </Link>
           ))}
           {results !== undefined && (
-            <div className="col results float-right" data-v-11b1ccfe="">
+            <div
+              className="col results"
+              data-v-11b1ccfe=""
+              style={{textAlign: 'right'}}
+            >
               {results} Result{results === 1 ? '' : 's'}
             </div>
           )}
