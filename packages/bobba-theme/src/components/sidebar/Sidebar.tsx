@@ -99,7 +99,6 @@ export function Sidebar() {
                 target="_blank"
                 className="nav-item nav-admin-panel"
                 data-v-65a92196=""
-                style={{marginTop: 100}}
               >
                 <span className="nav-label" data-v-65a92196="">
                   <Icon
