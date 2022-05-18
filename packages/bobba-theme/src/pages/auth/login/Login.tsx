@@ -1,31 +1,68 @@
-import React from 'react';
-import {Link} from 'wouter';
-import {setURL} from '@instinct-web/core';
+import {toast} from 'react-toastify';
+import {Link, useLocation} from 'wouter';
+import React, {SyntheticEvent, useContext, useState} from 'react';
 import {GuestLayout} from '../../../layout/guest-layout/GuestLayout';
+import {sessionContext, sessionService, setURL} from '@instinct-web/core';
 
 setURL('login', <LoginPage />);
 
 export function LoginPage() {
+  const {setUser} = useContext(sessionContext);
+  const [location, setLocation] = useLocation();
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const isValidCredentials = username !== '' && password !== '';
+
+  const onSubmitLogin = async (event: SyntheticEvent) => {
+    event.preventDefault();
+    try {
+      if (!isValidCredentials) {
+        toast.error('Username and password required');
+        return;
+      }
+
+      const bearerToken = await sessionService.attemptCredentials(
+        username,
+        password
+      );
+      const userData = await sessionService.attemptBearerToken(bearerToken);
+      setUser(userData);
+
+      toast.success(`Welcome back, ${userData.username}`);
+
+      setLocation('/me');
+    } catch {
+      toast.error('Failed to login');
+    }
+  };
+
   return (
     <GuestLayout>
       <h2 data-v-da0d1626="">Login</h2>
-      <form className="form w-100" data-v-da0d1626="">
+      <form className="form w-100" data-v-da0d1626="" onSubmit={onSubmitLogin}>
         <input
           className="form-control mb-4"
-          name="email"
-          placeholder="Email Address"
-          type="email"
+          placeholder="Username"
+          type="text"
+          onChange={e => setUsername(e.target.value)}
         />
         <input
           className="form-control mb-4"
-          name="password"
           placeholder="Password"
           type="password"
+          onChange={e => setPassword(e.target.value)}
         />
         <div className="row mb-4">
           <div className="col-6" />
           <div className="col-6">
-            <button className="btn btn-primary btn-block">Login</button>
+            <button
+              className="btn btn-primary btn-block"
+              type="submit"
+              disabled={!isValidCredentials}
+            >
+              Login
+            </button>
           </div>
         </div>
       </form>
