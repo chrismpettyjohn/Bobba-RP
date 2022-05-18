@@ -11,11 +11,11 @@ export function UndergroundLayout({children}: UndergroundLayoutProps) {
       icon: 'mask',
       text: 'Gangs',
     },
-    {
-      path: '/underground/territory',
-      icon: 'city',
-      text: 'Territory',
-    },
+    // {
+    //   path: '/underground/territory',
+    //   icon: 'city',
+    //   text: 'Territory',
+    // },
     {
       path: '/underground/weapons',
       icon: 'sword',
