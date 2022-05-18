@@ -12,6 +12,7 @@
     "noEmit": true
   },
   "include": [
+    "demo",
     "packages"
   ]
 }
