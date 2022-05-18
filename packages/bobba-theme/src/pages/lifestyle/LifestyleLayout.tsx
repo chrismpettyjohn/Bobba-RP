@@ -20,16 +20,16 @@ export function LifestyleLayout({
       icon: 'building',
       text: 'Companies',
     },
-    {
-      path: '/lifestyle/properties',
-      icon: 'house',
-      text: 'Properties',
-    },
-    {
-      path: '/lifestyle/stocks',
-      icon: 'chart-line',
-      text: 'Stocks',
-    },
+    // {
+    //   path: '/lifestyle/properties',
+    //   icon: 'house',
+    //   text: 'Properties',
+    // },
+    // {
+    //   path: '/lifestyle/stocks',
+    //   icon: 'chart-line',
+    //   text: 'Stocks',
+    // },
   ];
 
   return (

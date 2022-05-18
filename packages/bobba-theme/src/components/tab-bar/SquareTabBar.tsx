@@ -9,7 +9,11 @@ export function SquareTabBar({tabs, results}: TabBarProps) {
   return (
     <div className="filters" data-v-11b1ccfe="" data-v-37a7da9c="">
       <div className="scroll" data-v-11b1ccfe="">
-        <div className="row row2" data-v-11b1ccfe="">
+        <div
+          className="row row2"
+          data-v-11b1ccfe=""
+          style={{position: 'relative'}}
+        >
           {tabs.map(tab => (
             <Link to={tab.path} key={`square_tabs_${tab.path}`}>
               <div
@@ -30,7 +34,11 @@ export function SquareTabBar({tabs, results}: TabBarProps) {
             </Link>
           ))}
           {results !== undefined && (
-            <div className="results" data-v-11b1ccfe="">
+            <div
+              className="results"
+              data-v-11b1ccfe=""
+              style={{position: 'absolute', right: 0, top: 15}}
+            >
               {results} Result{results === 1 ? '' : 's'}
             </div>
           )}
