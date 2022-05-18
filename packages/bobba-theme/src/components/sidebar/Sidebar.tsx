@@ -1,10 +1,11 @@
 import {Link} from 'wouter';
 import React, {ReactNode, useContext} from 'react';
-import {configContext, Icon} from '@instinct-web/core';
+import {configContext, Icon, sessionContext} from '@instinct-web/core';
 import {AboutInstinct} from '../about-instinct/AboutInstinct';
 
 export function Sidebar() {
   const {config} = useContext(configContext);
+  const {user} = useContext(sessionContext);
 
   const navLinks: Array<{path: string; text: ReactNode; icon: string}> = [
     {
@@ -92,6 +93,29 @@ export function Sidebar() {
                 </span>
               </a>
             </Link>
+            {user?.rank?.permissions?.websiteShowAdminPanel && (
+              <Link to={process.env.REACT_ADMIN_LINK} target="_blank">
+                <a
+                  className="nav-item nav-enter-hotel"
+                  data-v-65a92196=""
+                  style={{marginTop: 100}}
+                >
+                  <span className="nav-label" data-v-65a92196="">
+                    <Icon
+                      type="cogs"
+                      style={{
+                        color: 'white',
+                        fontSize: 24,
+                        position: 'absolute',
+                        top: 13,
+                        left: 8,
+                      }}
+                    />
+                    Admin Panel
+                  </span>
+                </a>
+              </Link>
+            )}
             <Link to="/logout">
               <a className="nav-item nav-logout" data-v-65a92196="">
                 <span className="nav-label" data-v-65a92196="">
