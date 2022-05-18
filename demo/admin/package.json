@@ -1,5 +1,5 @@
 {
-  "name": "demo-web",
+  "name": "demo-admin",
   "version": "1.0.0",
   "scripts": {
     "start": "PORT=3001 SKIP_PREFLIGHT_CHECK=true react-app-rewired start",
@@ -9,7 +9,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "@instinct-web/core": "5.0.0",
-    "@bobba-rp/theme": "1.0.0",
+    "@instinct-web/admin": "5.0.0",
     "@instinct-plugin/bobba-rp-web": "1.0.0"
   },
   "devDependencies": {
