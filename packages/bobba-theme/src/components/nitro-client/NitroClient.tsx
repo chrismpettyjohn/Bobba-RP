@@ -7,10 +7,6 @@ import {themeContext, UserGuard} from '@instinct-web/core';
 export function NitroClient() {
   const {showClient} = useContext(themeContext);
 
-  if (!showClient) {
-    return null;
-  }
-
   return (
     <UserGuard redirect={false}>
       <div
