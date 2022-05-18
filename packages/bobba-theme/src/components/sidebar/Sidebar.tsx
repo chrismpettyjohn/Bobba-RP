@@ -94,27 +94,27 @@ export function Sidebar() {
               </a>
             </Link>
             {user?.rank?.permissions?.websiteShowAdminPanel && (
-              <Link to={process.env.REACT_ADMIN_LINK} target="_blank">
-                <a
-                  className="nav-item nav-enter-hotel"
-                  data-v-65a92196=""
-                  style={{marginTop: 100}}
-                >
-                  <span className="nav-label" data-v-65a92196="">
-                    <Icon
-                      type="cogs"
-                      style={{
-                        color: 'white',
-                        fontSize: 24,
-                        position: 'absolute',
-                        top: 13,
-                        left: 8,
-                      }}
-                    />
-                    Admin Panel
-                  </span>
-                </a>
-              </Link>
+              <a
+                href={process.env.REACT_ADMIN_LINK}
+                target="_blank"
+                className="nav-item nav-enter-hotel"
+                data-v-65a92196=""
+                style={{marginTop: 100}}
+              >
+                <span className="nav-label" data-v-65a92196="">
+                  <Icon
+                    type="cogs"
+                    style={{
+                      color: 'white',
+                      fontSize: 24,
+                      position: 'absolute',
+                      top: 13,
+                      left: 8,
+                    }}
+                  />
+                  Admin Panel
+                </span>
+              </a>
             )}
             <Link to="/logout">
               <a className="nav-item nav-logout" data-v-65a92196="">
