@@ -1,7 +1,7 @@
 import './StaffTeam.css';
 import React from 'react';
 import {setURL} from '@instinct-web/core';
-import {CommunityLayout} from '../CommunityLayoutProps';
+import {CommunityLayout} from '../CommunityLayout';
 
 setURL('community/staff', <StaffTeam />);
 

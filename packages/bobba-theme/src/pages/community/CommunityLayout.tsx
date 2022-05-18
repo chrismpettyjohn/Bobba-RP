@@ -20,16 +20,6 @@ export function CommunityLayout({
       icon: 'clipboard-user',
       text: 'Staff',
     },
-    {
-      path: '/community/high-scores',
-      icon: 'medal',
-      text: 'High Scores',
-    },
-    {
-      path: '/community/online',
-      icon: 'signal',
-      text: 'Online',
-    },
   ];
 
   return (

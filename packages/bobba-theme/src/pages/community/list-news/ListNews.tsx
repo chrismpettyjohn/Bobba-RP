@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'wouter';
 import {setURL} from '@instinct-web/core';
 import {exampleArticle} from '@instinct-prj/interface';
-import {CommunityLayout} from '../CommunityLayoutProps';
+import {CommunityLayout} from '../CommunityLayout';
 import {ArticleListingCard} from '../../../components/article-listing-card/ArticleListingCard';
 import {SearchFilters} from '../../../components/search-filters/SearchFilters';
 
