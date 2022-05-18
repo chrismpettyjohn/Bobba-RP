@@ -1,6 +1,7 @@
 import React from 'react';
 import {LayoutProps} from '../Layout.types';
 import {Sidebar} from '../../components/sidebar/Sidebar';
+import {AboutInstinct} from '../../components/about-instinct/AboutInstinct';
 
 export function UserLayout({children}: LayoutProps) {
   return (
@@ -17,6 +18,9 @@ export function UserLayout({children}: LayoutProps) {
             {children}
           </div>
         </div>
+      </div>
+      <div style={{position: 'absolute', bottom: 30, width: '100%'}}>
+        <AboutInstinct />
       </div>
     </div>
   );

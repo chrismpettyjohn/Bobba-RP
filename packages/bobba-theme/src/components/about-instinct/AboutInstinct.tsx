@@ -3,28 +3,28 @@ import React from 'react';
 export function AboutInstinct() {
   return (
     <div style={{margin: '0 auto'}}>
-      <span
+      <div
         style={{
           color: '#0D7776',
           fontSize: 35,
           fontWeight: 'bold',
           letterSpacing: 1.4,
+          width: '100%',
         }}
       >
         INSTINCT
-      </span>
-      <br />
-      <span
+      </div>
+      <div
         style={{
           color: 'white',
           fontSize: 15,
           fontWeight: 'bold',
           letterSpacing: 1.4,
-          marginLeft: '25%',
+          marginLeft: '2%',
         }}
       >
         By LeChris
-      </span>
+      </div>
     </div>
   );
 }

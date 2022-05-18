@@ -92,9 +92,6 @@ export function Sidebar() {
                 </span>
               </a>
             </Link>
-            <div style={{position: 'absolute', bottom: 30, width: '100%'}}>
-              <AboutInstinct />
-            </div>
           </nav>
         </div>
       </div>
