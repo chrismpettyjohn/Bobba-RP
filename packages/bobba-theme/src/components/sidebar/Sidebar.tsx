@@ -23,11 +23,11 @@ export function Sidebar() {
 
       text: 'Lifestyle',
     },
-    {
-      path: '/underground/gangs',
-      icon: 'skull',
-      text: 'Underground',
-    },
+    // {
+    //   path: '/underground/gangs',
+    //   icon: 'skull',
+    //   text: 'Underground',
+    // },
   ];
 
   return (
