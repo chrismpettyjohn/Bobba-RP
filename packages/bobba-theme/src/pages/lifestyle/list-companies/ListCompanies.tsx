@@ -51,27 +51,25 @@ export function ListCompanies() {
               data-v-6c1db704=""
               style={{margin: 0, width: '100%', maxWidth: '100%'}}
             >
-              <a className="left" data-v-6c1db704="" href="#/listing/774">
-                <div className="circle common" data-v-6c1db704="">
-                  <img
-                    data-v-6c1db704=""
-                    src="https://www.habborator.org/badges/badges/NWB.gif"
-                    style={{
-                      marginTop: 10,
-                      marginLeft: 1,
-                      width: 100,
-                      height: 100,
-                    }}
-                  />
-                </div>
-                <div className="vertical-line" data-v-6c1db704="" />
-                <div className="season" data-v-6c1db704="">
-                  Security
-                </div>
-                <div className="name" data-v-6c1db704="">
-                  {exampleBusiness.name}
-                </div>
-              </a>
+              <Link to="/lifestyle/companies/1" style={{cursor: 'pointer'}}>
+                <a className="left" data-v-6c1db704="">
+                  <div className="circle common" data-v-6c1db704="">
+                    <img
+                      data-v-6c1db704=""
+                      src="https://www.habborator.org/badges/badges/NWB.gif"
+                      style={{
+                        marginTop: 10,
+                        marginLeft: 1,
+                        width: 100,
+                        height: 100,
+                      }}
+                    />
+                  </div>
+                  <div className="name" data-v-6c1db704="">
+                    {exampleBusiness.name}
+                  </div>
+                </a>
+              </Link>
               <div className="right" data-v-6c1db704="">
                 <div className="info-segment" data-v-6c1db704="">
                   <span
