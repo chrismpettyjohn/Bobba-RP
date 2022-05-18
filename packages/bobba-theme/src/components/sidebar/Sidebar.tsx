@@ -97,7 +97,7 @@ export function Sidebar() {
               <a
                 href={process.env.REACT_ADMIN_LINK}
                 target="_blank"
-                className="nav-item nav-enter-hotel"
+                className="nav-item nav-admin-panel"
                 data-v-65a92196=""
                 style={{marginTop: 100}}
               >
