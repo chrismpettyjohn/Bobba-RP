@@ -15,7 +15,7 @@ export function AboutModal({isOpen, onToggle}: AboutModalProps) {
       <ModalBody>
         <h5>About</h5>
         <p>
-          Instinct is a CMS built with the latest technology give you an
+          Instinct is a CMS built with the latest technology and gives you an
           experience that's out of this world.
         </p>
         <p>

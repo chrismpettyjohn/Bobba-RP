@@ -7,10 +7,6 @@ import {GameClientActions} from './game-client-actions/GameClientActions';
 export function GameClient() {
   const {showClient} = useContext(themeContext);
 
-  if (!showClient) {
-    return null;
-  }
-
   return (
     <UserGuard redirect={false}>
       <div
