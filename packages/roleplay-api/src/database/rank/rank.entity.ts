@@ -1,60 +1,14 @@
 import {RPRankEntityStruct} from './rank.types';
-import {PermissionStatus} from '@instinct-api/database';
-import {Column, Entity, PrimaryGeneratedColumn} from 'typeorm';
-import {GovernmentBranch} from '@instinct-plugin/bobba-rp-types';
+import {RPUserEntity} from '../user/user.entity';
+import {Column, Entity, OneToMany} from 'typeorm';
+import {RPUserEntityStruct} from '../user/user.types';
+import {PermissionStatus, RankEntity} from '@instinct-api/database';
 
 @Entity('ranks')
-export class RPRankEntity implements RPRankEntityStruct {
-  @PrimaryGeneratedColumn()
-  id?: number;
-
-  @Column({name: 'name'})
-  name!: string;
-
-  @Column({name: 'badgeid'})
-  badge!: string;
-
-  @Column()
-  level!: number;
-
-  @Column({name: 'description'})
-  description!: string;
-
-  @Column({name: 'website_show_staff', type: 'enum', default: '0'})
-  websiteShowStaff!: PermissionStatus;
-
-  @Column({name: 'website_show_admin_panel', type: 'enum', default: '0'})
-  websiteShowAdminPanel!: PermissionStatus;
-
-  @Column({name: 'website_manage_news', type: 'enum', default: '0'})
-  websiteManageNews!: PermissionStatus;
-
-  @Column({name: 'website_manage_ranks', type: 'enum', default: '0'})
-  websiteManageRanks!: PermissionStatus;
-
-  @Column({name: 'website_manage_users', type: 'enum', default: '0'})
-  websiteManageUsers!: PermissionStatus;
-
-  @Column({name: 'website_manage_bans', type: 'enum', default: '0'})
-  websiteManageBans!: PermissionStatus;
-
-  @Column({name: 'website_manage_config', type: 'enum', default: '0'})
-  websiteManageConfig!: PermissionStatus;
-
-  @Column({name: 'website_manage_beta_codes', type: 'enum', default: '0'})
-  websiteManageBetaCodes!: PermissionStatus;
-
-  @Column({name: 'website_manage_guestbook', type: 'enum', default: '0'})
-  websiteManageGuestbook!: PermissionStatus;
-
-  @Column({name: 'website_manage_emulator', type: 'enum', default: '0'})
-  websiteManageEmulator!: PermissionStatus;
-
-  @Column({name: 'website_manage_comments', type: 'enum', default: '0'})
-  websiteManageComments!: PermissionStatus;
-
-  @Column({name: 'website_manage_forums', type: 'enum', default: '0'})
-  websiteManageForums!: PermissionStatus;
+export class RPRankEntity extends RankEntity implements RPRankEntityStruct {
+  @OneToMany(() => RPUserEntity, user => user.rank)
+  // @ts-ignore
+  users?: RPUserEntityStruct[];
 
   @Column({name: 'website_create_business', type: 'enum', default: '0'})
   websiteCreateBusiness!: PermissionStatus;
@@ -83,9 +37,6 @@ export class RPRankEntity implements RPRankEntityStruct {
   @Column({name: 'website_create_guide_categories', type: 'enum', default: '0'})
   websiteCreateGuideCategories!: PermissionStatus;
 
-  @Column({name: 'website_delete_guide_categories', type: 'enum', default: '0'})
-  websiteDeleteGuideCategories!: PermissionStatus;
-
   @Column({name: 'website_manage_food', type: 'enum', default: '0'})
   websiteManageFood!: PermissionStatus;
 
@@ -112,9 +63,6 @@ export class RPRankEntity implements RPRankEntityStruct {
 
   @Column({name: 'website_has_presidential_power', type: 'enum', default: '0'})
   websiteHasPresidentialPower!: PermissionStatus;
-
-  @Column({name: 'website_government_branch'})
-  websiteGovernmentBranch!: GovernmentBranch;
 
   @Column({
     name: 'website_register_political_party',

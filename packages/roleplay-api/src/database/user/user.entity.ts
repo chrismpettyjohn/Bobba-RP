@@ -7,9 +7,8 @@ import {Entity, JoinColumn, ManyToOne, OneToOne} from 'typeorm';
 
 @Entity('users')
 export class RPUserEntity extends UserEntity implements RPUserEntityStruct {
-  @ManyToOne(() => RPRankEntity, rank => rank.id)
+  @ManyToOne(() => RPRankEntity, rank => rank.users)
   @JoinColumn({name: 'rank'})
-  // @ts-ignore
   rank?: RPRankEntityStruct;
 
   @OneToOne(() => UserRPStatEntity, rpStats => rpStats.user)
