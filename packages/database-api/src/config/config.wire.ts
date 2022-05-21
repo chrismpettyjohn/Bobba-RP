@@ -30,6 +30,7 @@ export function configWire(configEntity: ConfigEntity): Config {
     findRetrosUsername: configEntity.findRetrosUsername,
     stripePublicKey: configEntity.stripePublicKey,
     logoURL: configEntity.logoURL,
+    awsS3Bucket: configEntity.awsS3Bucket,
   };
 }
 

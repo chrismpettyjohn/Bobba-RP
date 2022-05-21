@@ -38,6 +38,10 @@ import {ShopPackageEntity} from './web-store/package/shop-package.entity';
 import {ShopPackageRepository} from './web-store/package/shop-package.repository';
 import {PhotoReactionEntity} from './photo/photo-reaction.entity';
 import {PhotoReactionRepository} from './photo/photo-reaction.repository';
+import {MediaEntity} from './media/media.entity';
+import {MediaReferenceEntity} from './media/media-reference.entity';
+import {MediaRepository} from './media/media.repository';
+import {MediaReferenceRepository} from './media/media-reference.repository';
 
 export const databaseEntities: Function[] = [
   RankEntity,
@@ -57,6 +61,8 @@ export const databaseEntities: Function[] = [
   PhotoReactionEntity,
   EmulatorTextsEntity,
   UserGuestbookEntity,
+  MediaEntity,
+  MediaReferenceEntity,
   ArticleCommentEntity,
   ArticleCategoryEntity,
   EmulatorSettingsEntity,
@@ -80,6 +86,8 @@ export const databaseRepositories: Provider[] = [
   PhotoReactionRepository,
   BetaCodeRepository,
   EmulatorTextsRepository,
+  MediaRepository,
+  MediaReferenceRepository,
   UserGuestbookRepository,
   ArticleCommentRepository,
   ShopPackageRepository,

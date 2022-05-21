@@ -4,6 +4,7 @@ export * from './config';
 export * from './emulator';
 export * from './forum';
 export * from './group';
+export * from './media';
 export * from './photo';
 export * from './rank';
 export * from './room';

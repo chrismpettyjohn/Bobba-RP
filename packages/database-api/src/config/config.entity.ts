@@ -99,4 +99,7 @@ export class ConfigEntity {
 
   @Column({name: 'logo_url'})
   logoURL!: string;
+
+  @Column({name: 'aws_s3_bucket'})
+  awsS3Bucket!: string;
 }
