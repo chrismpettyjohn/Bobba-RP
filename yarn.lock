@@ -1635,47 +1635,10 @@
   resolved "https://registry.yarnpkg.com/@instinct-plugin/user-guestbook-api/-/user-guestbook-api-5.0.0.tgz#78eb7b23b7ec0079cf662fb2bf6cf1d35e91c03b"
   integrity sha512-ZP5kXug/IkSs2NxNaD+OeNnHfvWFUhJNiEmpziDoyT2ROGd9eGAXQbYX2wtoY4vQzB9WY0y1rsr/dweDQoJwhg==
 
-"@instinct-prj/interface-rp@^1.11.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@instinct-prj/interface-rp/-/interface-rp-1.11.0.tgz#cd702b7f2864850927e280e7bb8ea07a3b308015"
-  integrity sha512-OoMjPYUcfcmVQcd3k+0TbUuqcE2C6mqOBX6CViGkTkWMU+aBN/46ELAgwmCY4Wiu+t59SyGu/8IhKTfEcQWINQ==
-  dependencies:
-    "@instinct-prj/interface" "^1.9.0"
-
 "@instinct-prj/interface@5.0.0", "@instinct-prj/interface@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@instinct-prj/interface/-/interface-5.0.0.tgz#63e6e226ab0deed0260fe9e172c9efa470d2e213"
   integrity sha512-JG/PKxHuL89QLXWKIPGcAnmb2+RMTB0LpeD0yWOcKHAJFuWnF6y15OGZdWcyfhQ3lA2fd6E8pEHXFFDG5kEsZQ==
-
-"@instinct-prj/interface@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/@instinct-prj/interface/-/interface-1.9.0.tgz#45bf54f1538012ced2abe00be527d910ff433c13"
-  integrity sha512-et9PDpO7AJxSqqQ5ZYxSWVqxYsUCPB5g20W3qF/Zo9MmSYbI86a5k9ut+6obgchth97jIti9wbkeyYCkIOzqxA==
-
-"@instinct-prj/interface@^2.4.5":
-  version "2.4.9"
-  resolved "https://registry.yarnpkg.com/@instinct-prj/interface/-/interface-2.4.9.tgz#2e860fb461ed0dc6fe2850f75c4d2e6289a548be"
-  integrity sha512-gfXowOGHsqM7eVmJ7iDykVRUxNV285f6X66OlQ5EIqFGP6VIUIbpT0Ud4qOx+FipTpwtU9ecT6fS7jRBPB6c4Q==
-
-"@instinct-theme/bobba@1.0.0":
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/@instinct-theme/bobba/-/bobba-0.3.9.tgz#d2fc2241e8088e4786ccd99e036b9b42b1e848c9"
-  integrity sha512-cViweKWINeqCvOrqmlKn8/fseXtPzFGwTA/xn4ScK1PMkikSDvTd3Fb6XSzYDTKu4cuAcezYH8t789qPuiSdOA==
-  dependencies:
-    "@instinct-prj/interface" "^2.4.5"
-    "@instinct-prj/interface-rp" "^1.11.0"
-    "@instinct-web/core" "^2.4.8"
-    "@instinct-web/flash-client" "^2.4.8"
-    "@instinct-web/nitro-client" "^2.4.8"
-    "@material-ui/core" "^4.11.4"
-    "@material-ui/icons" "^4.11.2"
-    "@material-ui/lab" "^4.0.0-alpha.58"
-    "@stripe/react-stripe-js" "^1.4.1"
-    "@stripe/stripe-js" "^1.15.1"
-    react-markdown "6.0.2"
-    react-select "^4.3.1"
-    react-toggle "^4.1.2"
-    websocket "^1.0.34"
 
 "@instinct-web/admin@5.0.0":
   version "5.0.0"
@@ -1717,27 +1680,6 @@
     react-toastify "7.0.4"
     wouter "2.7.4"
 
-"@instinct-web/core@^2.4.8":
-  version "2.4.8"
-  resolved "https://registry.yarnpkg.com/@instinct-web/core/-/core-2.4.8.tgz#5365a1bf82857fc5506ac814dc739a18bb1d6db2"
-  integrity sha512-p683NrZAOApmHNbVocqOgZ+VTY7Vn9i2sE8hdeegskhC7/h1ifVFJTOwalSulhMpMJN2YBStHBHtdJtAwt1NdA==
-  dependencies:
-    "@instinct-prj/interface" "^2.4.5"
-    axios "^0.21.1"
-    events "^3.3.0"
-    lodash "^4.17.21"
-    moment "^2.29.1"
-    react-copy-to-clipboard "^5.0.3"
-    react-datepicker "^4.1.1"
-    react-draft-wysiwyg "^1.14.7"
-    react-draggable "^4.4.3"
-    react-google-recaptcha "^2.1.0"
-    react-loading-overlay "^1.0.1"
-    react-loading-skeleton "^2.2.0"
-    react-select "^4.3.1"
-    react-toastify "^7.0.4"
-    wouter "^2.7.4"
-
 "@instinct-web/flash-client@5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@instinct-web/flash-client/-/flash-client-5.0.0.tgz#b165c813763473c3422050a5067742b7b85dbad5"
@@ -1745,27 +1687,10 @@
   dependencies:
     swfobject "2.2.1"
 
-"@instinct-web/flash-client@^2.4.8":
-  version "2.4.8"
-  resolved "https://registry.yarnpkg.com/@instinct-web/flash-client/-/flash-client-2.4.8.tgz#6df9948df4dace9fc437c9a9020875469d48bd38"
-  integrity sha512-C2QfcrVg41CuTy885IweVowlvGgqHGjoSv67ZzyidPtyrEawCkyKmBffWnTEHrf1RSMyZsvI6VJCIi6VzVEuew==
-  dependencies:
-    "@instinct-prj/interface" "^2.4.5"
-    "@instinct-web/core" "^2.4.8"
-    swfobject "^2.2.1"
-
 "@instinct-web/nitro-client@5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@instinct-web/nitro-client/-/nitro-client-5.0.0.tgz#4927769eef0701cbafde2e26c6d8a28c77f2b89e"
   integrity sha512-y3/NIzNoJaUpqbeIAWvqorvITXf9l3Kz/obiczHrCvw54wcW1GzbFnjG1BWU7QfDe1O8wD3qKUWvYeJ/GXoguA==
-
-"@instinct-web/nitro-client@^2.4.8":
-  version "2.4.8"
-  resolved "https://registry.yarnpkg.com/@instinct-web/nitro-client/-/nitro-client-2.4.8.tgz#432ea89a3318607ab0bab037f7f119282b8b3586"
-  integrity sha512-JoLWd8iNyOCHRo1UNcfgqqrCP7c2YFUo1x89Xcaj8ZBZs3/MPo/olZQHHIWDBwBzkHycPvqRsvBM4R9X7HxvYg==
-  dependencies:
-    "@instinct-prj/interface" "^2.4.5"
-    "@instinct-web/core" "^2.4.8"
 
 "@isaacs/string-locale-compare@^1.0.1":
   version "1.1.0"
@@ -2668,35 +2593,10 @@
     react-is "^16.8.0 || ^17.0.0"
     react-transition-group "^4.4.0"
 
-"@material-ui/core@^4.11.4":
-  version "4.12.4"
-  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.12.4.tgz#4ac17488e8fcaf55eb6a7f5efb2a131e10138a73"
-  integrity sha512-tr7xekNlM9LjA6pagJmL8QCgZXaubWUwkJnoYcMKd4gw/t4XiyvnTkjdGrUVicyB2BsdaAv1tvow45bPM4sSwQ==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-    "@material-ui/styles" "^4.11.5"
-    "@material-ui/system" "^4.12.2"
-    "@material-ui/types" "5.1.0"
-    "@material-ui/utils" "^4.11.3"
-    "@types/react-transition-group" "^4.2.0"
-    clsx "^1.0.4"
-    hoist-non-react-statics "^3.3.2"
-    popper.js "1.16.1-lts"
-    prop-types "^15.7.2"
-    react-is "^16.8.0 || ^17.0.0"
-    react-transition-group "^4.4.0"
-
 "@material-ui/icons@4.11.2":
   version "4.11.2"
   resolved "https://registry.yarnpkg.com/@material-ui/icons/-/icons-4.11.2.tgz#b3a7353266519cd743b6461ae9fdfcb1b25eb4c5"
   integrity sha512-fQNsKX2TxBmqIGJCSi3tGTO/gZ+eJgWmMJkgDiOfyNaunNaxcklJQFaFogYcFl0qFuaEz1qaXYXboa/bUXVSOQ==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-
-"@material-ui/icons@^4.11.2":
-  version "4.11.3"
-  resolved "https://registry.yarnpkg.com/@material-ui/icons/-/icons-4.11.3.tgz#b0693709f9b161ce9ccde276a770d968484ecff1"
-  integrity sha512-IKHlyx6LDh8n19vzwH5RtHIOHl9Tu90aAAxcbWME6kp4dmvODM3UvOHJeMIDzUbd4muuJKHmlNoBN+mDY4XkBA==
   dependencies:
     "@babel/runtime" "^7.4.4"
 
@@ -2711,18 +2611,7 @@
     prop-types "^15.7.2"
     react-is "^16.8.0 || ^17.0.0"
 
-"@material-ui/lab@^4.0.0-alpha.58":
-  version "4.0.0-alpha.61"
-  resolved "https://registry.yarnpkg.com/@material-ui/lab/-/lab-4.0.0-alpha.61.tgz#9bf8eb389c0c26c15e40933cc114d4ad85e3d978"
-  integrity sha512-rSzm+XKiNUjKegj8bzt5+pygZeckNLOr+IjykH8sYdVk7dE9y2ZuUSofiMV2bJk3qU+JHwexmw+q0RyNZB9ugg==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-    "@material-ui/utils" "^4.11.3"
-    clsx "^1.0.4"
-    prop-types "^15.7.2"
-    react-is "^16.8.0 || ^17.0.0"
-
-"@material-ui/styles@^4.11.4", "@material-ui/styles@^4.11.5":
+"@material-ui/styles@^4.11.4":
   version "4.11.5"
   resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.11.5.tgz#19f84457df3aafd956ac863dbe156b1d88e2bbfb"
   integrity sha512-o/41ot5JJiUsIETME9wVLAJrmIWL3j0R0Bj2kCOLbSfqEkKf0fmaPt+5vtblUh5eXr2S+J/8J3DaCb10+CzPGA==
@@ -2744,7 +2633,7 @@
     jss-plugin-vendor-prefixer "^10.5.1"
     prop-types "^15.7.2"
 
-"@material-ui/system@^4.12.1", "@material-ui/system@^4.12.2":
+"@material-ui/system@^4.12.1":
   version "4.12.2"
   resolved "https://registry.yarnpkg.com/@material-ui/system/-/system-4.12.2.tgz#f5c389adf3fce4146edd489bf4082d461d86aa8b"
   integrity sha512-6CSKu2MtmiJgcCGf6nBQpM8fLkuB9F55EKfbdTC80NND5wpTmKzwdhLYLH3zL4cLlK0gVaaltW7/wMuyTnN0Lw==
@@ -3258,22 +3147,10 @@
   dependencies:
     prop-types "^15.7.2"
 
-"@stripe/react-stripe-js@^1.4.1":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-1.8.0.tgz#b07f1d95e75fe93ac5c33346539ec0972298957d"
-  integrity sha512-WtF2mIWJKnyAaZledC48NfynFckEseCPG8tybwFgisFxHvLPKrArlLISJOi2cjIY20DkMAkSkdlEljXifJi0ZA==
-  dependencies:
-    prop-types "^15.7.2"
-
 "@stripe/stripe-js@1.21.1":
   version "1.21.1"
   resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.21.1.tgz#e56cd01f889dc06af4a68ebf61d2492a87e80da1"
   integrity sha512-/HhRol0Bia/6L7JstXUOpg3m0U3nBW8c2tvaBE6QdonN+OMusYT9AIqCMR/PyzoF3ROifFJ2kbWT7xQjbKN3tw==
-
-"@stripe/stripe-js@^1.15.1":
-  version "1.29.0"
-  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.29.0.tgz#f41e46aee711d1eabcb3bbc77376016a250ec962"
-  integrity sha512-OsUxk0VLlum8E2d6onlEdKuQcvLMs7qTrOXCnl/BGV3fAm65qr6h3e1IZ5AX4lgUlPRrzRcddSOA5DvkKKYLvg==
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
@@ -4810,13 +4687,6 @@ axios@0.24.0:
   integrity sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==
   dependencies:
     follow-redirects "^1.14.4"
-
-axios@^0.21.1:
-  version "0.21.4"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
-  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
-  dependencies:
-    follow-redirects "^1.14.0"
 
 axios@^0.26.0:
   version "0.26.1"
@@ -8225,7 +8095,7 @@ eventemitter3@^3.1.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
 
-events@3.3.0, events@^3.0.0, events@^3.3.0:
+events@3.3.0, events@^3.0.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
   integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
@@ -8767,7 +8637,7 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0, follow-redirects@^1.10.0, follow-redirects@^1.14.0, follow-redirects@^1.14.4, follow-redirects@^1.14.8:
+follow-redirects@^1.0.0, follow-redirects@^1.10.0, follow-redirects@^1.14.4, follow-redirects@^1.14.8:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.0.tgz#06441868281c86d0dda4ad8bdaead2d02dca89d4"
   integrity sha512-aExlJShTV4qOUOL7yF1U5tvLCB0xQuudbf6toyYA0E/acBNw71mvjFTnLaRp50aQaYocMR0a/RMMBIHeZnGyjQ==
@@ -13373,11 +13243,6 @@ moment@2.29.1:
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
 
-moment@^2.29.1:
-  version "2.29.3"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
-  integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
-
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -15724,7 +15589,7 @@ prop-ini@^0.0.2:
   dependencies:
     extend "^3.0.0"
 
-prop-types@^15.0.0, prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.0.0, prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -16050,14 +15915,6 @@ react-copy-to-clipboard@5.0.3:
     copy-to-clipboard "^3"
     prop-types "^15.5.8"
 
-react-copy-to-clipboard@^5.0.3:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/react-copy-to-clipboard/-/react-copy-to-clipboard-5.1.0.tgz#09aae5ec4c62750ccb2e6421a58725eabc41255c"
-  integrity sha512-k61RsNgAayIJNoy9yDsYzDe/yAZAzEbEgcz3DZMhF686LEyukcE1hzurxe85JandPUG+yTfGVFzuEw3xt8WP/A==
-  dependencies:
-    copy-to-clipboard "^3.3.1"
-    prop-types "^15.8.1"
-
 react-datepicker@4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-4.1.1.tgz#5ecef49c672b2250fca26327c988464e6ba52b62"
@@ -16074,18 +15931,6 @@ react-datepicker@4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-4.3.0.tgz#f2e2fc652b7ed3c231663d858da4a3c67f470784"
   integrity sha512-cg+gp4YnPcZc6iZ0+v7VuRgcFG22KL7izHYrCxXeSLOn5VGkyxTfcu5qA/cGIsngurCt/u0NtgVTlHB1Fwap1g==
-  dependencies:
-    "@popperjs/core" "^2.9.2"
-    classnames "^2.2.6"
-    date-fns "^2.24.0"
-    prop-types "^15.7.2"
-    react-onclickoutside "^6.12.0"
-    react-popper "^2.2.5"
-
-react-datepicker@^4.1.1:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-4.8.0.tgz#11b8918d085a1ce4781eee4c8e4641b3cd592010"
-  integrity sha512-u69zXGHMpxAa4LeYR83vucQoUCJQ6m/WBsSxmUMu/M8ahTSVMMyiyQzauHgZA2NUr9y0FUgOAix71hGYUb6tvg==
   dependencies:
     "@popperjs/core" "^2.9.2"
     classnames "^2.2.6"
@@ -16133,7 +15978,7 @@ react-dom@17.0.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
-react-draft-wysiwyg@1.14.7, react-draft-wysiwyg@^1.14.7:
+react-draft-wysiwyg@1.14.7:
   version "1.14.7"
   resolved "https://registry.yarnpkg.com/react-draft-wysiwyg/-/react-draft-wysiwyg-1.14.7.tgz#5d27fe8ad87de7c692dad739b8787f3ac1f3c24e"
   integrity sha512-D4X8F/ourvQZuqHzCQ6Vs6Tnt6TbGH58kvHQxC+aZGq+45ko2EyatL6G5C/paMaNKDZq2JRe7yAzykneMLpNOg==
@@ -16160,14 +16005,6 @@ react-draggable@4.4.4:
     clsx "^1.1.1"
     prop-types "^15.6.0"
 
-react-draggable@^4.4.3:
-  version "4.4.5"
-  resolved "https://registry.yarnpkg.com/react-draggable/-/react-draggable-4.4.5.tgz#9e37fe7ce1a4cf843030f521a0a4cc41886d7e7c"
-  integrity sha512-OMHzJdyJbYTZo4uQE393fHcqqPYsEtkjfMgvCHr6rejT+Ezn4OZbNyGH50vv+SunC1RMvwOTSWkEODQLzw1M9g==
-  dependencies:
-    clsx "^1.1.1"
-    prop-types "^15.8.1"
-
 react-error-overlay@^6.0.7:
   version "6.0.11"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
@@ -16178,7 +16015,7 @@ react-fast-compare@^3.0.1:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
   integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
 
-react-google-recaptcha@2.1.0, react-google-recaptcha@^2.1.0:
+react-google-recaptcha@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-google-recaptcha/-/react-google-recaptcha-2.1.0.tgz#9f6f4954ce49c1dedabc2c532347321d892d0a16"
   integrity sha512-K9jr7e0CWFigi8KxC3WPvNqZZ47df2RrMAta6KmRoE4RUi7Ys6NmNjytpXpg4HI/svmQJLKR+PncEPaNJ98DqQ==
@@ -16208,7 +16045,7 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-loading-overlay@1.0.1, react-loading-overlay@^1.0.1:
+react-loading-overlay@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-loading-overlay/-/react-loading-overlay-1.0.1.tgz#ee3b1ad56c45bb2f1ba46d4820ba0d06cd319a91"
   integrity sha512-aUjtZ8tNXBSx+MbD2SQs0boPbeTAGTh+I5U9nWjDzMasKlYr58RJpr57c8W7uApeLpOkAGbInExRi6GamNC2bA==
@@ -16217,7 +16054,7 @@ react-loading-overlay@1.0.1, react-loading-overlay@^1.0.1:
     prop-types "^15.6.2"
     react-transition-group "^2.5.0"
 
-react-loading-skeleton@2.2.0, react-loading-skeleton@^2.2.0:
+react-loading-skeleton@2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/react-loading-skeleton/-/react-loading-skeleton-2.2.0.tgz#b8ce516f9a2471e90d7d9ead35d61425367e3340"
   integrity sha512-HH37uj9aobrUJSqFglHqO9KQt5zGQe+Svutv8LIq7Iq6gpJqCwIzJOsEVfkQy7ReirbI2uLhCtKloBGQIDP0BQ==
@@ -16392,7 +16229,7 @@ react-select@*:
     prop-types "^15.6.0"
     react-transition-group "^4.3.0"
 
-react-select@4.3.1, react-select@^4.3.1:
+react-select@4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-4.3.1.tgz#389fc07c9bc7cf7d3c377b7a05ea18cd7399cb81"
   integrity sha512-HBBd0dYwkF5aZk1zP81Wx5UsLIIT2lSvAY2JiJo199LjoLHoivjn9//KsmvQMEFGNhe58xyuOITjfxKCcGc62Q==
@@ -16418,14 +16255,14 @@ react-select@5.2.1:
     prop-types "^15.6.0"
     react-transition-group "^4.3.0"
 
-react-toastify@7.0.4, react-toastify@^7.0.4:
+react-toastify@7.0.4:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-7.0.4.tgz#7d0b743f2b96f65754264ca6eae31911a82378db"
   integrity sha512-Rol7+Cn39hZp5hQ/k6CbMNE2CKYV9E5OQdC/hBLtIQU2xz7DdAm7xil4NITQTHR6zEbE5RVFbpgSwTD7xRGLeQ==
   dependencies:
     clsx "^1.1.1"
 
-react-toggle@4.1.2, react-toggle@^4.1.2:
+react-toggle@4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/react-toggle/-/react-toggle-4.1.2.tgz#b00500832f925ad524356d909821821ae39f6c52"
   integrity sha512-4Ohw31TuYQdhWfA6qlKafeXx3IOH7t4ZHhmRdwsm1fQREwOBGxJT+I22sgHqR/w8JRdk+AeMCJXPImEFSrNXow==
@@ -18631,7 +18468,7 @@ svgo@^1.0.0, svgo@^1.2.2:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-swfobject@2.2.1, swfobject@^2.2.1:
+swfobject@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/swfobject/-/swfobject-2.2.1.tgz#e55451d5dde59657335c86b01732c61a923293e2"
   integrity sha1-5VRR1d3lllczXIawFzLGGpIyk+I=
@@ -20244,7 +20081,7 @@ websocket-extensions@>=0.1.1:
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
   integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
-websocket@1.0.34, websocket@^1.0.34:
+websocket@1.0.34:
   version "1.0.34"
   resolved "https://registry.yarnpkg.com/websocket/-/websocket-1.0.34.tgz#2bdc2602c08bf2c82253b730655c0ef7dcab3111"
   integrity sha512-PRDso2sGwF6kM75QykIesBijKSVceR6jL2G8NGYyq2XrItNC2P5/qL5XeR056GhA+Ly7JMFvJb9I312mJfmqnQ==
@@ -20523,7 +20360,7 @@ wouter@2.7.4:
   resolved "https://registry.yarnpkg.com/wouter/-/wouter-2.7.4.tgz#d528122cacf6e9805d7b953bbddfb90226850977"
   integrity sha512-shJIsHR+gcn69L2zR+0eKquOvAcjfIEdhzf8iAP502DlrAwg5lO2Q90DqIvXryNz/mk1fe2crTB40ZHXjoF1Bg==
 
-wouter@2.7.5, wouter@^2.7.4:
+wouter@2.7.5:
   version "2.7.5"
   resolved "https://registry.yarnpkg.com/wouter/-/wouter-2.7.5.tgz#c7466a2630bed3a4ec010aea0cda42a5bae69e5d"
   integrity sha512-TOI9gD1wa7a8wW+lh3rjg0C+MjYGKMV3eC+++6D+7n1z36ZJIBPWe2G9Hs1jYNPsV7oKiPTI3UFC5TGhZjQfrQ==

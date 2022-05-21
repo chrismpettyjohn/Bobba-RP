@@ -11,7 +11,7 @@
     "@instinct-web/admin": "5.0.0",
     "@instinct-web/core": "5.0.0",
     "@bobba-rp/theme": "1.0.0",
-    "@instinct-theme/bobba": "1.0.0",
+    "@instinct-theme/bobba-rp": "1.0.0",
     "@instinct-plugin/bobba-rp-web": "1.0.0"
   },
   "devDependencies": {
