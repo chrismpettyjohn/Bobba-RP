@@ -1517,7 +1517,7 @@
   dependencies:
     uuid "8.3.2"
 
-"@instinct-api/common@5.0.0":
+"@instinct-api/common@5.0.0", "@instinct-api/common@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@instinct-api/common/-/common-5.0.0.tgz#f354a4a988dc8978d8fb7681b84934215b171758"
   integrity sha512-LmgUpAV8HD51rhcfQ9Dg/ZE7PfglpVc6KuPSmPcBniMOQJWGOoNlcTO7HfmKMS/4LkxfFnPc7xht+8FOxZBYBw==
@@ -1531,21 +1531,10 @@
   resolved "https://registry.yarnpkg.com/@instinct-api/config/-/config-5.0.0.tgz#10852167273bd817ca2d59fab750301559953146"
   integrity sha512-i4RVRWHX5cO6KOEK7lf2F3GlUy2sGC005drTGendFE3jSm1h+08ki133nWmrqvEvqWw446fqNfxtDNQkpY+LAQ==
 
-"@instinct-api/database-migrations@5.0.0":
+"@instinct-api/database-migrations@5.0.0", "@instinct-api/database-migrations@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@instinct-api/database-migrations/-/database-migrations-5.0.0.tgz#38b8bc2575c49656bd68dc5238a834e2c489a100"
   integrity sha512-+1lVGrJNA30Fa5vgjvA0JdD2ikEXum2eKsM84OPED9RGXF2EiGqfB9XYkitcOQSOGRKYu9QpHxvTybr5Io4jjA==
-  dependencies:
-    eventemitter3 "4.0.7"
-    mysql2 "2.2.5"
-    node-cache "5.1.2"
-    randomstring "1.2.1"
-    typeorm "0.2.31"
-
-"@instinct-api/database@5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@instinct-api/database/-/database-5.0.0.tgz#07d7b605227418dc6d79f6c3d441d68f73aad23f"
-  integrity sha512-l2mc5Zx2NfiCiLMwfzsKwmzNejtbL5F3yeTyIuvFJWgrU6/qVuCcFkKay2DeUmATcZRZxy2D0oeqaOaBAMkmXw==
   dependencies:
     eventemitter3 "4.0.7"
     mysql2 "2.2.5"
@@ -1653,7 +1642,7 @@
   dependencies:
     "@instinct-prj/interface" "^1.9.0"
 
-"@instinct-prj/interface@5.0.0":
+"@instinct-prj/interface@5.0.0", "@instinct-prj/interface@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@instinct-prj/interface/-/interface-5.0.0.tgz#63e6e226ab0deed0260fe9e172c9efa470d2e213"
   integrity sha512-JG/PKxHuL89QLXWKIPGcAnmb2+RMTB0LpeD0yWOcKHAJFuWnF6y15OGZdWcyfhQ3lA2fd6E8pEHXFFDG5kEsZQ==
@@ -3727,6 +3716,11 @@
   version "6.9.7"
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.7.tgz#63bb7d067db107cc1e457c303bc25d511febf6cb"
   integrity sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==
+
+"@types/randomstring@1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@types/randomstring/-/randomstring-1.1.6.tgz#45cdc060a6f043d610bcd46503a6887db2a209c3"
+  integrity sha512-XRIZIMTxjcUukqQcYBdpFWGbcRDyNBXrvTEtTYgFMIbBNUVt+9mCKsU+jUUDLeFO/RXopUgR5OLiBqbY18vSHQ==
 
 "@types/randomstring@1.1.8":
   version "1.1.8"
@@ -19281,6 +19275,11 @@ typescript@4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.3.tgz#39062d8019912d43726298f09493d598048c1ce3"
   integrity sha512-qOcYwxaByStAWrBf4x0fibwZvMRG+r4cQoTjbPtUlrWjBHbmCAww1i448U0GJ+3cNNEtebDteo/cHOR3xJ4wEw==
+
+typescript@~4.2.3:
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
+  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
 
 typescript@~4.5.0:
   version "4.5.5"
