@@ -20,7 +20,7 @@ export function RPUserContextProvider({children}: ContextProvidersProps) {
     }
 
     fetchLatestRPUser();
-  }, [user?.id]);
+  }, [user]);
 
   function updateRPUser(changes?: Partial<RPUser>): void {
     setRPUser(_ => {

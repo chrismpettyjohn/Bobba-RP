@@ -8,8 +8,8 @@
   "dependencies": {
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "@instinct-web/admin": "5.0.0",
-    "@instinct-web/core": "5.0.0",
+    "@instinct-web/admin": "5.2.1",
+    "@instinct-web/core": "5.2.1",
     "@bobba-rp/theme": "1.0.0",
     "@instinct-theme/bobba-rp": "1.0.0",
     "@instinct-plugin/bobba-rp-web": "1.0.0"

@@ -1,13 +1,23 @@
-import React from 'react';
 import {Link} from 'wouter';
-import {setURL} from '@instinct-web/core';
+import React, {useContext, useState} from 'react';
 import {LifestyleLayout} from '../LifestyleLayout';
+import {sessionContext, setURL} from '@instinct-web/core';
 import {exampleBusiness} from '@instinct-plugin/bobba-rp-types';
+import {useFetchAllBusinesses} from '@instinct-plugin/bobba-rp-web';
 import {SearchFilters} from '../../../components/search-filters/SearchFilters';
 
 setURL('lifestyle/companies', <ListCompanies />);
 
 export function ListCompanies() {
+  const {user} = useContext(sessionContext);
+  const businesses = useFetchAllBusinesses();
+  const ownedBusinesses =
+    businesses?.filter(_ => _.owner.id === user!.id) ?? [];
+  const [filter, setFilter] = useState('');
+
+  const filteredBusinesses =
+    businesses?.filter(_ => _.name.toLowerCase().includes(filter)) ?? [];
+
   const getSearchFilters = () => {
     return (
       <>

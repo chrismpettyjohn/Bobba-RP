@@ -13,9 +13,9 @@
     "compile:types": "tsc -d -p tsconfig.build.json --emitDeclarationOnly --declarationDir dist/types"
   },
   "devDependencies": {
-    "@instinct-web/nitro-client": "5.0.0",
-    "@instinct-prj/interface": "5.0.0",
-    "@instinct-web/core": "5.0.0",
+    "@instinct-web/nitro-client": "5.2.1",
+    "@instinct-prj/interface": "5.2.1",
+    "@instinct-web/core": "5.2.1",
     "@instinct-plugin/bobba-rp-types": "1.0.0",
     "@rollup/plugin-commonjs": "21.0.1",
     "@rollup/plugin-image": "2.1.1",
@@ -53,9 +53,9 @@
     "@instinct-plugin/bobba-rp-web": "1.0.0"
   },
   "peerDependencies": {
-    "@instinct-web/nitro-client": "5.0.0",
-    "@instinct-prj/interface": "5.0.0",
-    "@instinct-web/core": "5.0.0",
+    "@instinct-web/nitro-client": "5.2.1",
+    "@instinct-prj/interface": "5.2.1",
+    "@instinct-web/core": "5.2.1",
     "@instinct-plugin/bobba-rp-types": "1.0.0",
     "axios": "0.24.0",
     "lodash": "4.17.21",
