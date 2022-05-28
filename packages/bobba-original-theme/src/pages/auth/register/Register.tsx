@@ -129,7 +129,7 @@ export function Register() {
             onChange={x => onChange('captcha', x as string)}
           />
         </FormGroup>
-        <FormGroup>
+        <FormGroup style={{marginBottom: 0}}>
           <button
             className="btn btn-success btn-block"
             disabled={disabled}

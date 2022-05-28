@@ -17,7 +17,15 @@ export function Footer() {
 
   return (
     <>
-      <footer className="footer-container">
+      <footer
+        style={{
+          clear: 'both',
+          width: '100%',
+          color: '#c1c1c1',
+          textAlign: 'center',
+          marginTop: '-2%',
+        }}
+      >
         <div className="footer-social-buttons flex-container flex-horizontal-center">
           <img
             alt="instinct logo"
