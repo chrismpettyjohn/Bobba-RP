@@ -7,7 +7,6 @@ import {ContextProvidersProps, sessionContext} from '@instinct-web/core';
 export function RPUserContextProvider({children}: ContextProvidersProps) {
   const {user} = useContext(sessionContext);
   const [rpUser, setRPUser] = useState<RPUser | undefined>(undefined);
-  sudo yum install dotnet-sdk-6.0
 
   useEffect(() => {
     if (user?.id === undefined) {
