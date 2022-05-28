@@ -1,5 +1,4 @@
 export * from './business-card';
-export * from './error';
 export * from './footer';
 export * from './forgot-password-modal';
 export * from './gang-card';

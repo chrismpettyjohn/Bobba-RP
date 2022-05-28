@@ -7,11 +7,14 @@ import {RPUserContextProvider} from '@instinct-plugin/bobba-rp-web';
 
 export function BobbaRPTheme() {
   return (
-    <ContextProviders>
-      <RPUserContextProvider>
-        <Bootstrap />
-        <NitroClient />
-      </RPUserContextProvider>
-    </ContextProviders>
+    <React.StrictMode>
+      <ContextProviders>
+        <RPUserContextProvider>
+          <Bootstrap />
+          <NitroClient />
+        </RPUserContextProvider>
+      </ContextProviders>
+    </React.StrictMode>
   );
 }
+

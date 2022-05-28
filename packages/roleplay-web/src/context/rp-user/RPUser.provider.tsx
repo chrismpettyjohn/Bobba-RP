@@ -20,7 +20,7 @@ export function RPUserContextProvider({children}: ContextProvidersProps) {
     }
 
     fetchLatestRPUser();
-  }, [user]);
+  }, [user?.id]);
 
   function updateRPUser(changes?: Partial<RPUser>): void {
     setRPUser(_ => {
@@ -34,6 +34,9 @@ export function RPUserContextProvider({children}: ContextProvidersProps) {
 
   return (
     <rpUserContext.Provider value={{rpUser: rpUser, setRPUser: updateRPUser}}>
+      <div className="bg-danger" style={{position: 'absolute', top: 0, width: '100%', zIndex: 500}}>
+        <b>User: </b> {user?.username ?? 'N/A'}
+      </div>
       {children}
     </rpUserContext.Provider>
   );
