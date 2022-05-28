@@ -26,7 +26,7 @@ export function AboutInstinct() {
             fontWeight: 'bold',
             letterSpacing: 1.4,
             marginLeft: 70,
-            marginTop: -15
+            marginTop: -15,
           }}
         >
           By LeChris

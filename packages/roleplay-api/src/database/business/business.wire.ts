@@ -19,7 +19,7 @@ export function businessWire(
       businessPositionWire(
         jobPosition,
         employees.filter(
-          jobEmployee => jobEmployee.rpStats.job!.positionID === jobPosition.id!
+          jobEmployee => jobEmployee.rpStats.job?.positionID === jobPosition.id!
         )
       )
     ),
