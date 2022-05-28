@@ -16,7 +16,8 @@ export default {
   output: [
     {
       dir: './dist',
-      format: 'cjs',
+      format: 'umd',
+      name: 'bobbarp-web',
       sourcemap: false,
     },
   ],

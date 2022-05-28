@@ -65,7 +65,7 @@ export function JobMarket() {
             {filteredPositions?.map(_ => (
               <Col key={`position_${_.id}`} xs={6}>
                 <BusinessPositionCard
-                  business={businesses.find(bus => bus.id === _.businessID)!}
+                  business={businesses!.find(bus => bus.id === _.businessID)!}
                   position={_}
                 />
               </Col>
