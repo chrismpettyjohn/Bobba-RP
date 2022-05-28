@@ -2,8 +2,6 @@
 
 .footer-container{
   background: transparent !important;
-
-  padding: 25px 0 23px;
   text-align: center;
   color: #c1c1c1;
   width: 100%;
@@ -14,6 +12,6 @@
   right: 0;
 }
 
-.footer-container .footer-social-buttons{
-  margin-bottom: 15px;
+.footer-container .footer-social-buttons {
+  margin-bottom: 0 !important;
 }

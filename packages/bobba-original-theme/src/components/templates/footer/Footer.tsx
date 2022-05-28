@@ -23,7 +23,7 @@ export function Footer() {
             alt="instinct logo"
             src="https://i.imgur.com/Bi8D2aL.png"
             onClick={toggleAboutModal}
-            style={{cursor: 'pointer'}}
+            style={{cursor: 'pointer', marginBottom: 0}}
           />
         </div>
         <div className="footer-copyright">
