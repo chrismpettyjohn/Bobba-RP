@@ -6,7 +6,7 @@
 
 body {
   background: $backgroundOne;
-  font-size: 1em;
+  font-size: 1.2em !important;
 }
 
 .header-container.is-small {
@@ -66,6 +66,10 @@ body {
 
     .navigation-subitem a {
       color: white !important;
+
+      &:hover {
+        background: rgb(15 65 108) !important;
+      }
     }
 
   }
