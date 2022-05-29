@@ -57,6 +57,17 @@ body {
       color: $primaryFontColor;
     }
 
+    .navigation-submenu {
+      background: black !important;
+      border: none !important;
+      border-radius: 4px !important;
+      box-shadow: rgb(15 65 108) 3px 3px !important;
+    }
+
+    .navigation-subitem a {
+      color: white !important;
+    }
+
   }
 }
 
@@ -87,6 +98,7 @@ body {
 .page-container .page-content article.default-section, .page-container .page-content aside.default-section {
     background: $backgroundTwo;
     color: $primaryFontColor;
+    box-shadow: rgb(15 65 108) 2px 2px !important;
 }
 
 .table {
@@ -245,6 +257,7 @@ body {
 
 .page-container .page-content article.default-section, .page-container .page-content aside.default-section {
   background: #000000 !important;
-  border: 1px solid grey;
+  border: none !important;
   border-radius: 4px;
+  box-shadow: rgb(15 65 108) 2px 2px;
 }
