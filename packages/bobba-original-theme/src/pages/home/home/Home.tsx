@@ -22,12 +22,24 @@ export function Home() {
         <div className="row">
           <div className="col-8">
             <MyProfile />
-            {rpUser && <MyEmploymentCard user={rpUser} />}
-            <HotRoomsCard />
           </div>
           <div className="col-4">
             <RecentNews />
+          </div>
+        </div>
+        <div className="row mt-4">
+          <div className="col-8">
+            {rpUser && <MyEmploymentCard user={rpUser} />}
+          </div>
+          <div className="col-4">
             <BetaNoticeCard />
+          </div>
+        </div>
+        <div className="row mt-4">
+          <div className="col-8">
+            <HotRoomsCard />
+          </div>
+          <div className="col-4">
             <GetInTouchCard />
           </div>
         </div>
