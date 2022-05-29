@@ -28,18 +28,24 @@ export function UserProfile() {
       <Loading isLoading={profile === undefined}>
         <Jumbotron title={`The profile of ${profile?.user?.username}`} />
         <Container>
-          <Column side="right">
-            <UserContainer profile={profile} />
-            <Badges profile={profile} />
-          </Column>
-          <Column side="left">
-            {profile && rpStats && (
-              <>
+          <div className="row">
+            <div className="col-4">
+              <UserContainer profile={profile} />
+            </div>
+            <div className="col-8">
+              {profile && rpStats && (
                 <MyEmploymentCard user={{...(profile.user as any), rpStats}} />
-                <Guestbook profile={profile} />
-              </>
-            )}
-          </Column>
+              )}
+            </div>
+          </div>
+          <div className="row mt-4">
+            <div className="col-4">
+              <Badges profile={profile} />
+            </div>
+            <div className="col-8">
+              {profile && rpStats && <Guestbook profile={profile} />}
+            </div>
+          </div>
         </Container>
       </Loading>
     </UserLayout>
