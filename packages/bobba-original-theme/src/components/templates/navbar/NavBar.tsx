@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {UserDropdown} from './UserDropdown';
-import {configContext, sessionContext} from '@instinct-web/core';
+import {sessionContext} from '@instinct-web/core';
 import {
   NavBarLink,
   NavBarDropdown,
@@ -8,7 +8,6 @@ import {
 } from '../../generic/navbar';
 
 export function NavBar() {
-  const {config} = useContext(configContext);
   const {user} = useContext(sessionContext);
 
   return (
@@ -25,9 +24,6 @@ export function NavBar() {
               <NavBarChildLink to="/community/staff">Staff</NavBarChildLink>
               <NavBarChildLink to="/guides">Guides</NavBarChildLink>
               <NavBarChildLink to="/community/photos">Photos</NavBarChildLink>
-              <NavBarChildLink to="/community/online">
-                Online Users
-              </NavBarChildLink>
             </NavBarDropdown>
             <NavBarDropdown text="High Scores" to="/high-scores/users">
               <NavBarChildLink to="/high-scores/users">Users</NavBarChildLink>
