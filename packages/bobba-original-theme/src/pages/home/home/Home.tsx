@@ -36,9 +36,7 @@ export function Home() {
           </div>
         </div>
         <div className="row mt-4">
-          <div className="col-8">
-            <HotRoomsCard />
-          </div>
+          <div className="col-8" />
           <div className="col-4">
             <GetInTouchCard />
           </div>
