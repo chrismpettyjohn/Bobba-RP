@@ -8,7 +8,6 @@ import {Container} from '../../../components/generic/container/Container';
 import {MyProfile} from '../../../components/templates/my-profile/MyProfile';
 import {RecentNews} from '../../../components/templates/recent-news/RecentNews';
 import {MyEmploymentCard} from '../../../components/templates/my-employment-card/MyEmploymentCard';
-import {HotRoomsCard} from './hot-rooms/HotRooms';
 
 setURL('me', <Home />);
 setURL('home', <Home />);

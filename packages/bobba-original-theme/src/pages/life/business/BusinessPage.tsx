@@ -26,9 +26,11 @@ export function BusinessPage() {
       <UserLayout>
         <Container>
           <Row>
-            <h2 style={{marginLeft: 15}}>
-              <Skeleton />
-            </h2>
+            <Col className="text-center text-white" xs={12}>
+              <h2 style={{marginLeft: 15}}>
+                <Icon className="fa-spin" type="spinner" /> Loading Business...
+              </h2>
+            </Col>
           </Row>
         </Container>
       </UserLayout>
@@ -39,7 +41,7 @@ export function BusinessPage() {
     <UserLayout>
       <Container>
         <Row>
-          <div className="col-12">
+          <Col xs={12}>
             <Link to="/businesses">
               <Icon
                 className="fa-4x text-white"
@@ -47,7 +49,7 @@ export function BusinessPage() {
                 type="caret-left"
               />
             </Link>
-          </div>
+          </Col>
         </Row>
         <Row>
           <div className="col-12">
@@ -76,18 +78,22 @@ export function BusinessPage() {
           </Col>
           <Col xs={9}>
             {business.positions.map(position => (
-              <Card key={position.id} header={position.name}>
-                {position.employees.length === 0 && (
-                  <p>There are no employees in this role yet!</p>
-                )}
-                {position.employees.map(user => (
-                  <UserContainer
-                    key={user.id}
-                    user={user as any}
-                    showJob={false}
-                  />
-                ))}
-              </Card>
+              <Row className="mb-4" key={`position_${position.id}`}>
+                <Col xs={12}>
+                  <Card header={position.name}>
+                    {position.employees.length === 0 && (
+                      <p>There are no employees in this role yet!</p>
+                    )}
+                    {position.employees.map(user => (
+                      <UserContainer
+                        key={user.id}
+                        user={user as any}
+                        showJob={false}
+                      />
+                    ))}
+                  </Card>
+                </Col>
+              </Row>
             ))}
           </Col>
         </Row>
