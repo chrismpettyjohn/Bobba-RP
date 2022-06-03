@@ -1621,7 +1621,7 @@
   resolved "https://registry.yarnpkg.com/@instinct-prj/interface/-/interface-5.2.2.tgz#b898fcb79bfb000a545962534c58f4103641fa58"
   integrity sha512-i61OowkVDbFPEh1U2gB1qkhSS/A8MwKXuY/c7j+K9zLaaJ+VfIIHPTn3v8JOKlNaQSsOa+FkfGB8vMbCuCZeQA==
 
-"@instinct-web/admin@5.2.10":
+"@instinct-web/admin@*", "@instinct-web/admin@5.2.10":
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/@instinct-web/admin/-/admin-5.2.10.tgz#a6714387c2c1625fb4271d3e5fe9f2cbd63cb9d6"
   integrity sha512-kjX3DxEyO+FvxN6qtdBQhZgUIV+hAev9rPTdmjMfRh4tMvwvheIbb0cwx/WLHjzknkolFqKtuhqdEm/jKDfRMQ==

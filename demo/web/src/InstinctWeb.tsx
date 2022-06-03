@@ -5,6 +5,6 @@ export function InstinctWeb() {
   return (
     <>
       <BobbaTheme />
-    </>
+      </>
   )
 }
