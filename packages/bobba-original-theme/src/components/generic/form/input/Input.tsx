@@ -1,5 +1,5 @@
 import './Input.scss';
-import {InputProps} from './';
+import {InputProps} from './Input.types';
 import React, {ChangeEvent} from 'react';
 
 export function Input(props: InputProps) {

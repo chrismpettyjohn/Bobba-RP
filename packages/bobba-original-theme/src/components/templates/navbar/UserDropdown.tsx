@@ -1,7 +1,7 @@
 import {Link} from 'wouter';
 import React, {useContext} from 'react';
-import {NavBarChildLink} from '../../generic/navbar/navbar-child-link/NavBarChildLink';
 import {Avatar, Icon, sessionContext} from '@instinct-web/core';
+import {NavBarChildLink} from '../../generic/navbar/navbar-child-link/NavBarChildLink';
 
 export function UserDropdown() {
   const {user} = useContext(sessionContext);

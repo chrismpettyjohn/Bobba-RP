@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
-import {GuestLayoutProps} from './';
+import {GuestLayoutProps} from './GuestLayout.types';
 import {Card} from '../../generic/card/Card';
-import {Footer} from '../../templates/footer';
+import {Footer} from '../../templates/footer/Footer';
 import {configContext, GuestGuard} from '@instinct-web/core';
 
 export function GuestLayout({children, style}: GuestLayoutProps) {

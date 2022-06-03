@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavBarLabelProps} from './';
+import {NavBarLabelProps} from './NavBarLabel.types';
 
 export function NavBarLabel({children}: NavBarLabelProps) {
   return (

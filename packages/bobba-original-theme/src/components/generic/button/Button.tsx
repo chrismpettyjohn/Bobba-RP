@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonProps} from './index';
+import {ButtonProps} from './Button.types';
 
 export function Button({
   color = 'light',

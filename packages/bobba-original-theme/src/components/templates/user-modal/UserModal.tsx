@@ -1,8 +1,8 @@
-import {UserModalProps} from './';
+import {UserModalProps} from './UserModal.types';
 import {useLocation} from 'wouter';
 import React, {useState} from 'react';
 import {Avatar} from '@instinct-web/core';
-import {Button} from '../../generic/button';
+import {Button} from '../../generic/button/Button';
 import {ModalOverlay} from '../../generic/modal/modal-overlay';
 
 export function UserModal({children, user}: UserModalProps) {

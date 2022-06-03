@@ -1,4 +1,4 @@
-import {Card} from '../card';
+import {Card} from '../card/Card';
 import {FormGroup} from 'reactstrap';
 import React, {useEffect, useState} from 'react';
 import {WizardCardProps} from './WizardCard.types';

@@ -1,4 +1,4 @@
-import {Card} from '../card';
+import {Card} from '../card/Card';
 import React, {useState} from 'react';
 import {NavTabsProps} from './NavTabs.types';
 export function NavTabs({tabs}: NavTabsProps) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {LoadingProps} from './';
+import {LoadingProps} from './Loading.types';
 // @ts-ignore - dependency doesn't have types
 import LoadingOverlay from 'react-loading-overlay';
 

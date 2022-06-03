@@ -1,11 +1,9 @@
 import React, {useContext} from 'react';
 import {UserDropdown} from './UserDropdown';
 import {sessionContext} from '@instinct-web/core';
-import {
-  NavBarLink,
-  NavBarDropdown,
-  NavBarChildLink,
-} from '../../generic/navbar';
+import {NavBarLink} from '../../generic/navbar/navbar-link/NavBarLink';
+import {NavBarDropdown} from '../../generic/navbar/navbar-dropdown/NavBarDropdown';
+import {NavBarChildLink} from '../../generic/navbar/navbar-child-link/NavBarChildLink';
 
 export function NavBar() {
   const {user} = useContext(sessionContext);

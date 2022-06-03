@@ -1,7 +1,7 @@
 import {Link, useLocation} from 'wouter';
-import {Header} from '../../templates/header';
-import {NavBar} from '../../templates/navbar';
-import {Footer} from '../../templates/footer';
+import {Header} from '../../templates/header/Header';
+import {NavBar} from '../../templates/navbar/NavBar';
+import {Footer} from '../../templates/footer/Footer';
 import {UserLayoutProps} from './UserLayout.types';
 import React, {useContext, useEffect} from 'react';
 import {

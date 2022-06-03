@@ -1,6 +1,6 @@
 import React from 'react';
 import {Icon} from '../icon/Icon';
-import {CardProps} from './index';
+import {CardProps} from './Card.types';
 
 export function Card(props: CardProps) {
   const {className = '', children, header, icon} = props;

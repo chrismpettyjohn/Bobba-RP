@@ -1,8 +1,8 @@
-import Moment from 'moment';
 import React from 'react';
+import Moment from 'moment';
+import {Select} from '@instinct-web/core';
 import {OnChangeValue} from 'react-select';
 import {Photo} from '@instinct-prj/interface';
-import {Select} from '@instinct-web/core';
 import {PhotoSelectorProps} from './PhotoSelector.types';
 
 export function PhotoSelector({photos, photoID, onChange}: PhotoSelectorProps) {

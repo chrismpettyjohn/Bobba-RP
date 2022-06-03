@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'wouter';
-import {NavBarChildLinkProps} from './';
+import {NavBarChildLinkProps} from './NavBarChildLink.types';
 
 export function NavBarChildLink({children, to}: NavBarChildLinkProps) {
   return (

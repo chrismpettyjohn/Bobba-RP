@@ -1,4 +1,4 @@
-import {FormProps} from './';
+import {FormProps} from './Form.types';
 import React, {SyntheticEvent} from 'react';
 
 export function Form({

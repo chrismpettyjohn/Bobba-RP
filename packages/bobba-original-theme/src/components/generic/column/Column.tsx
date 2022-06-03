@@ -1,5 +1,5 @@
 import React from 'react';
-import {ColumnProps} from './index';
+import {ColumnProps} from './Column.types';
 
 export function Column({children, side, style}: ColumnProps) {
   return (

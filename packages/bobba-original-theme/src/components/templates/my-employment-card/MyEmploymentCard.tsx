@@ -1,8 +1,7 @@
 import Moment from 'moment';
 import './MyEmploymentCard.scss';
-import {Row} from '../../generic/row';
 import React, {useContext} from 'react';
-import {Icon} from '../../generic/icon/Icon';
+import {Row} from '../../generic/row/Row';
 import {Card} from '../../generic/card/Card';
 import {configContext} from '@instinct-web/core';
 import {MyEmploymentCardProps} from './MyEmploymentCard.types';

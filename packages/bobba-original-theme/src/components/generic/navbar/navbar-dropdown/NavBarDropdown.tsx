@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'wouter';
-import {Icon} from '../../icon';
-import {NavBarDropdownProps} from './';
+import {Icon} from '../../icon/Icon';
+import {NavBarDropdownProps} from './NavBarDropDown.types';
 
 export function NavBarDropdown({children, text, to}: NavBarDropdownProps) {
   return (
