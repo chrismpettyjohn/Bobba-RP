@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import {Button, ModalOverlay} from '../../';
-import {ModalButtonProps, ModalButtonState, defaultModalButtonState} from './';
+import {Button} from '../../button/Button';
+import {ModalOverlay} from '../modal-overlay';
+import {ModalButtonProps, ModalButtonState, defaultModalButtonState} from './ModalButton.types';
 
 export function ModalButton({
   button,

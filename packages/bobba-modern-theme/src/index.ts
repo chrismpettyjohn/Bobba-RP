@@ -1,1 +1,1 @@
-export * from './BobbaRPTheme';
+import './pages';
