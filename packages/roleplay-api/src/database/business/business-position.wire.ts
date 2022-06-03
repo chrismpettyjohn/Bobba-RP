@@ -6,7 +6,7 @@ export function businessPositionWire(
   employees: RPUser[]
 ): BusinessPosition {
   return {
-    id: entity.jobRankID!,
+    id: entity.id!,
     businessID: entity.jobID,
     businessName: 'TO BE ADDED',
     name: entity.name,

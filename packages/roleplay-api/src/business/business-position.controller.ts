@@ -66,6 +66,8 @@ export class BusinessPositionController {
       );
     }
 
+    console.log(businessPosition);
+
     await this.businessPositionRepo.update(
       {id: businessPosition.id!},
       {openPositions: businessPosition.openPositions - 1}
