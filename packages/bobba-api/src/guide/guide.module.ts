@@ -1,4 +1,4 @@
-import {Module} from '@nestjs/common';
+import {Module, CacheModule} from '@nestjs/common';
 import {GuidePipe} from './guide,pipe';
 import {SessionModule} from '../session';
 import {RPUserModule} from '../user/user.module';
@@ -8,7 +8,12 @@ import {DatabaseModule} from '../database/database.module';
 import {GuideCategoryController} from './guide-category.controller';
 
 @Module({
-  imports: [DatabaseModule, SessionModule, RPUserModule],
+  imports: [
+    DatabaseModule,
+    SessionModule,
+    RPUserModule,
+    CacheModule.register(),
+  ],
   providers: [GuidePipe, GuideCategoryPipe],
   controllers: [GuideController, GuideCategoryController],
   exports: [GuidePipe, GuideCategoryPipe],

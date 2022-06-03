@@ -41,7 +41,7 @@ export class CrimeController {
     return crimeWire(newCrime);
   }
 
-  @Get
+  @Get()
   @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getCrimes(): Promise<Crime[]> {
     const crimes = await this.crimeRepo.find();

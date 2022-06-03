@@ -1,4 +1,4 @@
-import {Module} from '@nestjs/common';
+import {Module, CacheModule} from '@nestjs/common';
 import {PropertyPipe} from './property.pipe';
 import {RPUserModule} from '../user/user.module';
 import {PropertyService} from './property.service';
@@ -11,7 +11,12 @@ import {PropertyByUsernamePipe} from './property-by-username.pipe';
 import {PropertyPhotosController} from './property-photos.controller';
 
 @Module({
-  imports: [DatabaseModule, SessionModule, RPUserModule],
+  imports: [
+    DatabaseModule,
+    SessionModule,
+    RPUserModule,
+    CacheModule.register(),
+  ],
   controllers: [
     PropertyController,
     PropertyBidsController,

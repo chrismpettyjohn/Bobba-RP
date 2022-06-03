@@ -1,4 +1,4 @@
-import {Module} from '@nestjs/common';
+import {Module, CacheModule} from '@nestjs/common';
 import {DatabaseModule} from '../database';
 import {BusinessPipe} from './business.pipe';
 import {SessionModule} from '../session/session.module';
@@ -9,7 +9,12 @@ import {BusinessPositionController} from './business-position.controller';
 import {BusinessPositionPipe} from './business-position.pipe';
 
 @Module({
-  imports: [DatabaseModule, RPUserModule, SessionModule],
+  imports: [
+    DatabaseModule,
+    RPUserModule,
+    SessionModule,
+    CacheModule.register(),
+  ],
   controllers: [BusinessController, BusinessPositionController],
   providers: [BusinessPipe, BusinessService, BusinessPositionPipe],
   exports: [BusinessPipe, BusinessService, BusinessPositionPipe],
