@@ -1,5 +1,5 @@
 import {BusinessPositionEntity} from './business-position.entity';
-import {BusinessPosition, RPUser} from '@instinct-plugin/bobba-rp-types';
+import {BusinessPosition, RPUser} from '@bobba-rp/types';
 
 export function businessPositionWire(
   entity: BusinessPositionEntity,

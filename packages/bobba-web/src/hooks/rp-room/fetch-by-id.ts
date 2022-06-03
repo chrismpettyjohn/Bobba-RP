@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import {RPRoom} from '@instinct-plugin/bobba-rp-types';
+import {RPRoom} from '@bobba-rp/types';
 import {rpRoomService} from '../../services/rp-room';
 
 export function useFetchRPRoomByID(rpRoomID: string): RPRoom | undefined {

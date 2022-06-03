@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {propertyService} from '../../services/property';
-import {Property} from '@instinct-plugin/bobba-rp-types';
+import {Property} from '@bobba-rp/types';
 
 export function useFetchPropertyByID(
   propertyID: string,

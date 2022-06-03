@@ -1,4 +1,4 @@
-import {CrimeDTO} from '@instinct-plugin/bobba-rp-types';
+import {CrimeDTO} from '@bobba-rp/types';
 import {IsBoolean, IsString, IsNumber} from 'class-validator';
 
 export class CrimeDTOImplementation implements CrimeDTO {

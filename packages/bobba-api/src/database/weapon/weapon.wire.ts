@@ -1,5 +1,5 @@
 import {WeaponEntity} from './weapon.entity';
-import {Weapon} from '@instinct-plugin/bobba-rp-types';
+import {Weapon} from '@bobba-rp/types';
 
 export function weaponWire(entity: WeaponEntity): Weapon {
   return {

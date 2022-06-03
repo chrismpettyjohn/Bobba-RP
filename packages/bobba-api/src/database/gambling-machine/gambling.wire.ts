@@ -1,5 +1,5 @@
 import {GamblingMachineEntity} from './gambling.entity';
-import {GamblingMachine} from '@instinct-plugin/bobba-rp-types';
+import {GamblingMachine} from '@bobba-rp/types';
 
 export function gamblingMachineWire(
   entity: GamblingMachineEntity

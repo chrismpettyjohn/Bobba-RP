@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import {PoliticalParty} from '@instinct-plugin/bobba-rp-types';
+import {PoliticalParty} from '@bobba-rp/types';
 import {politicalPartyService} from '../../services/political-party';
 
 export function useFetchPoliticalPartyByID(

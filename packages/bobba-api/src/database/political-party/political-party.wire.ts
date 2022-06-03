@@ -1,5 +1,5 @@
 import {PoliticalPartyEntity} from './political-party.entity';
-import {PoliticalParty, RPUser} from '@instinct-plugin/bobba-rp-types';
+import {PoliticalParty, RPUser} from '@bobba-rp/types';
 
 export function politicalPartyWire(
   politicalParty: PoliticalPartyEntity,

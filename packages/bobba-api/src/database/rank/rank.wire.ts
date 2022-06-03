@@ -1,5 +1,5 @@
 import {RPRankEntityStruct} from './rank.types';
-import {RPRank, RPUser} from '@instinct-plugin/bobba-rp-types';
+import {RPRank, RPUser} from '@bobba-rp/types';
 import {PermissionStatus, rankWire} from '@instinct-api/database';
 
 export function rpRankWire(

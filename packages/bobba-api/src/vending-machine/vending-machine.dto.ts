@@ -1,5 +1,5 @@
 import {IsString, IsNumber} from 'class-validator';
-import {VendingMachineDTO} from '@instinct-plugin/bobba-rp-types';
+import {VendingMachineDTO} from '@bobba-rp/types';
 
 export class VendingMachineDTOImplementation implements VendingMachineDTO {
   @IsString()

@@ -1,4 +1,4 @@
-import {WeaponDTO} from '@instinct-plugin/bobba-rp-types';
+import {WeaponDTO} from '@bobba-rp/types';
 import {IsString, IsNumber, IsOptional} from 'class-validator';
 
 export class WeaponDTOImplementation implements WeaponDTO {

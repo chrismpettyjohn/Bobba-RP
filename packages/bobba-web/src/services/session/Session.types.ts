@@ -1,4 +1,4 @@
-import {RPUser} from '@instinct-plugin/bobba-rp-types';
+import {RPUser} from '@bobba-rp/types';
 
 export interface RPSessionService {
   getRPUser(): Promise<RPUser>;

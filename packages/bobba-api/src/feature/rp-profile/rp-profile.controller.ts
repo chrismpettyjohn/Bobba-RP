@@ -1,4 +1,4 @@
-import {UserRPStats} from '@instinct-plugin/bobba-rp-types';
+import {UserRPStats} from '@bobba-rp/types';
 import {RPUserService} from '../../user/user.service';
 import {Controller, Get, Param, NotFoundException} from '@nestjs/common';
 import {RPUserRepository} from '../../database/user/user.repository';

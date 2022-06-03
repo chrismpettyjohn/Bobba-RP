@@ -1,4 +1,4 @@
-import {RPRank} from '@instinct-plugin/bobba-rp-types';
+import {RPRank} from '@bobba-rp/types';
 
 export interface RPRanksService {
   getStaffRanks(): Promise<RPRank[]>;

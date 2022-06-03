@@ -1,7 +1,7 @@
 import {
   PoliticalParty,
   PoliticalPartyDTO,
-} from '@instinct-plugin/bobba-rp-types';
+} from '@bobba-rp/types';
 
 export interface PoliticalPartyService {
   getAll(): Promise<PoliticalParty[]>;

@@ -11,7 +11,7 @@ import {
   LawPresidentialStatus,
   LawStatus,
   LawVoteStatus,
-} from '@instinct-plugin/bobba-rp-types';
+} from '@bobba-rp/types';
 import {LawRepository} from '../database/law/law.repository';
 import {RPUserEntityStruct} from '../database/user/user.types';
 import {HasRPScope} from '../session/permission-scope.decorator';

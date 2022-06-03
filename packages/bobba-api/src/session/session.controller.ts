@@ -1,7 +1,7 @@
 import {Controller, Get} from '@nestjs/common';
 import {RPUserService} from '../user/user.service';
 import {rpUserWire} from '../database/user/user.wire';
-import {RPUser} from '@instinct-plugin/bobba-rp-types';
+import {RPUser} from '@bobba-rp/types';
 import {GetSession, HasSession} from '@instinct-api/session';
 import {RPUserEntityStruct} from '../database/user/user.types';
 import {RPUserRepository} from '../database/user/user.repository';

@@ -14,7 +14,7 @@ import {RPUserEntityStruct} from '../user/user.types';
 import {
   LawStatus,
   LawPresidentialStatus,
-} from '@instinct-plugin/bobba-rp-types';
+} from '@bobba-rp/types';
 
 @Entity('instinct_rp_laws')
 export class LawEntity {

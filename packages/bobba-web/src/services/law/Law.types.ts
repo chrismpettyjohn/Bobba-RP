@@ -3,7 +3,7 @@ import {
   LawDTO,
   LawPresidentialDecisionDTO,
   LawVoteDTO,
-} from '@instinct-plugin/bobba-rp-types';
+} from '@bobba-rp/types';
 
 export interface LawService {
   getAll(): Promise<Law[]>;

@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import {VendingMachine} from '@instinct-plugin/bobba-rp-types';
+import {VendingMachine} from '@bobba-rp/types';
 import {vendingMachineService} from '../../services/vending-machine';
 
 export function useFetchVendingMachineByID(

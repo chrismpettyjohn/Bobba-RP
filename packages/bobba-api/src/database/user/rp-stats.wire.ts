@@ -1,7 +1,7 @@
 import {UserRPStatEntity} from './rp-stats.entity';
 import {GangEntity, GangRankEntity} from '../gang';
 import {BusinessEntity} from '../business/business.entity';
-import {UserRPStats} from '@instinct-plugin/bobba-rp-types';
+import {UserRPStats} from '@bobba-rp/types';
 import {BusinessPositionEntity} from '../business/business-position.entity';
 import {
   BusinessData,

@@ -4,7 +4,7 @@ import {
   LawDTO,
   LawPresidentialDecisionDTO,
   LawVoteDTO,
-} from '@instinct-plugin/bobba-rp-types';
+} from '@bobba-rp/types';
 
 export class LawServiceMock implements LawService {
   async getAll() {

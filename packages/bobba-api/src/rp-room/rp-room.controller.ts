@@ -1,5 +1,5 @@
 import {HasSession} from '@instinct-api/session';
-import {RPRoom} from '@instinct-plugin/bobba-rp-types';
+import {RPRoom} from '@bobba-rp/types';
 import {HasRPScope} from '../session/permission-scope.decorator';
 import {Body, Controller, Get, Param, Patch} from '@nestjs/common';
 import {RPRoomRepository} from '../database/room/rp-room.repository';

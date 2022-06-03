@@ -7,7 +7,7 @@ import {
   GovernmentBranch,
   RPUser,
   UserRPStats,
-} from '@instinct-plugin/bobba-rp-types';
+} from '@bobba-rp/types';
 import {businessWire} from '../database/business/business.wire';
 import {
   BusinessEntity,

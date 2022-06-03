@@ -1,7 +1,7 @@
 import {Injectable} from '@nestjs/common';
 import {UserRPStatRepository} from '../database/user';
 import {RPUserEntityStruct} from '../database/user/user.types';
-import {Gang, RPUser} from '@instinct-plugin/bobba-rp-types';
+import {Gang, RPUser} from '@bobba-rp/types';
 import {RPUserService} from '../user/user.service';
 import {rpUserWire} from '../database/user/user.wire';
 import {RPUserEntity} from '../database/user/user.entity';

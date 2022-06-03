@@ -1,4 +1,4 @@
-import {Weapon} from '@instinct-plugin/bobba-rp-types';
+import {Weapon} from '@bobba-rp/types';
 import {weaponService} from '../../services/weapon';
 import {createFetchHook} from '@instinct-web/core';
 

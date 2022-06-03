@@ -1,7 +1,7 @@
 import {GuideEntity} from './guide.entity';
 import {guideCategoryWire} from './guide-category.wire';
 import {guideReactionWire} from './guide-reaction.wire';
-import {Guide, RPUser} from '@instinct-plugin/bobba-rp-types';
+import {Guide, RPUser} from '@bobba-rp/types';
 
 export function guideWire(entity: GuideEntity, rpUser: RPUser): Guide {
   return {

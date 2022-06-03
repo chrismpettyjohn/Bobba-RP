@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import {GamblingMachine} from '@instinct-plugin/bobba-rp-types';
+import {GamblingMachine} from '@bobba-rp/types';
 import {gamblingMachineService} from '../../services/gambling-machine';
 
 export function useFetchGamblingMachineByID(

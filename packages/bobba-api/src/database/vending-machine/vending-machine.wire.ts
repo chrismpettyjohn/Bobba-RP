@@ -1,5 +1,5 @@
 import {VendingMachineEntity} from './vending-machine.entity';
-import {VendingMachine} from '@instinct-plugin/bobba-rp-types';
+import {VendingMachine} from '@bobba-rp/types';
 
 export function vendingMachineWire(
   entity: VendingMachineEntity

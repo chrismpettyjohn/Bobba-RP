@@ -1,5 +1,5 @@
 import {BusinessService} from './Business.types';
-import {BusinessDTO, exampleBusiness} from '@instinct-plugin/bobba-rp-types';
+import {BusinessDTO, exampleBusiness} from '@bobba-rp/types';
 
 export class BusinessServiceMock implements BusinessService {
   async create(businessDTO: BusinessDTO) {

@@ -1,4 +1,4 @@
-import {LawVoteDTO, LawVoteStatus} from '@instinct-plugin/bobba-rp-types';
+import {LawVoteDTO, LawVoteStatus} from '@bobba-rp/types';
 import {IsEnum} from 'class-validator';
 
 export class LawVoteDTOImplementation implements LawVoteDTO {

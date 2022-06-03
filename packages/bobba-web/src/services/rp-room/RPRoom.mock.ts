@@ -1,5 +1,5 @@
 import {RPRoomService} from './RPRoom.types';
-import {exampleRPRoom, RPRoomDTO} from '@instinct-plugin/bobba-rp-types';
+import {exampleRPRoom, RPRoomDTO} from '@bobba-rp/types';
 
 export class RPRoomServiceMock implements RPRoomService {
   async getAll() {

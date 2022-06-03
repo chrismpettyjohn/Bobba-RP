@@ -8,7 +8,7 @@ import {
 import {GuideEntity} from './guide.entity';
 import {RPUserEntity} from '../user/user.entity';
 import {RPUserEntityStruct} from '../user/user.types';
-import {GuideReaction} from '@instinct-plugin/bobba-rp-types';
+import {GuideReaction} from '@bobba-rp/types';
 
 @Entity('instinct_rp_guide_reactions')
 export class GuideReactionEntity {

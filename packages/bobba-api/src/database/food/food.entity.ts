@@ -1,5 +1,5 @@
 import {Column, Entity, PrimaryGeneratedColumn} from 'typeorm';
-import {FoodType} from '@instinct-plugin/bobba-rp-types';
+import {FoodType} from '@bobba-rp/types';
 
 export enum FoodServable {
   Yes = '1',

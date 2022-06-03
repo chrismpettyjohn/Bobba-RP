@@ -1,4 +1,4 @@
-import {Food} from '@instinct-plugin/bobba-rp-types';
+import {Food} from '@bobba-rp/types';
 import {foodService} from '../../services/food';
 import {createFetchHook} from '@instinct-web/core';
 

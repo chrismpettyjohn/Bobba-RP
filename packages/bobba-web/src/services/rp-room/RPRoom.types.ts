@@ -1,4 +1,4 @@
-import {RPRoom, RPRoomDTO} from '@instinct-plugin/bobba-rp-types';
+import {RPRoom, RPRoomDTO} from '@bobba-rp/types';
 
 export interface RPRoomService {
   getAll(): Promise<RPRoom[]>;

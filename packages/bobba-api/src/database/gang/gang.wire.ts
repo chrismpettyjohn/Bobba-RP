@@ -1,5 +1,5 @@
 import {GangEntity} from './gang.entity';
-import {Gang, RPUser} from '@instinct-plugin/bobba-rp-types';
+import {Gang, RPUser} from '@bobba-rp/types';
 import {GangStatsData} from './gang.types';
 
 export function parseGangStats(stats?: string): GangStatsData {

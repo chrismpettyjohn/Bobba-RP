@@ -2,7 +2,7 @@ import {IsString} from 'class-validator';
 import {
   LawDTO,
   LawPresidentialDecisionDTO,
-} from '@instinct-plugin/bobba-rp-types';
+} from '@bobba-rp/types';
 
 export class LawDTOImplementation implements LawDTO {
   @IsString()

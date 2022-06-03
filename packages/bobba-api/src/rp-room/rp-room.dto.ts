@@ -1,4 +1,4 @@
-import {RPRoomDTO} from '@instinct-plugin/bobba-rp-types';
+import {RPRoomDTO} from '@bobba-rp/types';
 import {IsBoolean, IsString, IsNumber} from 'class-validator';
 
 export class RPRoomDTOImplementation implements RPRoomDTO {

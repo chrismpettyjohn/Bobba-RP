@@ -1,7 +1,7 @@
 import {rpRankWire} from '../rank/rank.wire';
 import {RPUserEntityStruct} from './user.types';
 import {userWire} from '@instinct-api/database';
-import {RPUser, UserRPStats} from '@instinct-plugin/bobba-rp-types';
+import {RPUser, UserRPStats} from '@bobba-rp/types';
 
 export function rpUserWire(
   entity: RPUserEntityStruct,

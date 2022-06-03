@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import {Gang} from '@instinct-plugin/bobba-rp-types';
+import {Gang} from '@bobba-rp/types';
 import {gangService} from '../../services/gang';
 
 export function useFetchGangByID(gangID: string): Gang | undefined {

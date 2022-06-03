@@ -1,5 +1,5 @@
 import {IsNumber} from 'class-validator';
-import {BountyDTO} from '@instinct-plugin/bobba-rp-types';
+import {BountyDTO} from '@bobba-rp/types';
 
 export class BountyDTOImplementation implements BountyDTO {
   @IsNumber()

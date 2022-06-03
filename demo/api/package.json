@@ -26,7 +26,7 @@
     "@instinct-plugin/findretros-api": "5.2.2",
     "@instinct-plugin/forgot-password-api": "5.2.2",
     "@instinct-plugin/manage-users-api": "5.2.2",
-    "@instinct-plugin/bobba-rp-api": "1.0.0",
+    "@bobba-rp/api": "1.0.0",
     "@instinct-plugin/user-guestbook-api": "5.2.2",
     "@instinct-prj/interface": "5.2.2",
     "@nestjs/common": "7.6.18",

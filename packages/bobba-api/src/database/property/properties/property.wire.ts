@@ -1,7 +1,7 @@
 import {orderBy} from 'lodash';
 import {PropertyEntity} from './property.entity';
 import {rpRoomWire} from '../../room/rp-room.wire';
-import {Property, RPUser} from '@instinct-plugin/bobba-rp-types';
+import {Property, RPUser} from '@bobba-rp/types';
 import {propertyBidWire} from '../property-bids/property-bids.wire';
 import {propertyPhotoWire} from '../property-photos/property-photos.wire';
 

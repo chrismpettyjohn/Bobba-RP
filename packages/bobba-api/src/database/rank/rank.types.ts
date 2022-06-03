@@ -1,5 +1,5 @@
 import {RPUserEntityStruct} from '../user/user.types';
-import {GovernmentBranch, RPPermissions} from '@instinct-plugin/bobba-rp-types';
+import {GovernmentBranch, RPPermissions} from '@bobba-rp/types';
 import {PermissionStatus, RankEntityStruct} from '@instinct-api/database';
 
 export type RPPermissionsStruct = Record<keyof RPPermissions, PermissionStatus>;

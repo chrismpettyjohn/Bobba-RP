@@ -1,4 +1,4 @@
-import {Food, FoodDTO} from '@instinct-plugin/bobba-rp-types';
+import {Food, FoodDTO} from '@bobba-rp/types';
 
 export interface FoodService {
   create(foodDTO: FoodDTO): Promise<Food>;

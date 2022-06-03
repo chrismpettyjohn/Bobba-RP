@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {lawService} from '../../services/law';
-import {Law} from '@instinct-plugin/bobba-rp-types';
+import {Law} from '@bobba-rp/types';
 
 export function useFetchLawByID(
   lawID: number | string,

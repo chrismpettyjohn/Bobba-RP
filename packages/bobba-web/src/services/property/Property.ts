@@ -7,7 +7,7 @@ import {
   PropertyDTO,
   PropertyPhotoDTO,
   RespondOnPropertyBidDTO,
-} from '@instinct-plugin/bobba-rp-types';
+} from '@bobba-rp/types';
 
 export class PropertyServiceImplementation implements PropertyService {
   async create(propertyDTO: PropertyDTO) {

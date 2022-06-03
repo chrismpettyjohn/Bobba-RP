@@ -1,5 +1,5 @@
 import {BountyService} from './Bounty.types';
-import {exampleBounty, BountyDTO} from '@instinct-plugin/bobba-rp-types';
+import {exampleBounty, BountyDTO} from '@bobba-rp/types';
 
 export class BountyServiceMock implements BountyService {
   async create(bountyDTO: BountyDTO) {

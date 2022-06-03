@@ -1,7 +1,7 @@
 import {RankService} from './rank.service';
 import {Controller, Get} from '@nestjs/common';
 import {HasSession} from '@instinct-api/session';
-import {RPRank} from '@instinct-plugin/bobba-rp-types';
+import {RPRank} from '@bobba-rp/types';
 import {PermissionStatus} from '@instinct-api/database';
 import {RPRankRepository} from '../database/rank/rank.repository';
 

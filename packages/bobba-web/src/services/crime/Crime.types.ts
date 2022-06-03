@@ -1,4 +1,4 @@
-import {Crime, CrimeDTO} from '@instinct-plugin/bobba-rp-types';
+import {Crime, CrimeDTO} from '@bobba-rp/types';
 
 export interface CrimeService {
   create(crimeDTO: CrimeDTO): Promise<Crime>;

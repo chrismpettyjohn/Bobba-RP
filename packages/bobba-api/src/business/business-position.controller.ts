@@ -5,7 +5,7 @@ import {RPUserEntity} from '../database/user/user.entity';
 import {GetSession, HasSession} from '@instinct-api/session';
 import {BusinessPositionPipe} from './business-position.pipe';
 import {RoomRepository, UserRepository} from '@instinct-api/database';
-import {BusinessPosition, RPUser} from '@instinct-plugin/bobba-rp-types';
+import {BusinessPosition, RPUser} from '@bobba-rp/types';
 import {
   Controller,
   Get,

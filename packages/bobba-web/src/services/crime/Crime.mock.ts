@@ -1,5 +1,5 @@
 import {CrimeService} from './Crime.types';
-import {exampleCrime, CrimeDTO} from '@instinct-plugin/bobba-rp-types';
+import {exampleCrime, CrimeDTO} from '@bobba-rp/types';
 
 export class CrimeServiceMock implements CrimeService {
   async create(crimeDTO: CrimeDTO) {

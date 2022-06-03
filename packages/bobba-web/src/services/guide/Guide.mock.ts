@@ -1,5 +1,5 @@
 import {GuideService} from './Guide.types';
-import {exampleGuide, GuideDTO} from '@instinct-plugin/bobba-rp-types';
+import {exampleGuide, GuideDTO} from '@bobba-rp/types';
 
 export class GuideServiceMock implements GuideService {
   async getAll() {

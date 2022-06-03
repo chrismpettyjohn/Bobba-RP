@@ -10,7 +10,7 @@ import {
   BusinessType,
   BusinessDTO as BusinessDTOI,
   BusinessPositionDTO as BusinessPositionDTOI,
-} from '@instinct-plugin/bobba-rp-types';
+} from '@bobba-rp/types';
 
 export class BusinessDTO implements BusinessDTOI {
   @IsString()

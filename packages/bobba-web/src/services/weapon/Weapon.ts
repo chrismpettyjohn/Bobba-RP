@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {WeaponService} from './Weapon.types';
 import {backendAPI} from '@instinct-web/core';
-import {Weapon, WeaponDTO} from '@instinct-plugin/bobba-rp-types';
+import {Weapon, WeaponDTO} from '@bobba-rp/types';
 
 export class WeaponServiceImplementation implements WeaponService {
   async create(weaponDTO: WeaponDTO) {

@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {weaponService} from '../../services/weapon';
-import {Weapon} from '@instinct-plugin/bobba-rp-types';
+import {Weapon} from '@bobba-rp/types';
 
 export function useFetchWeaponByID(weaponID: string): Weapon | undefined {
   const [weapon, setWeapon] = useState<Weapon>();

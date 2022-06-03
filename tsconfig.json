@@ -4,11 +4,10 @@
     "baseUrl": ".",
     "paths": {
       "@instinct-api/database": ["packages/database-api/src"],
-      "@bobba-rp/theme": ["packages/bobba-modern-theme/src"],
-      "@instinct-theme/bobba-rp": ["packages/bobba-original-theme/src"],
-      "@instinct-plugin/bobba-rp-api":  ["packages/bobba-api/src"],
-      "@instinct-plugin/bobba-rp-types":  ["packages/bobba-types/src"],
-      "@instinct-plugin/bobba-rp-web": ["packages/bobba-web/src"]
+      "@bobba-rp/theme": ["packages/bobba-original-theme/src"],
+      "@bobba-rp/api":  ["packages/bobba-api/src"],
+      "@bobba-rp/types":  ["packages/bobba-types/src"],
+      "@bobba-rp/web": ["packages/bobba-web/src"]
     },
     "noEmit": true
   },

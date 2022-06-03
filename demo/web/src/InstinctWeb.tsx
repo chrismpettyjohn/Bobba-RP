@@ -1,7 +1,7 @@
 import React from 'react';
-import {BobbaOriginalTheme} from '@instinct-theme/bobba-rp';
+import {BobbaOriginalTheme} from '@bobba-rp/theme';
 import {ContextProviders, Bootstrap} from '@instinct-web/core';
-import {RPUserContextProvider} from '@instinct-plugin/bobba-rp-web';
+import {RPUserContextProvider} from '@bobba-rp/web';
 
 export function InstinctWeb() {
   return (

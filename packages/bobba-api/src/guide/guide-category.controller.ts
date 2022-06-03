@@ -1,4 +1,4 @@
-import {GuideCategory, GuideCategoryDTO} from '@instinct-plugin/bobba-rp-types';
+import {GuideCategory, GuideCategoryDTO} from '@bobba-rp/types';
 import {
   Body,
   Controller,
