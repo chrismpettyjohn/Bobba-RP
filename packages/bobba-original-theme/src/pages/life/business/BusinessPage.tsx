@@ -8,7 +8,7 @@ import {UserLayout} from '../../../components/layout/user';
 import {useFetchBusinessByID} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';
 import {UserContainer} from '../../../components/templates/user-container/UserContainer';
-import {Avatar, Icon, setURL, Skeleton} from '@instinct-web/core';
+import {Avatar, Icon, setURL} from '@instinct-web/core';
 import {BusinessHeader} from './widgets/business-header';
 import {BusinessTools} from './widgets/business-tools/BusinessTools';
 

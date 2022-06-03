@@ -122,6 +122,11 @@ export function ViewArticle() {
                 </div>
               </Row>
             </Card>
+          </div>
+        </Row>
+        <Row className="mb-2">
+          <div className="col-8" />
+          <div className="col-4">
             <Card header="Other Articles by the Author">
               {articlesByAuthor ? (
                 <div
@@ -156,6 +161,11 @@ export function ViewArticle() {
                 </>
               )}
             </Card>
+          </div>
+        </Row>
+        <Row className="mb-2">
+          <div className="col-8" />
+          <div className="col-4">
             <ViewComments article={article} onChange={refreshArticle} />
           </div>
         </Row>
