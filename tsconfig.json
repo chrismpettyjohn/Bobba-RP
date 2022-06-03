@@ -6,9 +6,9 @@
       "@instinct-api/database": ["packages/database-api/src"],
       "@bobba-rp/theme": ["packages/bobba-modern-theme/src"],
       "@instinct-theme/bobba-rp": ["packages/bobba-original-theme/src"],
-      "@instinct-plugin/bobba-rp-api":  ["packages/roleplay-api/src"],
-      "@instinct-plugin/bobba-rp-types":  ["packages/roleplay-types/src"],
-      "@instinct-plugin/bobba-rp-web": ["packages/roleplay-web/src"]
+      "@instinct-plugin/bobba-rp-api":  ["packages/bobba-api/src"],
+      "@instinct-plugin/bobba-rp-types":  ["packages/bobba-types/src"],
+      "@instinct-plugin/bobba-rp-web": ["packages/bobba-web/src"]
     },
     "noEmit": true
   },
