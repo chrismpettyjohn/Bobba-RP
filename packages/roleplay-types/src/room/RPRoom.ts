@@ -4,7 +4,6 @@ export interface RPRoom {
   bankEnabled: boolean;
   casinoEnabled: boolean;
   meleeEnabled: boolean;
-  shootEnabled: boolean;
   bombEnabled: boolean;
   hitEnabled: boolean;
   magicEnabled: boolean;
@@ -13,7 +12,6 @@ export interface RPRoom {
   turfEnabled: boolean;
   hospitalEnabled: boolean;
   safezoneEnabled: boolean;
-  mwEnabled: boolean;
   gymEnabled: boolean;
   taxiToEnabled: boolean;
   taxiFromEnabled: boolean;
@@ -28,7 +26,6 @@ export const exampleRPRoom: RPRoom = {
   bankEnabled: false,
   casinoEnabled: false,
   meleeEnabled: false,
-  shootEnabled: false,
   bombEnabled: false,
   hitEnabled: false,
   magicEnabled: false,
@@ -37,7 +34,6 @@ export const exampleRPRoom: RPRoom = {
   turfEnabled: false,
   hospitalEnabled: false,
   safezoneEnabled: false,
-  mwEnabled: false,
   gymEnabled: false,
   taxiToEnabled: false,
   taxiFromEnabled: false,

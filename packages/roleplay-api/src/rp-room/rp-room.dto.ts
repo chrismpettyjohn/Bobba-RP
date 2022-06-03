@@ -39,9 +39,6 @@ export class RPRoomDTOImplementation implements RPRoomDTO {
   safezoneEnabled!: boolean;
 
   @IsBoolean()
-  mwEnabled!: boolean;
-
-  @IsBoolean()
   gymEnabled!: boolean;
 
   @IsBoolean()

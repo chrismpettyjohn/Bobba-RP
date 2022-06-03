@@ -53,9 +53,6 @@ export class RPRoomController {
         meleeEnabled: rpRoomDTO.meleeEnabled
           ? RPRoomFeature.Enabled
           : RPRoomFeature.Disabled,
-        shootEnabled: rpRoomDTO.shootEnabled
-          ? RPRoomFeature.Enabled
-          : RPRoomFeature.Disabled,
         bombEnabled: rpRoom.bombEnabled
           ? RPRoomFeature.Enabled
           : RPRoomFeature.Disabled,
@@ -78,9 +75,6 @@ export class RPRoomController {
           ? RPRoomFeature.Enabled
           : RPRoomFeature.Disabled,
         safezoneEnabled: rpRoom.safezoneEnabled
-          ? RPRoomFeature.Enabled
-          : RPRoomFeature.Disabled,
-        mwEnabled: rpRoom.mwEnabled
           ? RPRoomFeature.Enabled
           : RPRoomFeature.Disabled,
         gymEnabled: rpRoom.gymEnabled

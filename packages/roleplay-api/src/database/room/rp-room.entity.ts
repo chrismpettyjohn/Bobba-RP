@@ -30,9 +30,6 @@ export class RPRoomEntity {
   @Column({name: 'melee_enabled', type: 'enum'})
   meleeEnabled!: RPRoomFeature;
 
-  @Column({name: 'shoot_enabled', type: 'enum'})
-  shootEnabled!: RPRoomFeature;
-
   @Column({name: 'bomb_enabled', type: 'enum'})
   bombEnabled!: RPRoomFeature;
 
@@ -56,9 +53,6 @@ export class RPRoomEntity {
 
   @Column({name: 'safezone_enabled', type: 'enum'})
   safezoneEnabled!: RPRoomFeature;
-
-  @Column({name: 'mw_enabled', type: 'enum'})
-  mwEnabled!: RPRoomFeature;
 
   @Column({name: 'gym_enabled', type: 'enum'})
   gymEnabled!: RPRoomFeature;
