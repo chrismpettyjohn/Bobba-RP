@@ -14,6 +14,7 @@ import {
   Get,
   Param,
   Patch,
+  CacheTTL,
   Post,
 } from '@nestjs/common';
 import {BountyDTOImplementation} from './bounty.dto';
@@ -22,6 +23,7 @@ import {rpUserWire} from '../database/user/user.wire';
 import {HasRPScope} from '../session/permission-scope.decorator';
 import {GetSession} from '@instinct-api/session';
 import {RPUserEntity} from '../database/user/user.entity';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('bounties')
 @HasSession()
@@ -60,6 +62,7 @@ export class BountyController {
   }
 
   @Get()
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getBounties(): Promise<Bounty[]> {
     const currentTimestamp = Moment().unix();
     const bounties = await this.bountyRepo.find({

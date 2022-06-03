@@ -1,4 +1,4 @@
-import {Controller, Get} from '@nestjs/common';
+import {Controller, Get, CacheTTL} from '@nestjs/common';
 import {BusinessService} from '../business/business.service';
 import {businessWire} from '../database/business/business.wire';
 import {IsGovernment} from '../database/business/business.types';
@@ -6,6 +6,7 @@ import {BusinessEntity} from '../database/business/business.entity';
 import {BusinessRepository} from '../database/business/business.repository';
 import {Business, BusinessPosition, RPUser} from '@bobba-rp/types';
 import {HasSession} from '@instinct-api/session';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('government')
 @HasSession()
@@ -16,6 +17,7 @@ export class GovernmentController {
   ) {}
 
   @Get()
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getGovernmentMembers(): Promise<BusinessPosition[]> {
     const governmentCorps = await this.businessRepo.find({
       isGovernment: IsGovernment.Yes,

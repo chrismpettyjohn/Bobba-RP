@@ -1,9 +1,10 @@
 import {RankService} from './rank.service';
-import {Controller, Get} from '@nestjs/common';
+import {Controller, Get, CacheTTL} from '@nestjs/common';
 import {HasSession} from '@instinct-api/session';
 import {RPRank} from '@bobba-rp/types';
 import {PermissionStatus} from '@instinct-api/database';
 import {RPRankRepository} from '../database/rank/rank.repository';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('rp-ranks')
 @HasSession()
@@ -14,6 +15,7 @@ export class RankController {
   ) {}
 
   @Get('staff')
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getStaffRanks(): Promise<RPRank[]> {
     const staffRanks = await this.rankRepo.find({
       websiteShowStaff: PermissionStatus.Enabled,

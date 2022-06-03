@@ -17,9 +17,11 @@ import {
   Param,
   Patch,
   Post,
+  CacheTTL,
 } from '@nestjs/common';
 import {CrimeDTOImplementation} from './crime.dto';
 import {HasRPScope} from '../session/permission-scope.decorator';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('crimes')
 @HasSession()
@@ -39,7 +41,8 @@ export class CrimeController {
     return crimeWire(newCrime);
   }
 
-  @Get()
+  @Get
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getCrimes(): Promise<Crime[]> {
     const crimes = await this.crimeRepo.find();
     return crimes.map(crimeWire);

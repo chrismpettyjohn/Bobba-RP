@@ -24,12 +24,14 @@ import {
   Param,
   Patch,
   Post,
+  CacheTTL,
   UnauthorizedException,
 } from '@nestjs/common';
 import {LawEntity} from '../database/law/law.entity';
 import {LawPipe} from './law.pipe';
 import {LawVoteRepository} from '../database/law/law-vote.repository';
 import {LawVoteDTOImplementation} from '../database/law/law-vote.dto';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('laws')
 @HasSession()
@@ -41,6 +43,7 @@ export class LawController {
   ) {}
 
   @Get()
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getAllLaws(): Promise<Law[]> {
     const laws = await this.lawRepo.find({}, {id: 'DESC'});
     const users = await Promise.all(

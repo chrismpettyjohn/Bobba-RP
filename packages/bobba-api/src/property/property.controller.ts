@@ -19,8 +19,10 @@ import {
   Patch,
   Post,
   UseGuards,
+  CacheTTL,
 } from '@nestjs/common';
 import {PropertyByUsernamePipe} from './property-by-username.pipe';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('properties')
 @HasSession()
@@ -47,6 +49,7 @@ export class PropertyController {
   }
 
   @Get()
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getProperties(): Promise<Property[]> {
     const properties = await this.propertyRepo.find({
       soldAt: IsNull(),

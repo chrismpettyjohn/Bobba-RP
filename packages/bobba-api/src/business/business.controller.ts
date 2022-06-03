@@ -11,7 +11,6 @@ import {
 } from '../database/business';
 import {
   PermissionStatus,
-  RoomEntity,
   RoomEntityStruct,
   RoomRepository,
   UserEntityStruct,
@@ -27,6 +26,7 @@ import {
   Get,
   Param,
   Patch,
+  CacheTTL,
   Post,
 } from '@nestjs/common';
 import {RPUserEntityStruct} from '../database/user/user.types';
@@ -34,6 +34,7 @@ import {BusinessService} from './business.service';
 import {IsGovernment} from '../database/business/business.types';
 import {RPUserService} from '../user/user.service';
 import {rpUserWire} from '../database/user/user.wire';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('businesses')
 @HasSession()
@@ -102,6 +103,7 @@ export class BusinessController {
   }
 
   @Get()
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getAllBusinesses(): Promise<Business[]> {
     const businesses: BusinessEntity[] = await this.businessRepo.find();
 

@@ -19,9 +19,11 @@ import {
   Post,
   Put,
   UnauthorizedException,
+  CacheTTL,
 } from '@nestjs/common';
 import {GuideReactionRepository} from '../database/guide/guide-reaction.repository';
 import {GuideReactionEntity} from '../database/guide/guide-reaction.entity';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('guides')
 @HasSession()
@@ -33,6 +35,7 @@ export class GuideController {
   ) {}
 
   @Get()
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getAllGuides() {
     const guides = await this.guideRepo.find({}, {id: 'DESC'});
     const guideOwnerRPStats = await Promise.all(

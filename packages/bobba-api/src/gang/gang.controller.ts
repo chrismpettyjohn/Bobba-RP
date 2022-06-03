@@ -1,9 +1,10 @@
 import {GangPipe} from './gang.pipe';
 import {GangService} from './gang.service';
-import {Controller, Get, Param} from '@nestjs/common';
+import {Controller, Get, Param, CacheTTL} from '@nestjs/common';
 import {Gang, RPUser} from '@bobba-rp/types';
 import {GangEntity, GangRepository, gangWire} from '../database/gang';
 import {HasSession} from '@instinct-api/session';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('gangs')
 @HasSession()
@@ -14,6 +15,7 @@ export class GangController {
   ) {}
 
   @Get()
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getGangs(): Promise<Gang[]> {
     const gangs = await this.gangRepo.find();
     const gangMembers: Array<RPUser[]> = [];

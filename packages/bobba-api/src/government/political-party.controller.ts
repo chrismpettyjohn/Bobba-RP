@@ -19,8 +19,10 @@ import {
   Post,
   BadRequestException,
   UnauthorizedException,
+  CacheTTL,
 } from '@nestjs/common';
 import {PoliticalPartyMemberRepository} from '../database/political-party/political-party-member.repository';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('political-parties')
 @HasSession()
@@ -32,6 +34,7 @@ export class PoliticalPartyController {
   ) {}
 
   @Get()
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getPoliticalParties(): Promise<PoliticalParty[]> {
     const politicalParties = await this.politicalPartyRepo.find(
       {},

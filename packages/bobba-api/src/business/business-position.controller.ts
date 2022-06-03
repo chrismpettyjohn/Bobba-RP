@@ -10,6 +10,7 @@ import {
   Controller,
   Get,
   Param,
+  CacheTTL,
   Post,
   BadRequestException,
 } from '@nestjs/common';
@@ -20,6 +21,7 @@ import {
   BusinessRepository,
 } from '../database/business';
 import {UserRPStatRepository} from '../database/user';
+import {TWENTY_MINUTES_IN_MS} from '../time.const';
 
 @Controller('business-positions')
 @HasSession()
@@ -35,6 +37,7 @@ export class BusinessPositionController {
   ) {}
 
   @Get()
+  @CacheTTL(TWENTY_MINUTES_IN_MS)
   async getOpenPositions(): Promise<BusinessPosition[]> {
     const openPositions = await this.businessPositionRepo.find({
       openPositions: MoreThan(0),
