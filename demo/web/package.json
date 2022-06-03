@@ -8,15 +8,19 @@
   "dependencies": {
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "@instinct-web/admin": "5.2.9",
-    "@instinct-web/core": "5.2.9",
-    "@instinct-web/nitro-client": "5.2.9",
+    "@instinct-web/admin": "5.2.10",
+    "@instinct-web/core": "5.2.10",
+    "@instinct-web/nitro-client": "5.2.10",
     "@bobba-rp/theme": "*",
     "@instinct-theme/bobba-rp": "*",
     "@instinct-plugin/bobba-rp-web": "*",
-    "@stripe/stripe-js": "^1.31.0",
-    "@stripe/react-stripe-js": "^1.8.1",
-    "react-draft-wysiwyg": "^1.14.7"
+    "@stripe/stripe-js": "1.31.0",
+    "@stripe/react-stripe-js": "1.8.1",
+    "react-draft-wysiwyg": "1.14.7",
+    "react-dropzone": "14.2.1",
+    "react-color": "2.19.3",
+    "react-datepicker": "4.8.0",
+    "react-loading-skeleton": "3.1.0"
   },
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.2",

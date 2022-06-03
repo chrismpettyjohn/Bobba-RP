@@ -10,7 +10,7 @@ import {themeContext, UserGuard, sessionService, sessionContext} from '@instinct
 
 export function GameClient() {
   useRenewSSO();
-  const {showClient} = useContext(themeContext);
+  const {showClient, setStore} = useContext(themeContext);
   const {setSSO} = useContext(sessionContext);
   const [isAlreadyOnline, setIsAlreadyOnline] = useState(false);
 
@@ -23,15 +23,17 @@ export function GameClient() {
     fetchOnlineStatus();
   }, [showClient]);
 
+  useEffect(() => {
+    return(() => {
+      setStore({showClient: false})
+    })
+  }, []);
+
   const onEndClientSession = async () => {
     setSSO(null as any);
   }
 
-  if (!showClient) {
-    return null;
-  }
-
-  if (isAlreadyOnline) {
+  if (showClient && isAlreadyOnline) {
     return (
       <UserLayout>
         <Container>

@@ -13,7 +13,7 @@
     "compile:types": "tsc -d -p tsconfig.build.json --emitDeclarationOnly --declarationDir dist/types"
   },
   "dependencies": {
-    "reconnecting-websocket": "^4.4.0"
+    "reconnecting-websocket": "4.4.0"
   },
   "devDependencies": {
     "@instinct-prj/interface": "*",
