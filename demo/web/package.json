@@ -12,7 +12,7 @@
     "@instinct-web/core": "5.2.10",
     "@instinct-web/nitro-client": "5.2.10",
     "@bobba-rp/theme": "*",
-    "@bobba-rp/theme": "*",
+    "@bobba-rp/types": "*",
     "@bobba-rp/web": "*",
     "@stripe/stripe-js": "1.31.0",
     "@stripe/react-stripe-js": "1.8.1",

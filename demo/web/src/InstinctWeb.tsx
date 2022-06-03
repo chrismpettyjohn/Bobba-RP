@@ -1,15 +1,10 @@
 import React from 'react';
-import {BobbaOriginalTheme} from '@bobba-rp/theme';
-import {ContextProviders, Bootstrap} from '@instinct-web/core';
-import {RPUserContextProvider} from '@bobba-rp/web';
+import {BobbaTheme} from '@bobba-rp/theme';
 
 export function InstinctWeb() {
   return (
-    <ContextProviders>
-      <RPUserContextProvider>
-        <Bootstrap />
-        <BobbaOriginalTheme />
-      </RPUserContextProvider>
-    </ContextProviders>
-  );
+    <>
+      <BobbaTheme />
+    </>
+  )
 }
