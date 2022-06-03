@@ -1,11 +1,17 @@
 import './GameClientActions.scss';
 import {useLocation} from 'wouter';
 import React, {useContext, useState} from 'react';
-import {healthContext, themeContext, Icon} from '@instinct-web/core';
+import {
+  healthContext,
+  themeContext,
+  Icon,
+  sessionContext,
+} from '@instinct-web/core';
 
 export function GameClientActions() {
   const [location, setLocation] = useLocation();
   const {health} = useContext(healthContext);
+  const {setSSO} = useContext(sessionContext);
   const {showClient, setStore} = useContext(themeContext);
   const [isExpanded, setExpanded] = useState<boolean>(false);
 
@@ -24,7 +30,7 @@ export function GameClientActions() {
   }
 
   function reloadPage(): void {
-    window.location.reload();
+    setSSO(null as any);
   }
 
   return (

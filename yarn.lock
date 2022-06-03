@@ -1682,20 +1682,20 @@
     tslib "2.3.0"
     wouter "2.7.4"
 
-"@instinct-web/admin@5.2.7":
-  version "5.2.7"
-  resolved "https://registry.yarnpkg.com/@instinct-web/admin/-/admin-5.2.7.tgz#e5d4e4d06875652c7ab0289193d3bd4777163c75"
-  integrity sha512-3ByXAyMPkgGc7VkB8oaTwgsx/pJE9edcYW2jm2+rzZBDu+B0ehWuF70o6gbdHwzMNMaLHUFFl3sWdS33SqFoig==
+"@instinct-web/admin@5.2.8":
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/@instinct-web/admin/-/admin-5.2.8.tgz#e576f975bee86a452b2525f9489d48aec3e8132e"
+  integrity sha512-eq4Cile/3ws7aZHTPgE1AS5w+IM4LzenMuwJhgoEUzuMmATnOvQORPA1EAln8iX/KcnslJc3Msa1LbC20q5Akg==
 
 "@instinct-web/core@*":
   version "5.2.5"
   resolved "https://registry.yarnpkg.com/@instinct-web/core/-/core-5.2.5.tgz#d929ccc176d1d08e70ea1868ed315f3f617f3386"
   integrity sha512-BYEhjKd5zR+ViSXtckYAI6tdnMuRqnFOenjD2uPctNwbEEged038boS4lJ0cAbPHi85PF95qFz93MjKsypRBbg==
 
-"@instinct-web/core@5.2.7":
-  version "5.2.7"
-  resolved "https://registry.yarnpkg.com/@instinct-web/core/-/core-5.2.7.tgz#2efaa248033953c878a09421add2f878d10a79fb"
-  integrity sha512-4ce62BLA/LPAJVOIE5wgqy0MFpolEUbGqJvD0NoZZiQm2W3mL7fy1Us7USFq5ZMIlzniyqTVg6Co+fsNXeT+sQ==
+"@instinct-web/core@5.2.8":
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/@instinct-web/core/-/core-5.2.8.tgz#0ddaaa1fb8a62c6bcfb502c01c5892b83c5b90a6"
+  integrity sha512-8/W1OvqeC+FBEC7AC/tKkc+yMZ/1+cldi+ZfJAuYGxzywMWQ/JzYpYlK/6KAevTckfUN0RGQQl+uYkhFz5Ez8w==
 
 "@instinct-web/flash-client@5.2.2":
   version "5.2.2"
@@ -1714,10 +1714,10 @@
   resolved "https://registry.yarnpkg.com/@instinct-web/nitro-client/-/nitro-client-5.2.2.tgz#ac8d5217b38cee40c254a95f333b6279b6a1c211"
   integrity sha512-sUgHBcuH3X0nBuOvhbQPEv2F84bimrihsUGQAXEHPNcM4Fc1O4XTwWPf3c2fLTbppjWr+y/THD/QlePRNl0eVQ==
 
-"@instinct-web/nitro-client@5.2.7":
-  version "5.2.7"
-  resolved "https://registry.yarnpkg.com/@instinct-web/nitro-client/-/nitro-client-5.2.7.tgz#9628356d8329f28cc2dfc551d93319ccf2a13ff0"
-  integrity sha512-KfVuOYddMxrpDvFPJjQlGpAAw+BXxpH23UVnYDvoAwUMISaYzBnne8U5ZwzEN4DBaC1xG8MkIGk0rSer2TPW+w==
+"@instinct-web/nitro-client@5.2.8":
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/@instinct-web/nitro-client/-/nitro-client-5.2.8.tgz#eefad77a207170e91e33135e7f98832857f7bd22"
+  integrity sha512-/FlBTgPenp2MFvTEr9no+5gPyZjbvWezqfb0QzolW8afv1aOEf1wm8M+KHStJcAhXS7faGeDrPA/igXNIzNgHQ==
 
 "@isaacs/string-locale-compare@^1.0.1":
   version "1.1.0"
