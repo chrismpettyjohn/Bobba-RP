@@ -3,10 +3,7 @@ import React, {useState} from 'react';
 import {Icon, Input, Select} from '@instinct-web/core';
 import {EditPoliticalPartyProps} from './EditParty.types';
 import {Card} from '../../../../components/generic/card/Card';
-import {
-  PoliticalIdeology,
-  PoliticalPartyDTO,
-} from '@bobba-rp/types';
+import {PoliticalIdeology, PoliticalPartyDTO} from '@bobba-rp/types';
 import {BadgeSelectorModal} from '../../../../components/templates/badge-selector-modal/BadgeSelectorModal';
 
 const PARTY_TYPES = [

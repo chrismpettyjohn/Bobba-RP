@@ -7,10 +7,7 @@ import {Container} from '../../components/generic/container/Container';
 import {useFetchGovPositions} from '@bobba-rp/web';
 import {MiniJumbotron} from '../../components/generic/mini-jumbotron/MiniJumbotron';
 import {UserContainer} from '../../components/templates/user-container/UserContainer';
-import {
-  BusinessPosition,
-  GovernmentBranch,
-} from '@bobba-rp/types';
+import {BusinessPosition, GovernmentBranch} from '@bobba-rp/types';
 
 setURL('government/executive', <GovernmentExecutive />);
 

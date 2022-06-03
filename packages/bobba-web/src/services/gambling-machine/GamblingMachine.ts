@@ -1,10 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {backendAPI} from '@instinct-web/core';
 import {GamblingMachineService} from './GamblingMachine.types';
-import {
-  GamblingMachine,
-  GamblingMachineDTO,
-} from '@bobba-rp/types';
+import {GamblingMachine, GamblingMachineDTO} from '@bobba-rp/types';
 
 export class GamblingMachineServiceImplementation
   implements GamblingMachineService

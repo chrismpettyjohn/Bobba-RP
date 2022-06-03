@@ -1,7 +1,7 @@
 import {toast} from 'react-toastify';
 import {Link, useLocation} from 'wouter';
 import React, {useContext, useState} from 'react';
-import {configContext, Icon} from '@instinct-web/core';
+import {configContext, Icon, sessionContext} from '@instinct-web/core';
 import {Row} from '../../../../components/generic/row/Row';
 import {Card} from '../../../../components/generic/card/Card';
 import {businessService} from '@bobba-rp/web';
@@ -11,6 +11,7 @@ export function BusinessPositionCard({
   business,
   position,
 }: BusinessPositionCardProps) {
+  const {user} = useContext(sessionContext);
   const [location, setLocation] = useLocation();
   const [showSpinner, setSpinner] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
@@ -24,6 +25,10 @@ export function BusinessPositionCard({
   async function acceptPosition() {
     if (!showConfirm) {
       setShowConfirm(true);
+      return;
+    }
+
+    if (user?.online) {
       return;
     }
 
@@ -82,6 +87,7 @@ export function BusinessPositionCard({
             </p>
             <button
               className={`btn btn-block btn-${buttonColor}`}
+              disabled={user?.online}
               onBlur={() => setShowConfirm(false)}
               onClick={acceptPosition}
             >

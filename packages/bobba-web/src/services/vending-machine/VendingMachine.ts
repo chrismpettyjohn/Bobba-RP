@@ -1,10 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {backendAPI} from '@instinct-web/core';
 import {VendingMachineService} from './VendingMachine.types';
-import {
-  VendingMachine,
-  VendingMachineDTO,
-} from '@bobba-rp/types';
+import {VendingMachine, VendingMachineDTO} from '@bobba-rp/types';
 
 export class VendingMachineImplementation implements VendingMachineService {
   async create(vendingMachineDTO: VendingMachineDTO) {

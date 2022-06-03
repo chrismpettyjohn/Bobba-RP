@@ -11,10 +11,7 @@ import {
 import {RPUserEntity} from '../user/user.entity';
 import {LawEventEntity} from './law-event.entity';
 import {RPUserEntityStruct} from '../user/user.types';
-import {
-  LawStatus,
-  LawPresidentialStatus,
-} from '@bobba-rp/types';
+import {LawStatus, LawPresidentialStatus} from '@bobba-rp/types';
 
 @Entity('instinct_rp_laws')
 export class LawEntity {

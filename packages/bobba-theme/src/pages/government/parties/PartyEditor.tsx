@@ -7,10 +7,7 @@ import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Card} from '../../../components/generic/card/Card';
 import {EditPoliticalParty} from './edit-party/EditParty';
 import {PoliticalPartyDTO} from '@bobba-rp/types';
-import {
-  politicalPartyService,
-  useFetchPoliticalPartyByID,
-} from '@bobba-rp/web';
+import {politicalPartyService, useFetchPoliticalPartyByID} from '@bobba-rp/web';
 import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 

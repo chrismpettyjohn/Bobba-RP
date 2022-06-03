@@ -5,10 +5,7 @@ import {PropertyDTO} from '@bobba-rp/types';
 import {Icon, sessionContext, Select} from '@instinct-web/core';
 import {EditPropertyModalProps} from './EditPropertyModal.types';
 import {PhotoSlider} from '../../../../components/templates/photo-slider/PhotoSlider';
-import {
-  propertyService,
-  useFetchPhotosByUsername,
-} from '@bobba-rp/web';
+import {propertyService, useFetchPhotosByUsername} from '@bobba-rp/web';
 import {
   Modal,
   ModalBody,

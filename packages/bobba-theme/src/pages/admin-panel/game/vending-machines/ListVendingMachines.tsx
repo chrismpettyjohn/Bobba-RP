@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
 import {GameLayout} from '../Game';
 import {setURL, Icon} from '@instinct-web/core';
-import {
-  useFetchAllVendingMachines,
-  useFilter,
-} from '@bobba-rp/web';
+import {useFetchAllVendingMachines, useFilter} from '@bobba-rp/web';
 import {RPPermissionGuard} from '../../../../components/templates/permission-guard/PermissionGuard';
 import {DeleteVendingMachineModal} from './delete-vending-machine-modal/DeleteVendingMachineModal';
 import {EditVendingMachineModal} from './edit-vending-machine-modal/EditVendingMachineModal';

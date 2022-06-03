@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  Law,
-  LawPresidentialStatus,
-  LawStatus,
-} from '@bobba-rp/types';
+import {Law, LawPresidentialStatus, LawStatus} from '@bobba-rp/types';
 
 export function getPrettyLawStatus(law: Law) {
   const lawStatusText: Record<LawStatus, [string, string]> = {

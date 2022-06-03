@@ -1,7 +1,4 @@
-import {
-  PoliticalParty,
-  PoliticalPartyDTO,
-} from '@bobba-rp/types';
+import {PoliticalParty, PoliticalPartyDTO} from '@bobba-rp/types';
 
 export interface PoliticalPartyService {
   getAll(): Promise<PoliticalParty[]>;

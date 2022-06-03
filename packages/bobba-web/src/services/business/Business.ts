@@ -1,11 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {backendAPI} from '@instinct-web/core';
 import {BusinessService} from './Business.types';
-import {
-  Business,
-  BusinessDTO,
-  BusinessPosition,
-} from '@bobba-rp/types';
+import {Business, BusinessDTO, BusinessPosition} from '@bobba-rp/types';
 
 export class BusinessServiceImplementation implements BusinessService {
   async create(businessDTO: BusinessDTO) {

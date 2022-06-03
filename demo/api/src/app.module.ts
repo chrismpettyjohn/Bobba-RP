@@ -20,10 +20,7 @@ import {databaseMigrations} from '@instinct-api/database-migrations';
 import {databaseEntities, DatabaseModule} from '@instinct-api/database';
 import {UserGuestbookModule} from '@instinct-plugin/user-guestbook-api';
 import {ForgotPasswordModule} from '@instinct-plugin/forgot-password-api';
-import {
-  InstinctRPModule,
-  rpDatabaseEntities,
-} from '@bobba-rp/api';
+import {InstinctRPModule, rpDatabaseEntities} from '@bobba-rp/api';
 import {
   CommonModule,
   databaseHost,

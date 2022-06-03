@@ -1,8 +1,5 @@
 import {IsString} from 'class-validator';
-import {
-  LawDTO,
-  LawPresidentialDecisionDTO,
-} from '@bobba-rp/types';
+import {LawDTO, LawPresidentialDecisionDTO} from '@bobba-rp/types';
 
 export class LawDTOImplementation implements LawDTO {
   @IsString()

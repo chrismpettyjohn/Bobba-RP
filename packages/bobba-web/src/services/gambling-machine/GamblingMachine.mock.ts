@@ -1,8 +1,5 @@
 import {GamblingMachineService} from './GamblingMachine.types';
-import {
-  exampleGamblingMachine,
-  GamblingMachineDTO,
-} from '@bobba-rp/types';
+import {exampleGamblingMachine, GamblingMachineDTO} from '@bobba-rp/types';
 
 export class GamblingMachineServiceMock implements GamblingMachineService {
   async create(gamblingMachineDTO: GamblingMachineDTO) {

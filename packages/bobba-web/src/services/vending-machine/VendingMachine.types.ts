@@ -1,7 +1,4 @@
-import {
-  VendingMachine,
-  VendingMachineDTO,
-} from '@bobba-rp/types';
+import {VendingMachine, VendingMachineDTO} from '@bobba-rp/types';
 
 export interface VendingMachineService {
   create(vendingMachineDTO: VendingMachineDTO): Promise<VendingMachine>;

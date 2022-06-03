@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
 import {GameLayout} from '../Game';
 import {setURL, Icon} from '@instinct-web/core';
-import {
-  useFetchAllGamblingMachines,
-  useFilter,
-} from '@bobba-rp/web';
+import {useFetchAllGamblingMachines, useFilter} from '@bobba-rp/web';
 import {RPPermissionGuard} from '../../../../components/templates/permission-guard/PermissionGuard';
 import {DeleteGamblingMachine} from './delete-gambling-machine-modal/DeleteGamblingMachine';
 import {EditGamblingModal} from './edit-gambling-modal/EditGamblingModal';

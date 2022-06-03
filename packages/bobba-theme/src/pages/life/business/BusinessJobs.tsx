@@ -1,20 +1,18 @@
 import {Col} from 'reactstrap';
-import React, {useState} from 'react';
-import {Icon, Input, setURL} from '@instinct-web/core';
+import React, {useContext, useState} from 'react';
+import {Icon, Input, sessionContext, setURL} from '@instinct-web/core';
 import {Row} from '../../../components/generic/row/Row';
 import {Card} from '../../../components/generic/card/Card';
 import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Container} from '../../../components/generic/container/Container';
 import {BusinessPositionCard} from './business-position-card/BusinessPositionCard';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
-import {
-  useFetchAllBusinesses,
-  useFetchOpenPositions,
-} from '@bobba-rp/web';
+import {useFetchAllBusinesses, useFetchOpenPositions} from '@bobba-rp/web';
 
 setURL('businesses/jobs', <JobMarket />);
 
 export function JobMarket() {
+  const {user} = useContext(sessionContext);
   const businesses = useFetchAllBusinesses();
   const positions = useFetchOpenPositions();
   const [filter, setFilter] = useState('');
@@ -27,6 +25,16 @@ export function JobMarket() {
   return (
     <UserLayout>
       <Container>
+        {user?.online && (
+          <Row>
+            <div className="col-12">
+              <div className="alert alert-danger">
+                <b className="mr-2">Notice:</b>
+                <span>You must be offline to use this feature</span>
+              </div>
+            </div>
+          </Row>
+        )}
         <Row>
           <div className="col-12">
             <MiniJumbotron>

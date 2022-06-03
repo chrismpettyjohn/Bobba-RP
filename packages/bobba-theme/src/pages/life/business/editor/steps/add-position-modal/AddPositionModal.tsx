@@ -8,10 +8,7 @@ import {
   ModalBody,
   ModalFooter,
 } from 'reactstrap';
-import {
-  BusinessPositionDTO,
-  exampleBusinessPositionDTO,
-} from '@bobba-rp/types';
+import {BusinessPositionDTO, exampleBusinessPositionDTO} from '@bobba-rp/types';
 
 export function AddPositionModal() {
   const {user} = useContext(sessionContext);

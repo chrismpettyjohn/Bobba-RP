@@ -1,10 +1,7 @@
 import {AxiosResponse} from 'axios';
 import {backendAPI} from '@instinct-web/core';
 import {PoliticalPartyService} from './PoliticalParty.types';
-import {
-  PoliticalParty,
-  PoliticalPartyDTO,
-} from '@bobba-rp/types';
+import {PoliticalParty, PoliticalPartyDTO} from '@bobba-rp/types';
 
 export class PoliticalPartyServiceImplementation
   implements PoliticalPartyService

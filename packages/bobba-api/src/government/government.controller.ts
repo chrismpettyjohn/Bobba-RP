@@ -4,11 +4,7 @@ import {businessWire} from '../database/business/business.wire';
 import {IsGovernment} from '../database/business/business.types';
 import {BusinessEntity} from '../database/business/business.entity';
 import {BusinessRepository} from '../database/business/business.repository';
-import {
-  Business,
-  BusinessPosition,
-  RPUser,
-} from '@bobba-rp/types';
+import {Business, BusinessPosition, RPUser} from '@bobba-rp/types';
 import {HasSession} from '@instinct-api/session';
 
 @Controller('government')

@@ -9,10 +9,7 @@ import {Card} from '../../../components/generic/card/Card';
 import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {useFetchLawByID} from '@bobba-rp/web';
 import {Container} from '../../../components/generic/container/Container';
-import {
-  LawPresidentialStatus,
-  LawVoteStatus,
-} from '@bobba-rp/types';
+import {LawPresidentialStatus, LawVoteStatus} from '@bobba-rp/types';
 import {LawActions} from './law-actions/LawActions';
 import {getPrettyLawStatus, getPrettyPresidentialStatus} from './bill.const';
 

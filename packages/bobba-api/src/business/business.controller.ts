@@ -2,12 +2,7 @@ import {uniqBy} from 'lodash';
 import {BusinessDTO} from './business.dto';
 import {BusinessPipe} from './business.pipe';
 import {GetSession, HasScope, HasSession} from '@instinct-api/session';
-import {
-  Business,
-  GovernmentBranch,
-  RPUser,
-  UserRPStats,
-} from '@bobba-rp/types';
+import {Business, GovernmentBranch, RPUser, UserRPStats} from '@bobba-rp/types';
 import {businessWire} from '../database/business/business.wire';
 import {
   BusinessEntity,

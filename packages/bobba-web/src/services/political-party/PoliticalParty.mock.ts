@@ -1,8 +1,5 @@
 import {PoliticalPartyService} from './PoliticalParty.types';
-import {
-  examplePoliticalParty,
-  PoliticalPartyDTO,
-} from '@bobba-rp/types';
+import {examplePoliticalParty, PoliticalPartyDTO} from '@bobba-rp/types';
 
 export class PoliticalPartyMockImplementation implements PoliticalPartyService {
   async getAll() {

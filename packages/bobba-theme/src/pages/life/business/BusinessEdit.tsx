@@ -5,10 +5,7 @@ import {setURL, Icon} from '@instinct-web/core';
 import {Row} from '../../../components/generic/row/Row';
 import {BusinessEditor} from './editor/BusinessEditor';
 import {UserLayout} from '../../../components/layout/user/UserLayout';
-import {
-  businessService,
-  useFetchBusinessByID,
-} from '@bobba-rp/web';
+import {businessService, useFetchBusinessByID} from '@bobba-rp/web';
 import {BusinessDTO} from '@bobba-rp/types';
 import {Container} from '../../../components/generic/container/Container';
 import {RPPermissionGuard} from '../../../components/templates/permission-guard/PermissionGuard';

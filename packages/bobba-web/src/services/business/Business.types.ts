@@ -1,8 +1,4 @@
-import {
-  Business,
-  BusinessDTO,
-  BusinessPosition,
-} from '@bobba-rp/types';
+import {Business, BusinessDTO, BusinessPosition} from '@bobba-rp/types';
 
 export interface BusinessService {
   create(businessDTO: BusinessDTO): Promise<Business>;

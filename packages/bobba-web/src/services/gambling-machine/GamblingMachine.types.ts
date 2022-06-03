@@ -1,7 +1,4 @@
-import {
-  GamblingMachine,
-  GamblingMachineDTO,
-} from '@bobba-rp/types';
+import {GamblingMachine, GamblingMachineDTO} from '@bobba-rp/types';
 
 export interface GamblingMachineService {
   create(gamblingMachineDTO: GamblingMachineDTO): Promise<GamblingMachine>;

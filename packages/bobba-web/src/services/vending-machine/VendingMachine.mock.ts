@@ -1,8 +1,5 @@
 import {VendingMachineService} from './VendingMachine.types';
-import {
-  exampleVendingMachine,
-  VendingMachineDTO,
-} from '@bobba-rp/types';
+import {exampleVendingMachine, VendingMachineDTO} from '@bobba-rp/types';
 
 export class VendingMachineMock implements VendingMachineService {
   async create(vendingMachineDTO: VendingMachineDTO) {
