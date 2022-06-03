@@ -90,7 +90,6 @@ export function Register() {
             name="username"
             value={state.username}
             onChange={onChange}
-            pattern="[^()/><\][\\\x22,;|]+"
           />
         </FormGroup>
         <FormGroup>
