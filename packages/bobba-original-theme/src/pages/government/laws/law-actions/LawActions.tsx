@@ -8,7 +8,7 @@ import {DismissLawModal} from './dismiss-law-modal/DismissLawModal';
 import {OpenVotingModal} from './open-voting-modal/OpenVotingModal';
 import {CloseVotingModal} from './close-voting-modal/CloseVotingModal';
 import {LawStatus, LawVoteStatus} from '@instinct-plugin/bobba-rp-types';
-import {RPPermissionGuard} from '../../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../../components/templates/permission-guard/PermissionGuard';
 import {PresidentialReviewModal} from './presidential-review-modal/PresidentialReviewModal';
 
 export function LawActions({law, onChange}: LawActionsProps) {

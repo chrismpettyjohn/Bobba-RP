@@ -2,7 +2,7 @@ import React from 'react';
 import Moment from 'moment';
 import {setURL, Icon} from '@instinct-web/core';
 import {Row} from '../../../components/generic/row/Row';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {UserScoreCard} from './user-score-card/UserScoreCard';
 import {useFetchTopUsers} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';

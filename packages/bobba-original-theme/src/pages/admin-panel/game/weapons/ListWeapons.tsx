@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {GameLayout} from '../Game';
 import {setURL, Icon} from '@instinct-web/core';
 import {useFetchAllWeapons, useFilter} from '@instinct-plugin/bobba-rp-web';
-import {RPPermissionGuard} from '../../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../../components/templates/permission-guard/PermissionGuard';
 import {DeleteWeaponModal} from './delete-weapon-modal/DeleteWeaponModal';
 import {EditWeaponModal} from './edit-weapon-modal/EditWeaponModal';
 import {Input} from 'reactstrap';

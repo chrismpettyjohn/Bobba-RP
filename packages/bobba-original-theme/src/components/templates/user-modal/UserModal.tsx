@@ -3,7 +3,7 @@ import {useLocation} from 'wouter';
 import React, {useState} from 'react';
 import {Avatar} from '@instinct-web/core';
 import {Button} from '../../generic/button/Button';
-import {ModalOverlay} from '../../generic/modal/modal-overlay';
+import {ModalOverlay} from '../../generic/modal/modal-overlay/ModalOverlay';
 
 export function UserModal({children, user}: UserModalProps) {
   const [location, setLocation] = useLocation();

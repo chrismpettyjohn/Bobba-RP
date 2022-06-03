@@ -6,7 +6,7 @@ import {Jumbotron} from '../components/jumbotron/Jumbotron';
 import {AdminLayout} from '../components/admin-layout/AdminLayout';
 import {AdminLayoutProps} from '../components/admin-layout/AdminLayout.types';
 import {RPPermissions} from '@instinct-plugin/bobba-rp-types';
-import {RPPermissionGuard} from '../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../components/templates/permission-guard/PermissionGuard';
 
 const userLinks: Array<{
   text: string;

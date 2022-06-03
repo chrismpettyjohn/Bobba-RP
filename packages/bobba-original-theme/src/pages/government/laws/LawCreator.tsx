@@ -6,12 +6,12 @@ import {setURL} from '@instinct-web/core';
 import {lawService} from '@instinct-plugin/bobba-rp-web';
 import {LawDTO} from '@instinct-plugin/bobba-rp-types';
 import {Row} from '../../../components/generic/row/Row';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Icon} from '../../../components/generic/icon/Icon';
 import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 
-import {RPPermissionGuard} from '../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../components/templates/permission-guard/PermissionGuard';
 
 setURL('government/laws/create', <LawCreator />);
 

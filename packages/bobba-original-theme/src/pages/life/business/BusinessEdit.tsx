@@ -4,14 +4,14 @@ import {Link, useRoute} from 'wouter';
 import {setURL, Icon} from '@instinct-web/core';
 import {Row} from '../../../components/generic/row/Row';
 import {BusinessEditor} from './editor/BusinessEditor';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {
   businessService,
   useFetchBusinessByID,
 } from '@instinct-plugin/bobba-rp-web';
 import {BusinessDTO} from '@instinct-plugin/bobba-rp-types';
 import {Container} from '../../../components/generic/container/Container';
-import {RPPermissionGuard} from '../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../components/templates/permission-guard/PermissionGuard';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 
 setURL('businesses/edit/:businessID', <BusinessEdit />);

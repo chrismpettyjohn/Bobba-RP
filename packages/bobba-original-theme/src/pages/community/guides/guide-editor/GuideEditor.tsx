@@ -5,7 +5,7 @@ import MDEditor from '@uiw/react-md-editor';
 import {Icon, Input} from '@instinct-web/core';
 import {GuideEditorProps} from './GuideEditor.types';
 import {GuideDTO} from '@instinct-plugin/bobba-rp-types';
-import {RPPermissionGuard} from '../../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../../components/templates/permission-guard/PermissionGuard';
 
 export function GuideEditor({baseGuideDTO, onSubmit}: GuideEditorProps) {
   const [spinner, setSpinner] = useState(false);

@@ -3,7 +3,7 @@ import {Icon} from '@instinct-web/core';
 import {lawService} from '@instinct-plugin/bobba-rp-web';
 import {DismissLawModalProps} from './DismissLawModal.types';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
-import {RPPermissionGuard} from '../../../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../../../components/templates/permission-guard/PermissionGuard';
 
 export function DismissLawModal({law}: DismissLawModalProps) {
   const [spinner, setSpinner] = useState(false);

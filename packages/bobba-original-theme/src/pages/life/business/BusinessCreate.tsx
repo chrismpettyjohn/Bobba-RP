@@ -4,11 +4,11 @@ import React, {useContext, useState} from 'react';
 import {BusinessEditor} from './editor/BusinessEditor';
 import {Row} from '../../../components/generic/row/Row';
 import {businessRegistrationFee} from './Business.const';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {BusinessDTO} from '@instinct-plugin/bobba-rp-types';
 import {setURL, Icon, sessionContext} from '@instinct-web/core';
 import {Container} from '../../../components/generic/container/Container';
-import {RPPermissionGuard} from '../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../components/templates/permission-guard/PermissionGuard';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {ConfirmBusinessCreationModal} from './widgets/confirm-business-creation-modal/ConfirmBusinessCreationModal';
 

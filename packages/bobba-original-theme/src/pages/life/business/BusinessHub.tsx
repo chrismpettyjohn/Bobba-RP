@@ -3,11 +3,11 @@ import {Col} from 'reactstrap';
 import React, {useContext, useState} from 'react';
 import {Row} from '../../../components/generic/row/Row';
 import {Card} from '../../../components/generic/card/Card';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {useFetchAllBusinesses} from '@instinct-plugin/bobba-rp-web';
-import {BusinessCard} from '../../../components/templates/business-card';
+import {BusinessCard} from '../../../components/templates/business-card/BusinessCard';
 import {Container} from '../../../components/generic/container/Container';
-import {RPPermissionGuard} from '../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../components/templates/permission-guard/PermissionGuard';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 
 import {

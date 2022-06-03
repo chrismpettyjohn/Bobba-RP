@@ -1,3 +1,3 @@
 import './Photos';
 export * from './Photos';
-export * from './PhotosInterface';
+export * from './Photos.types';

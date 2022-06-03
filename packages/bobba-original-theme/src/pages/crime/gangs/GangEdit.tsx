@@ -1,7 +1,7 @@
 import React from 'react';
 import {Column, Icon, setURL} from '@instinct-web/core';
 import {Row} from '../../../components/generic/row/Row';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Card} from '../../../components/generic/card/Card';
 import {Jumbotron} from '../../../components/generic/jumbotron/Jumbotron';
 import {Container} from '../../../components/generic/container/Container';

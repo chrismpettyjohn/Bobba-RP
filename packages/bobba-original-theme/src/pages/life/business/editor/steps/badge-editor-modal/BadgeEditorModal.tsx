@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {businessEditorContext} from '../../context';
-import {BadgeSelectorModal} from '../../../../../../components/templates/badge-selector-modal';
+import {BadgeSelectorModal} from '../../../../../../components/templates/badge-selector-modal/BadgeSelectorModal';
 
 export function BadgeEditorModal() {
   const {business, setBusiness} = useContext(businessEditorContext);

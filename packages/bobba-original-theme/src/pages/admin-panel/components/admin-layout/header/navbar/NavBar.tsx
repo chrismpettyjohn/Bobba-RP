@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {NavBarLink} from './navbar-link/NavBarLink';
 import {UserDropdown} from './user-dropdown/UserDropdown';
 import {sessionContext, PermissionGuard} from '@instinct-web/core';
-import {RPPermissionGuard} from '../../../../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../../../../components/templates/permission-guard/PermissionGuard';
 
 export function NavBar() {
   const {user} = useContext(sessionContext);

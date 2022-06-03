@@ -3,7 +3,7 @@ import {FormGroup} from 'reactstrap';
 import {Link, useLocation} from 'wouter';
 import React, {useContext, useState} from 'react';
 import {defaultLoginState, LoginState} from './Login.types';
-import {GuestLayout} from '../../../components/layout/guest';
+import {GuestLayout} from '../../../components/layout/guest/GuestLayout';
 import {
   configContext,
   Form,

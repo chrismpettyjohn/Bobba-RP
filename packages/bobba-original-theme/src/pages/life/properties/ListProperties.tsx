@@ -3,7 +3,7 @@ import {Input} from 'reactstrap';
 import React, {useContext} from 'react';
 import {Row} from '../../../components/generic/row/Row';
 import {Card} from '../../../components/generic/card/Card';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {setURL, Avatar, Icon, sessionContext} from '@instinct-web/core';
 import {Container} from '../../../components/generic/container/Container';
 import {SellPropertyModal} from './sell-property-modal/SellPropertyModal';

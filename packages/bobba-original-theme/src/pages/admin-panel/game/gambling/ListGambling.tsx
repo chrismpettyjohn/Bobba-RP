@@ -5,7 +5,7 @@ import {
   useFetchAllGamblingMachines,
   useFilter,
 } from '@instinct-plugin/bobba-rp-web';
-import {RPPermissionGuard} from '../../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../../components/templates/permission-guard/PermissionGuard';
 import {DeleteGamblingMachine} from './delete-gambling-machine-modal/DeleteGamblingMachine';
 import {EditGamblingModal} from './edit-gambling-modal/EditGamblingModal';
 import {Input} from 'reactstrap';

@@ -1,7 +1,7 @@
 import {FormGroup} from 'reactstrap';
 import {Link, useLocation} from 'wouter';
 import React, {useContext, useState} from 'react';
-import {GuestLayout} from '../../../components/layout/guest';
+import {GuestLayout} from '../../../components/layout/guest/GuestLayout';
 import {defaultRegisterState, RegisterState} from './Register.types';
 import {
   configContext,

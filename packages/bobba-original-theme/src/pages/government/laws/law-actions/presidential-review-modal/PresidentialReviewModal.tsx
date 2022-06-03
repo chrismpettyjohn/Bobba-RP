@@ -4,7 +4,7 @@ import {Icon} from '@instinct-web/core';
 import {lawService} from '@instinct-plugin/bobba-rp-web';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import {PresidentialReviewModalProps} from './PresidentialReviewModal.types';
-import {RPPermissionGuard} from '../../../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../../../components/templates/permission-guard/PermissionGuard';
 import {LawPresidentialStatus} from '@instinct-plugin/bobba-rp-types';
 
 export function PresidentialReviewModal({

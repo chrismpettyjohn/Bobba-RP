@@ -3,7 +3,7 @@ import {OpenVotingModalProps} from './CloseVotingModal.types';
 import {lawService} from '@instinct-plugin/bobba-rp-web';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import {Icon} from '@instinct-web/core';
-import {RPPermissionGuard} from '../../../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../../../components/templates/permission-guard/PermissionGuard';
 import {LawStatus} from '@instinct-plugin/bobba-rp-types';
 
 export function CloseVotingModal({law, onFinish}: OpenVotingModalProps) {

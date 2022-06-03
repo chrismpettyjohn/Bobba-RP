@@ -5,7 +5,7 @@ import {
   useFetchAllVendingMachines,
   useFilter,
 } from '@instinct-plugin/bobba-rp-web';
-import {RPPermissionGuard} from '../../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../../components/templates/permission-guard/PermissionGuard';
 import {DeleteVendingMachineModal} from './delete-vending-machine-modal/DeleteVendingMachineModal';
 import {EditVendingMachineModal} from './edit-vending-machine-modal/EditVendingMachineModal';
 import {Input} from 'reactstrap';

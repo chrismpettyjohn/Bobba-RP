@@ -4,7 +4,7 @@ import {lawService} from '@instinct-plugin/bobba-rp-web';
 import {VoteOnLawModalProps} from './VoteOnLawModal.types';
 import {LawVoteStatus} from '@instinct-plugin/bobba-rp-types';
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
-import {RPPermissionGuard} from '../../../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../../../components/templates/permission-guard/PermissionGuard';
 
 export function VoteOnLawModal({
   children,

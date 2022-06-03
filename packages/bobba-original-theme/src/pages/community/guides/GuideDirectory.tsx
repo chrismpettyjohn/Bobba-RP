@@ -1,11 +1,11 @@
 import React, {useContext, useState} from 'react';
 import {Row} from '../../../components/generic/row/Row';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {setURL, configContext, Icon, Input} from '@instinct-web/core';
 import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {Link} from 'wouter';
-import {RPPermissionGuard} from '../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../components/templates/permission-guard/PermissionGuard';
 import {useFetchAllGuides} from '@instinct-plugin/bobba-rp-web';
 import {GuideCard} from '../../../components/templates/guide-card/GuideCard';
 

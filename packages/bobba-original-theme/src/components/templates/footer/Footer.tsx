@@ -1,5 +1,5 @@
 import './Footer.scss';
-import {AboutModal} from './about-modal';
+import {AboutModal} from './about-modal/AboutModal';
 import React, {useContext, useState} from 'react';
 import {themeContext} from '@instinct-web/core';
 

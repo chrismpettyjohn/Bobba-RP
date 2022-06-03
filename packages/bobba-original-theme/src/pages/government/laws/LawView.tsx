@@ -6,7 +6,7 @@ import {Avatar, setURL} from '@instinct-web/core';
 import {Row} from '../../../components/generic/row/Row';
 import {Icon} from '../../../components/generic/icon/Icon';
 import {Card} from '../../../components/generic/card/Card';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {useFetchLawByID} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';
 import {

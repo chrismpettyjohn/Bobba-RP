@@ -6,7 +6,12 @@ import {UserLayout} from '../../layout/user/UserLayout';
 import {Container} from '../../generic/container/Container';
 import React, {useContext, useEffect, useState} from 'react';
 import {GameClientActions} from './game-client-actions/GameClientActions';
-import {themeContext, UserGuard, sessionService, sessionContext} from '@instinct-web/core';
+import {
+  themeContext,
+  UserGuard,
+  sessionService,
+  sessionContext,
+} from '@instinct-web/core';
 
 export function GameClient() {
   useRenewSSO();
@@ -18,20 +23,20 @@ export function GameClient() {
     const fetchOnlineStatus = async () => {
       const currentUserStatus = await sessionService.getCurrentUser();
       setIsAlreadyOnline(currentUserStatus.online);
-    }
+    };
 
     fetchOnlineStatus();
   }, [showClient]);
 
   useEffect(() => {
-    return(() => {
-      setStore({showClient: false})
-    })
+    return () => {
+      setStore({showClient: false});
+    };
   }, []);
 
   const onEndClientSession = async () => {
     setSSO(null as any);
-  }
+  };
 
   if (showClient && isAlreadyOnline) {
     return (
@@ -47,15 +52,21 @@ export function GameClient() {
           </div>
           <div className="row">
             <div className="col-12 text-center" style={{color: 'white'}}>
-              <p>You can use the button below to generate a new token regardless and end the existing session.</p>
-              <button className="btn btn-danger btn-block" onClick={onEndClientSession}>
+              <p>
+                You can use the button below to generate a new token regardless
+                and end the existing session.
+              </p>
+              <button
+                className="btn btn-danger btn-block"
+                onClick={onEndClientSession}
+              >
                 End Client Session
               </button>
             </div>
           </div>
         </Container>
       </UserLayout>
-    )
+    );
   }
 
   return (

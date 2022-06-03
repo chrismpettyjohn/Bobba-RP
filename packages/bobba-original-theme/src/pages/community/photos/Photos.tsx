@@ -2,9 +2,9 @@ import {Photo} from '@instinct-prj/interface';
 import {photoService, Icon} from '@instinct-web/core';
 import React, {useEffect, useState} from 'react';
 import {Row} from '../../../components/generic/row/Row';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Card} from '../../../components/generic/card/Card';
-import {defaultPhotosState, PhotosState} from './PhotosInterface';
+import {defaultPhotosState, PhotosState} from './Photos.types';
 import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 

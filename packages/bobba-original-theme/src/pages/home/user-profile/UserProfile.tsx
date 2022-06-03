@@ -7,7 +7,7 @@ import {UserContainer} from './user-container';
 import {useFetchRPStatsByUsername} from '@instinct-plugin/bobba-rp-web';
 import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Container} from '../../../components/generic/container/Container';
-import {MyEmploymentCard} from '../../../components/templates/my-employment-card';
+import {MyEmploymentCard} from '../../../components/templates/my-employment-card/MyEmploymentCard';
 import {
   configContext,
   Loading,

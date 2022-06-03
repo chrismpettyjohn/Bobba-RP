@@ -3,7 +3,7 @@ import {toast} from 'react-toastify';
 import {Link, useRoute} from 'wouter';
 import {setURL, Icon} from '@instinct-web/core';
 import {Row} from '../../../components/generic/row/Row';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Card} from '../../../components/generic/card/Card';
 import {EditPoliticalParty} from './edit-party/EditParty';
 import {PoliticalPartyDTO} from '@instinct-plugin/bobba-rp-types';

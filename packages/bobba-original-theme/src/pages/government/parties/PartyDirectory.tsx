@@ -1,10 +1,10 @@
 import {Link} from 'wouter';
 import React, {useContext, useState} from 'react';
 import {Row} from '../../../components/generic/row/Row';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Icon, Input, sessionContext, setURL} from '@instinct-web/core';
 import {Container} from '../../../components/generic/container/Container';
-import {RPPermissionGuard} from '../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../components/templates/permission-guard/PermissionGuard';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {useFetchPoliticalParties} from '@instinct-plugin/bobba-rp-web';
 import {PoliticalPartyCard} from '../../../components/templates/political-party-card/PoliticalPartyCard';

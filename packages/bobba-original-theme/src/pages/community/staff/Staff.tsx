@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {Row} from '../../../components/generic/row/Row';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Card} from '../../../components/generic/card/Card';
 import {useFetchRPStaff} from '@instinct-plugin/bobba-rp-web';
 import {setURL, Skeleton, Icon, configContext} from '@instinct-web/core';

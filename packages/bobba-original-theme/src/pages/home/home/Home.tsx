@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {setURL} from '@instinct-web/core';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {rpUserContext} from '@instinct-plugin/bobba-rp-web';
 import {BetaNoticeCard} from './beta-notice-card/BetaNoticeCard';
 import {GetInTouchCard} from './get-in-touch-card/GetInTouchCard';

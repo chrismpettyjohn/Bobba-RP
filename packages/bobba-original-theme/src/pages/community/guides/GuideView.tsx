@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import {guideService} from '@instinct-plugin/bobba-rp-web';
 import {Row} from '../../../components/generic/row/Row';
 import {Card} from '../../../components/generic/card/Card';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Avatar, Icon, sessionContext, setURL} from '@instinct-web/core';
 import {GuideReaction} from '@instinct-plugin/bobba-rp-types';
 import {useFetchGuideByID} from '@instinct-plugin/bobba-rp-web';

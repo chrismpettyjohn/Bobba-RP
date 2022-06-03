@@ -5,8 +5,8 @@ import {uniqBy} from 'lodash';
 import {Article} from '@instinct-prj/interface';
 import React, {useContext, useState} from 'react';
 import {Row} from '../../../../components/generic/row/Row';
-import {UserLayout} from '../../../../components/layout/user';
 import {Card} from '../../../../components/generic/card/Card';
+import {UserLayout} from '../../../../components/layout/user/UserLayout';
 import {Container} from '../../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {

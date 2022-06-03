@@ -6,7 +6,7 @@ import {Icon} from '../../../components/generic/icon/Icon';
 import {Card} from '../../../components/generic/card/Card';
 import {Row} from '../../../components/generic/row/Row';
 import {EditPoliticalParty} from './edit-party/EditParty';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {PoliticalPartyDTO} from '@instinct-plugin/bobba-rp-types';
 import {politicalPartyService} from '@instinct-plugin/bobba-rp-web';
 import {Container} from '../../../components/generic/container/Container';

@@ -5,7 +5,7 @@ import {Avatar, configContext, Input, setURL} from '@instinct-web/core';
 import {Row} from '../../../components/generic/row/Row';
 import {Icon} from '../../../components/generic/icon/Icon';
 import {Card} from '../../../components/generic/card/Card';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {UserContainer} from '../../../components/templates/user-container/UserContainer';
 import {Container} from '../../../components/generic/container/Container';
 import {useFetchPoliticalPartyByID} from '@instinct-plugin/bobba-rp-web';

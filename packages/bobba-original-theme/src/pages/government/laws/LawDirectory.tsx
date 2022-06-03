@@ -5,7 +5,7 @@ import React, {useContext, useState} from 'react';
 import {Law} from '@instinct-plugin/bobba-rp-types';
 import {Row} from '../../../components/generic/row/Row';
 import {Card} from '../../../components/generic/card/Card';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {useFetchLaws} from '@instinct-plugin/bobba-rp-web';
 import {
   Icon,
@@ -16,7 +16,7 @@ import {
   configContext,
 } from '@instinct-web/core';
 import {Container} from '../../../components/generic/container/Container';
-import {RPPermissionGuard} from '../../../components/templates/permission-guard';
+import {RPPermissionGuard} from '../../../components/templates/permission-guard/PermissionGuard';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {getPrettyLawStatus} from './bill.const';
 

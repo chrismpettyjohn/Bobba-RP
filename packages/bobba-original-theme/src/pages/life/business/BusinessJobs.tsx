@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import {Icon, Input, setURL} from '@instinct-web/core';
 import {Row} from '../../../components/generic/row/Row';
 import {Card} from '../../../components/generic/card/Card';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Container} from '../../../components/generic/container/Container';
 import {BusinessPositionCard} from './business-position-card/BusinessPositionCard';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';

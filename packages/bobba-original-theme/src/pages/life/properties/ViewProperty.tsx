@@ -2,7 +2,7 @@ import Moment from 'moment';
 import {Link, useRoute} from 'wouter';
 import React, {useContext, useState} from 'react';
 import {Row} from '../../../components/generic/row/Row';
-import {UserLayout} from '../../../components/layout/user';
+import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Card} from '../../../components/generic/card/Card';
 import {PropertyBid} from '@instinct-plugin/bobba-rp-types';
 import {useFetchPropertyByID} from '@instinct-plugin/bobba-rp-web';
