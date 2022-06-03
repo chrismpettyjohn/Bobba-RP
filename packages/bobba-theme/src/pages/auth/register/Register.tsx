@@ -1,3 +1,4 @@
+import {toast} from 'react-toastify';
 import {FormGroup} from 'reactstrap';
 import {Link, useLocation} from 'wouter';
 import React, {useContext, useState} from 'react';
@@ -46,6 +47,12 @@ export function Register() {
     try {
       onChange('showSpinner', true);
       onChange('showError', false);
+
+      if (!/^[a-zA-Z0-9]+$/.test(state.username)) {
+        toast.error("Usernames can't contain invalid characters");
+        return;
+      }
+
       await userService.create(
         state.username,
         state.password,
@@ -83,6 +90,7 @@ export function Register() {
             name="username"
             value={state.username}
             onChange={onChange}
+            pattern="[^()/><\][\\\x22,;|]+"
           />
         </FormGroup>
         <FormGroup>

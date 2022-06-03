@@ -5,7 +5,7 @@
     "start": "node_modules/.bin/ts-node -r tsconfig-paths/register src/index.ts"
   },
   "dependencies": {
-    "@instinct-api/articles": "5.2.2",
+    "@instinct-api/articles": "5.2.3",
     "@instinct-api/beta-codes": "5.2.2",
     "@instinct-api/common": "5.2.2",
     "@instinct-api/config": "5.2.2",
@@ -24,10 +24,10 @@
     "@instinct-api/users": "5.2.2",
     "@instinct-api/validator": "5.2.2",
     "@instinct-plugin/findretros-api": "5.2.2",
-    "@instinct-plugin/forgot-password-api": "5.2.2",
-    "@instinct-plugin/manage-users-api": "5.2.2",
+    "@instinct-plugin/forgot-password-api": "5.2.3",
+    "@instinct-plugin/manage-users-api": "5.2.3",
     "@bobba-rp/api": "1.0.0",
-    "@instinct-plugin/user-guestbook-api": "5.2.2",
+    "@instinct-plugin/user-guestbook-api": "5.2.3",
     "@instinct-prj/interface": "5.2.2",
     "@nestjs/common": "7.6.18",
     "@nestjs/core": "7.6.18",

@@ -1472,10 +1472,10 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
-"@instinct-api/articles@5.2.2":
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/@instinct-api/articles/-/articles-5.2.2.tgz#2c89c7538f2f9c199b9d667007723daaeba81661"
-  integrity sha512-M7LYc46yNaswL10ZLNuj5BCQ4wYu1Hu8mOsyFwsWqZYhyjfGIwXyWKClM9ZqwwV8wgCJVMMjac7JvuVPF2HNmw==
+"@instinct-api/articles@5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@instinct-api/articles/-/articles-5.2.3.tgz#b617e4d921f58cc5a72870472ef468b174210456"
+  integrity sha512-mxpaVIQfOwxnxSgtHRmrm1ljhYZ3ycS3C+rcd2GqQsaQn4P6g91tTctXkddUREYQ06Ob2bcVydB/Nt3ZW28RAQ==
 
 "@instinct-api/beta-codes@5.2.2":
   version "5.2.2"
@@ -1582,7 +1582,12 @@
     passport "0.4.1"
     passport-jwt "4.0.0"
 
-"@instinct-api/users@*", "@instinct-api/users@5.2.2":
+"@instinct-api/users@*":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@instinct-api/users/-/users-5.2.3.tgz#10aa9e7994f5ae0d06955b4492bca03348d0d51f"
+  integrity sha512-WD9F6/t0OYORpZyoV08KpVR+ZWEdbrVRORl8pSrVPfmrwPSy8zSxYMQMAUopKQ2aPfSBtnG55cpZGuG2ETvZ8w==
+
+"@instinct-api/users@5.2.2":
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/@instinct-api/users/-/users-5.2.2.tgz#15bc853f3149c3c3331dc7d34355157b9d92f25f"
   integrity sha512-AbZK7gVFiTNu/fgcnirt9BIXsnH/FEkkUD+oBq3j8RvqPlwlzfsql113Iq7YCLjrKK/MKzwGVXQLFH9+0eEdBg==
@@ -1599,22 +1604,22 @@
   dependencies:
     axios "0.21.1"
 
-"@instinct-plugin/forgot-password-api@5.2.2":
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/@instinct-plugin/forgot-password-api/-/forgot-password-api-5.2.2.tgz#42f9064d0a2021241941007ca0aefd10b315597e"
-  integrity sha512-3pWEiFlxrbRYlcuL+KWxSnDUXOZkLfHmKcQS2KFCeYmU4Pq6ZIf8OKv2MKAH0lCOiykBZKcH55AjUoKuZAV3pw==
+"@instinct-plugin/forgot-password-api@5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@instinct-plugin/forgot-password-api/-/forgot-password-api-5.2.3.tgz#df2c63a2dd39e42000783d537aa7814e01b8522b"
+  integrity sha512-3/SnL63/vK7HuUb9W+309xQ4y0lO5p9SU6a8LSLWKEpJauZ68k/LsQHGSVgPLlOWzJxijF/sCyiRqxnDuU5Edw==
   dependencies:
     crypto-random-string "3.3.1"
 
-"@instinct-plugin/manage-users-api@5.2.2":
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/@instinct-plugin/manage-users-api/-/manage-users-api-5.2.2.tgz#96c3d93ffa96ada794c1031bb4ee58a00147502c"
-  integrity sha512-rpoMp8OL8WJkO/nW1AB84eH1eq5RImDryy/92Dmc8WtZB+eaY5BAWpS5Eq8o34Qs69FfpIGfX4Q3vaxR2qrhwA==
+"@instinct-plugin/manage-users-api@5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@instinct-plugin/manage-users-api/-/manage-users-api-5.2.3.tgz#38d352f9418e09f5f0c25418fbf81cf7e5c46287"
+  integrity sha512-LvgfVwjtRSGLW/i/ewdfPd0hCrEenFwk4WUYCmFmCA7Jyq3ozUN+1YKz3vb1KYseWKu+KxuzisHH3i3gbZOEEQ==
 
-"@instinct-plugin/user-guestbook-api@5.2.2":
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/@instinct-plugin/user-guestbook-api/-/user-guestbook-api-5.2.2.tgz#daa3da41efcdcfad1471f195127f9ead6d1ecb1d"
-  integrity sha512-QY6mKeremkBz5RzyVlF4SQkJAg2p7uBsGgHH6R1ZmbBu6XV/KHVL9YvTQ0IjzprjUezgipi1iue7Q3dcT00B4w==
+"@instinct-plugin/user-guestbook-api@5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@instinct-plugin/user-guestbook-api/-/user-guestbook-api-5.2.3.tgz#fd2a67356db3ad657d81d12d42ae019dc2e3d177"
+  integrity sha512-EJkFwaN84UBFw3ZMxOATSyrVFtyIw7b3ahWvj1fErMEeIaXfOg9WsEo6PHIRRfvILIDoruYYfFoVRiqx3bLAQg==
 
 "@instinct-prj/interface@*", "@instinct-prj/interface@5.2.2":
   version "5.2.2"
@@ -3354,9 +3359,9 @@
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
 "@types/node@*":
-  version "17.0.38"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.38.tgz#f8bb07c371ccb1903f3752872c89f44006132947"
-  integrity sha512-5jY9RhV7c0Z4Jy09G+NIDTsCZ5G0L5n+Z+p+Y7t5VJHM30bgwzSjVtlcBxqAj+6L/swIlvtOSzr8rBk/aNyV2g==
+  version "17.0.39"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.39.tgz#3652d82e2a16b4ea679d5ea3143b816c91b7e113"
+  integrity sha512-JDU3YLlnPK3WDao6/DlXLOgSNpG13ct+CwIO17V8q0/9fWJyeMJJ/VyZ1lv8kDprihvZMydzVwf0tQOqGiY2Nw==
 
 "@types/node@14.14.33":
   version "14.14.33"
