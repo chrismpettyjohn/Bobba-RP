@@ -10,7 +10,7 @@
     "deploy": "yarn run build && lerna publish",
     "bootstrap": "lerna bootstrap",
     "update": "lerna exec -- ncu -u",
-    "purge": "lerna exec -- rm -rf node_modules && lerna exec -- rm -rf dist && rm -rf yarn.lock && rm -rf node_modules"
+    "purge": "lerna exec -- rm -rf node_modules && lerna exec -- rm -rf dist && rm -rf yarn.lock && rm -rf node_modules && rm -rf yarn.lock"
   },
   "devDependencies": {
     "@types/node": "14.14.33",
