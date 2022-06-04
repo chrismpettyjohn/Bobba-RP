@@ -14,6 +14,7 @@ import {
 } from '@instinct-web/core';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {MyEmploymentCard} from '../../../components/templates/my-employment-card/MyEmploymentCard';
+import {SearchUsers} from './search-users/SearchUsers';
 
 export function UserProfile({username}: UserProfileProps) {
   const {config} = useContext(configContext);
@@ -24,6 +25,11 @@ export function UserProfile({username}: UserProfileProps) {
     <UserLayout section="profile">
       <Loading isLoading={profile === undefined}>
         <Container>
+          <div className="row mb-4">
+            <div className="col-12">
+              <SearchUsers />
+            </div>
+          </div>
           <div className="row">
             <div className="col-12">
               <MiniJumbotron>

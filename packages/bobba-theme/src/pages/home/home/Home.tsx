@@ -8,5 +8,5 @@ setURL('welcome', <Home />);
 
 export function Home() {
   const {user} = useContext(sessionContext);
-  return <UserProfile username={user?.username ?? ''} />;
+  return <UserProfile username={user!.username} />;
 }
