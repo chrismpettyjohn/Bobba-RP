@@ -1,14 +1,19 @@
-import React, {useContext} from 'react';
+import React from 'react';
+import {Icon} from '@instinct-web/core';
 import {Card} from '../../../generic/card/Card';
-import {sessionContext, Icon} from '@instinct-web/core';
+import {SearchUsers} from '../search-users/SearchUsers';
 import {UserLayout} from '../../../layout/user/UserLayout';
 import {Container} from '../../../generic/container/Container';
 
 export function InvalidProfile() {
-  const {user} = useContext(sessionContext);
   return (
     <UserLayout>
       <Container>
+        <div className="row mb-4">
+          <div className="col-12 text-center">
+            <SearchUsers />
+          </div>
+        </div>
         <div className="row mb-5">
           <div className="col-12 text-center">
             <Card>

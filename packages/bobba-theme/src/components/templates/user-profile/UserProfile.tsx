@@ -42,6 +42,15 @@ export function UserProfile({username}: UserProfileProps) {
     fetchProfile(username);
   }, [username]);
 
+  const pluralizeUsername = (): string => {
+    const splitUsername = username?.split('') ?? [];
+    const punctuation =
+      splitUsername[splitUsername.length - 1]?.toLowerCase() === 's'
+        ? "'"
+        : "'s";
+    return username + punctuation;
+  };
+
   if (invalidProfile) {
     return <InvalidProfile />;
   }
@@ -60,7 +69,7 @@ export function UserProfile({username}: UserProfileProps) {
               <MiniJumbotron>
                 <div className="row">
                   <div className="col">
-                    <h1>{profile?.user?.username}'s Profile</h1>
+                    <h1>{pluralizeUsername()} Profile</h1>
                   </div>
                   <div className="col text-right">
                     {profile?.user?.rank?.permissions?.websiteShowStaff && (
