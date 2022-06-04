@@ -1,9 +1,11 @@
+@import "../../../public/css/ThemeColors";
+
 .page-container .related-articles-container {
 
   .related-article-container {
     display: block;
-    background: #000B13;
-    border: 1px solid #000B13;
+    background: $backgroundThree;
+    border: 1px solid $backgroundThree;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;

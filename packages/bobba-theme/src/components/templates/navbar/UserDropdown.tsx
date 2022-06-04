@@ -25,9 +25,6 @@ export function UserDropdown() {
       </Link>
       <ul className="navigation-submenu">
         <NavBarChildLink to="/preferences">Settings</NavBarChildLink>
-        <NavBarChildLink to={`/profile/${user.username}`}>
-          My Profile
-        </NavBarChildLink>
         <NavBarChildLink to="/logout">Logout</NavBarChildLink>
         {user.rank?.permissions.websiteShowAdminPanel && (
           <>

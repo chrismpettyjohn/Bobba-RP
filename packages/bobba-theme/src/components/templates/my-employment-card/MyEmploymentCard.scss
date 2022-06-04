@@ -1,6 +1,8 @@
+@import "../../../public/css/ThemeColors";
+
 .employment-block {
-  background: #000b13;
-  border: 1px solid  #000b13;
+  background: $backgroundThree;
+  border: 1px solid  $backgroundThree;
   cursor: pointer;
   padding: 10px;
   border-radius: 4px;
