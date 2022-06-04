@@ -42,7 +42,7 @@ export function RPStats({rpStats}: UserProfileWidgetProps) {
               {stat.label}:
             </b>
           </div>
-          <div className="col">{stat.value}</div>
+          <div className="col text-right">{stat.value}</div>
         </div>
       ))}
     </Card>

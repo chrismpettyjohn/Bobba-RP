@@ -60,17 +60,12 @@ export function UserProfile({username}: UserProfileProps) {
     <UserLayout section="profile">
       <Loading isLoading={profile === undefined}>
         <Container>
-          <div className="row mb-4">
-            <div className="col-12">
-              <SearchUsers />
-            </div>
-          </div>
           <div className="row">
             <div className="col-12">
               <MiniJumbotron>
                 <div className="row">
                   <div className="col">
-                    <h1>{pluralizeUsername()} Profile</h1>
+                    <SearchUsers defaultUsername={username} />
                   </div>
                   <div className="col text-right">
                     {profile?.user?.rank?.permissions?.websiteShowStaff && (

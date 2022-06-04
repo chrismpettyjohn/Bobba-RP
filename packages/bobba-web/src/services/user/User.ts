@@ -1,7 +1,8 @@
 import {AxiosResponse} from 'axios';
 import {UserService} from './User.types';
-import {backendAPI} from '@instinct-web/core';
 import {UserRPStats} from '@bobba-rp/types';
+import {User} from '@instinct-prj/interface';
+import {backendAPI} from '@instinct-web/core';
 
 export class UserServiceImplementation implements UserService {
   async getRPStats(username: string) {
@@ -9,5 +10,12 @@ export class UserServiceImplementation implements UserService {
       `users/profile/${username}/rp`
     );
     return rpStats.data;
+  }
+
+  async searchByUsername(username: string) {
+    const matchingUsers: AxiosResponse<User[]> = await backendAPI.get(
+      `search-users/${username}`
+    );
+    return matchingUsers.data;
   }
 }
