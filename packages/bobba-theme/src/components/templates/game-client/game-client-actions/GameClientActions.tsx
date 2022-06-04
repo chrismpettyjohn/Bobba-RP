@@ -16,7 +16,7 @@ export function GameClientActions() {
   const [isExpanded, setExpanded] = useState<boolean>(false);
 
   function toggleWebView(): void {
-    setStore({showClient: !showClient});
+    setStore({showClient: false});
     setLocation('/me');
   }
 

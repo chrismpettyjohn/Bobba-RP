@@ -1,9 +1,9 @@
-import {toast} from 'react-toastify';
 import {useContext, useEffect} from 'react';
 import {sessionContext, sessionService} from '@instinct-web/core';
 
 export function useRenewSSO() {
-  const {user, setUser, sso, setSSO} = useContext(sessionContext);
+  const {user, setUser, sso, setSSO, online, setOnline} =
+    useContext(sessionContext);
   useEffect(() => {
     if (sso) {
       return;
@@ -12,12 +12,12 @@ export function useRenewSSO() {
     async function fetchSSO() {
       const currentUserStatus = await sessionService.getCurrentUser();
 
-      if (currentUserStatus.online) {
-        toast.error("You're already online!");
+      if (currentUserStatus.online && !online) {
         return;
       }
 
       setUser({online: true});
+      setOnline(true);
 
       const sso = await sessionService.createSSO();
       setSSO(sso);

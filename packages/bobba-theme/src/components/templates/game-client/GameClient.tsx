@@ -10,12 +10,6 @@ export function GameClient() {
   useRenewSSO();
   const {showClient, setStore} = useContext(themeContext);
 
-  useEffect(() => {
-    return () => {
-      setStore({showClient: false});
-    };
-  }, []);
-
   return (
     <UserGuard redirect={false}>
       <GameClientOnlineGuard>
