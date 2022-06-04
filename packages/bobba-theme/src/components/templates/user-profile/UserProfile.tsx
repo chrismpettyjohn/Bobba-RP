@@ -1,5 +1,4 @@
 import './UserProfile.scss';
-import {Badges} from './badges';
 import {Guestbook} from './guestbook';
 import {UserRPStats} from '@bobba-rp/types';
 import {UserContainer} from './user-container';
@@ -14,6 +13,8 @@ import {Container} from '../../../components/generic/container/Container';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {MyEmploymentCard} from '../../../components/templates/my-employment-card/MyEmploymentCard';
 import {InvalidProfile} from './invalid-profile/InvalidProfile';
+import {RPStats} from './rp-stats/RPStats';
+import {Friends} from './friends';
 
 export function UserProfile({username}: UserProfileProps) {
   const {config} = useContext(configContext);
@@ -96,10 +97,15 @@ export function UserProfile({username}: UserProfileProps) {
           </div>
           <div className="row mt-4">
             <div className="col-4">
-              <Badges profile={profile} />
+              <RPStats profile={profile} />
             </div>
             <div className="col-8">
               {profile && rpStats && <Guestbook profile={profile} />}
+            </div>
+          </div>
+          <div className="row mt-4">
+            <div className="col-4">
+              <Friends profile={profile} />
             </div>
           </div>
         </Container>

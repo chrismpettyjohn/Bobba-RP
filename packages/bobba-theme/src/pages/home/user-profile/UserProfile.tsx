@@ -1,5 +1,4 @@
 import React from 'react';
-import './UserProfile.scss';
 import {useRoute} from 'wouter';
 import {setURL} from '@instinct-web/core';
 import {UserProfile} from '../../../components/templates/user-profile/UserProfile';
