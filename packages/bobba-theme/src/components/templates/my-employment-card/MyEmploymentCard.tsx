@@ -3,7 +3,7 @@ import './MyEmploymentCard.scss';
 import React, {useContext} from 'react';
 import {Row} from '../../generic/row/Row';
 import {Card} from '../../generic/card/Card';
-import {configContext} from '@instinct-web/core';
+import {configContext, Icon} from '@instinct-web/core';
 import {MyEmploymentCardProps} from './MyEmploymentCard.types';
 import {EmploymentBlock} from './employment-block/EmploymentBlock';
 
@@ -28,7 +28,10 @@ export function MyEmploymentCard({user}: MyEmploymentCardProps) {
     <Card>
       <Row>
         <div className="col-6 mb-4">
-          <h4>Health</h4>
+          <b>
+            <Icon type="heart" />
+            Health
+          </b>
           <div className="progress">
             <div
               className="progress-bar bg-danger"
@@ -40,7 +43,10 @@ export function MyEmploymentCard({user}: MyEmploymentCardProps) {
           </div>
         </div>
         <div className="col-6 mb-4">
-          <b>Energy</b>
+          <b>
+            <Icon type="burn" />
+            Energy
+          </b>
           <div className="progress">
             <div
               className="progress-bar bg-success"
@@ -52,15 +58,24 @@ export function MyEmploymentCard({user}: MyEmploymentCardProps) {
           </div>
         </div>
         <div className="col-6 mb-4">
-          <h4>Wallet</h4>
+          <b>
+            <Icon type="wallet" />
+            Wallet
+          </b>
           <p>${Number(user.credits).toLocaleString()}</p>
         </div>
         <div className="col-6 mb-4">
-          <b>Last Online</b>
+          <b>
+            <Icon type="clock" />
+            Last Online
+          </b>
           <p>{Moment(user.lastLoginDate).format('MMMM DD, YYYY')}</p>
         </div>
         <div className="col-6 mb-4">
-          <b>Employment</b>
+          <b>
+            <Icon type="user-tie" />
+            Employment
+          </b>
           {user.rpStats.job && (
             <EmploymentBlock
               badge={`${config.swfBadgeURL}/${
@@ -74,7 +89,10 @@ export function MyEmploymentCard({user}: MyEmploymentCardProps) {
           {!user.rpStats.job && <p>No job</p>}
         </div>
         <div className="col-6 mb-4">
-          <b>Gang Affiliation</b>
+          <b>
+            <Icon type="skull" />
+            Gang Affiliation
+          </b>
           {user.rpStats.gang && (
             <EmploymentBlock
               badge={`${config.swfBadgeURL}/${
