@@ -70,7 +70,7 @@ export function UserProfile({username}: UserProfileProps) {
                   <div className="col text-right">
                     {profile?.user?.rank?.permissions?.websiteShowStaff && (
                       <img
-                        src={`${config.rankBadgeURL}/ADM.gif`}
+                        src={`${config.rankBadgeURL}/${profile?.user?.rank?.badge}.gif`}
                         height={55}
                         width={55}
                       />
