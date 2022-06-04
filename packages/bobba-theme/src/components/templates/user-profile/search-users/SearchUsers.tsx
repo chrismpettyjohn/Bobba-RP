@@ -35,6 +35,24 @@ export function SearchUsers({defaultUsername = ''}: SearchUsersProps) {
       loadOptions={searchForSimilarUsers}
       defaultInputValue={username}
       onChange={(e: any) => setUsername(e.label)}
+      styles={{
+        control: (provided: any) => ({
+          ...provided,
+          color: 'black',
+        }),
+        input: (provided: any) => ({
+          ...provided,
+          color: 'black',
+        }),
+        singleValue: (provided: any) => ({
+          ...provided,
+          color: 'black',
+        }),
+        option: (provided: any) => ({
+          ...provided,
+          color: 'black',
+        }),
+      }}
     />
   );
 }

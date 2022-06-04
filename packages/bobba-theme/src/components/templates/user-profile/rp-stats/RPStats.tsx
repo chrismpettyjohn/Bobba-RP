@@ -17,7 +17,7 @@ export function RPStats({rpStats}: UserProfileWidgetProps) {
     },
     {
       label: 'Arrests Made',
-      icon: 'siren-on',
+      icon: 'siren',
       value: rpStats?.police?.arrestsMade ?? 0,
     },
     {
