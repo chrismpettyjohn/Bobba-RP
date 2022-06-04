@@ -4,6 +4,8 @@
 @import "./theme.responsive.css";
 @import "./ThemeColors.scss";
 
+$pageWidth: 55%;
+
 body {
   background: $backgroundOne;
   font-size: 1.2em !important;
@@ -28,12 +30,16 @@ body {
   .header-content {
     padding-top: 15px;
     width: 100%;
-    max-width: 1200px !important;
+    max-width: $pageWidth !important;
     margin: 0 auto;
   }
 
   .header-logo {
   }
+}
+
+.page-container .page-content {
+  max-width: $pageWidth !important;
 }
 
 .account-buttons {
@@ -42,6 +48,10 @@ body {
 
 .navigation-container {
   background: $backgroundTwo;
+  width: $pageWidth !important;
+  margin: 0 auto;
+  border-radius: 4px;
+
   .navigation-menu {
 
     .navigation-item.main-link-item>a {
@@ -95,7 +105,7 @@ body {
 }
 
 .page-container .page-content {
-  max-width: 1200px !important;
+  max-width: $pageWidth !important;
 }
 
 .page-container .page-content article.default-section, .page-container .page-content aside.default-section {
