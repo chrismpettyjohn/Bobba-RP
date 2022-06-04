@@ -1,25 +1,50 @@
 import './UserProfile.scss';
 import {Badges} from './badges';
 import {Guestbook} from './guestbook';
-import React, {useContext} from 'react';
+import {UserRPStats} from '@bobba-rp/types';
 import {UserContainer} from './user-container';
 import {UserProfileProps} from './UserProfile.types';
-import {useFetchRPStatsByUsername} from '@bobba-rp/web';
+import {SearchUsers} from './search-users/SearchUsers';
+import {userService as rpUserService} from '@bobba-rp/web';
+import React, {useContext, useEffect, useState} from 'react';
+import {UserProfile as IUserProfile} from '@instinct-prj/interface';
+import {configContext, Loading, userService} from '@instinct-web/core';
 import {UserLayout} from '../../../components/layout/user/UserLayout';
 import {Container} from '../../../components/generic/container/Container';
-import {
-  configContext,
-  Loading,
-  useFetchUserByUsername,
-} from '@instinct-web/core';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {MyEmploymentCard} from '../../../components/templates/my-employment-card/MyEmploymentCard';
-import {SearchUsers} from './search-users/SearchUsers';
+import {InvalidProfile} from './invalid-profile/InvalidProfile';
 
 export function UserProfile({username}: UserProfileProps) {
   const {config} = useContext(configContext);
-  const profile = useFetchUserByUsername(username);
-  const rpStats = useFetchRPStatsByUsername(username);
+  const [profile, setProfile] = useState<IUserProfile>();
+  const [rpStats, setRPStats] = useState<UserRPStats>();
+  const [invalidProfile, setInvalidProfile] = useState(false);
+
+  useEffect(() => {
+    setProfile(undefined);
+    setRPStats(undefined);
+    setInvalidProfile(false);
+
+    const fetchProfile = async (usernameToRetrieve: string) => {
+      try {
+        const profile = await userService.getByUsername(username);
+        const rpStats = await rpUserService.getRPStats(username);
+        if (usernameToRetrieve === username) {
+          setProfile(profile);
+          setRPStats(rpStats);
+        }
+      } catch {
+        setInvalidProfile(true);
+      }
+    };
+
+    fetchProfile(username);
+  }, [username]);
+
+  if (invalidProfile) {
+    return <InvalidProfile />;
+  }
 
   return (
     <UserLayout section="profile">
