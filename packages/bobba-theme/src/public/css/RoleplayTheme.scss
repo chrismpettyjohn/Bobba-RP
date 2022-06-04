@@ -4,7 +4,7 @@
 @import "./theme.responsive.css";
 @import "./ThemeColors.scss";
 
-$pageWidth: 55%;
+$pageWidth: 1600px;
 
 body {
   background: $backgroundOne;
@@ -30,6 +30,7 @@ body {
   .header-content {
     padding-top: 15px;
     width: 100%;
+    width: 100% !important;
     max-width: $pageWidth !important;
     margin: 0 auto;
   }
@@ -39,6 +40,7 @@ body {
 }
 
 .page-container .page-content {
+  width: 100% !important;
   max-width: $pageWidth !important;
 }
 
@@ -48,7 +50,8 @@ body {
 
 .navigation-container {
   background: $backgroundTwo;
-  width: $pageWidth !important;
+  width: 100% !important;
+  max-width: $pageWidth !important;
   margin: 0 auto;
   border-radius: 4px;
 
@@ -109,6 +112,7 @@ body {
 }
 
 .page-container .page-content {
+  width: 100% !important;
   max-width: $pageWidth !important;
   padding-top: 20px !important;
 }
