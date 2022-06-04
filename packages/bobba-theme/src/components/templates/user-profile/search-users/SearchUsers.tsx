@@ -1,17 +1,18 @@
 import {useLocation} from 'wouter';
 import {userService} from '@bobba-rp/web';
 import AsyncSelect from 'react-select/async';
+import React, {useEffect, useState} from 'react';
 import {SearchUsersProps} from './SearchUsers.types';
-import React, {SyntheticEvent, useState} from 'react';
 
 export function SearchUsers({defaultUsername = ''}: SearchUsersProps) {
   const [location, setLocation] = useLocation();
   const [username, setUsername] = useState(defaultUsername);
 
-  const onSubmitUserSearch = (event: SyntheticEvent) => {
-    event.preventDefault();
-    setLocation(`/profile/${username}`);
-  };
+  useEffect(() => {
+    if (username !== defaultUsername) {
+      setLocation(`/profile/${username}`);
+    }
+  }, [username, defaultUsername]);
 
   const searchForSimilarUsers = async (
     username: string
@@ -32,8 +33,8 @@ export function SearchUsers({defaultUsername = ''}: SearchUsersProps) {
       cacheOptions
       defaultOptions
       loadOptions={searchForSimilarUsers}
-      value={username}
-      onChange={(e: any) => setUsername(e.value)}
+      defaultInputValue={username}
+      onChange={(e: any) => setUsername(e.label)}
     />
   );
 }
