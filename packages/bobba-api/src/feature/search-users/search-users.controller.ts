@@ -12,9 +12,14 @@ export class SearchUsersController {
 
   @Get(':username')
   async getProfile(@Param('username') username: string): Promise<User[]> {
-    const matchingUsers = await this.userRepo.find({
-      username: Like(`%${username}%`),
-    });
+    const userConditions: any = {};
+
+    if (username !== '') {
+      userConditions.username = Like(`%${username}%`);
+    }
+
+    const matchingUsers = await this.userRepo.find(userConditions);
+
     return matchingUsers.map(_ => userWire(_));
   }
 }

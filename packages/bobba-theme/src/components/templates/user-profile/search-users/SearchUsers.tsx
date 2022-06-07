@@ -1,8 +1,9 @@
 import {useLocation} from 'wouter';
 import {userService} from '@bobba-rp/web';
-import AsyncSelect from 'react-select/async';
 import React, {useEffect, useState} from 'react';
 import {SearchUsersProps} from './SearchUsers.types';
+import {SearchBar} from '../../../generic/search-bar/SearchBar';
+import {SearchBarRow} from '../../../generic/search-bar/SearchBar.types';
 
 export function SearchUsers({defaultUsername = ''}: SearchUsersProps) {
   const [location, setLocation] = useLocation();
@@ -16,11 +17,7 @@ export function SearchUsers({defaultUsername = ''}: SearchUsersProps) {
 
   const searchForSimilarUsers = async (
     username: string
-  ): Promise<Array<{label: string; value: number}>> => {
-    if (username === '') {
-      return [];
-    }
-
+  ): Promise<SearchBarRow[]> => {
     const matchingUsers = await userService.searchByUsername(username);
     return matchingUsers.map(_ => ({
       label: _.username,
@@ -29,30 +26,10 @@ export function SearchUsers({defaultUsername = ''}: SearchUsersProps) {
   };
 
   return (
-    <AsyncSelect
-      cacheOptions
-      defaultOptions
-      loadOptions={searchForSimilarUsers}
-      defaultInputValue={username}
-      onChange={(e: any) => setUsername(e.label)}
-      styles={{
-        control: (provided: any) => ({
-          ...provided,
-          color: 'black',
-        }),
-        input: (provided: any) => ({
-          ...provided,
-          color: 'black',
-        }),
-        singleValue: (provided: any) => ({
-          ...provided,
-          color: 'black',
-        }),
-        option: (provided: any) => ({
-          ...provided,
-          color: 'black',
-        }),
-      }}
+    <SearchBar
+      onSearch={searchForSimilarUsers}
+      onSelect={e => setUsername(e.label)}
+      defaultValue={username}
     />
   );
 }
