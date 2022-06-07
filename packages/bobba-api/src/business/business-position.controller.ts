@@ -22,6 +22,7 @@ import {
 } from '../database/business';
 import {UserRPStatRepository} from '../database/user';
 import {TWENTY_MINUTES_IN_MS} from '../time.const';
+import {IsOffline} from '../session/session-offline.decorator';
 
 @Controller('business-positions')
 @HasSession()
@@ -58,6 +59,7 @@ export class BusinessPositionController {
   }
 
   @Post(':businessPosition/accept')
+  @IsOffline()
   async acceptOpenPositions(
     @GetSession() user: RPUserEntity,
     @Param('businessPosition', BusinessPositionPipe)

@@ -35,6 +35,7 @@ import {IsGovernment} from '../database/business/business.types';
 import {RPUserService} from '../user/user.service';
 import {rpUserWire} from '../database/user/user.wire';
 import {TWENTY_MINUTES_IN_MS} from '../time.const';
+import {IsOffline} from '../session/session-offline.decorator';
 
 @Controller('businesses')
 @HasSession()
@@ -50,6 +51,7 @@ export class BusinessController {
 
   @Post()
   @HasScope('websiteCreateBusiness' as any)
+  @IsOffline()
   async createBusiness(
     @Body() businessDTO: BusinessDTO,
     @GetSession() user: UserEntityStruct
