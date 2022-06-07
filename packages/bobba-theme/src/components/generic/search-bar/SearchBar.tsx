@@ -8,8 +8,8 @@ export function SearchBar({defaultValue, onSearch, onSelect}: SearchBarProps) {
       cacheOptions
       defaultOptions
       loadOptions={onSearch}
-      defaultInputValue={defaultValue}
-      onChange={onSelect}
+      defaultInputValue={defaultValue as any}
+      onChange={e => onSelect(e as any)}
       styles={{
         control: (provided: any) => ({
           ...provided,

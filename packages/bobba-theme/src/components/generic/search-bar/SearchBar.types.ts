@@ -1,10 +1,10 @@
 export interface SearchBarProps {
-  defaultValue?: string;
-  onSearch(value: string | number): Promise<SearchBarRow[]>;
+  defaultValue?: string | number;
+  onSearch(value: string | number): Promise<SearchBarRow[]> | SearchBarRow[];
   onSelect(value: SearchBarRow): void;
 }
 
 export interface SearchBarRow {
   label: string;
-  value: string;
+  value: string | number;
 }
