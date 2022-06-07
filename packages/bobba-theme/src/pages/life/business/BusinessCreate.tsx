@@ -11,6 +11,7 @@ import {Container} from '../../../components/generic/container/Container';
 import {RPPermissionGuard} from '../../../components/templates/permission-guard/PermissionGuard';
 import {MiniJumbotron} from '../../../components/generic/mini-jumbotron/MiniJumbotron';
 import {ConfirmBusinessCreationModal} from './widgets/confirm-business-creation-modal/ConfirmBusinessCreationModal';
+import {UserIsOfflineGuard} from '../../../components/guard/user-is-offline-guard/UserIsOfflineGuard';
 
 setURL('business/creator', <BusinessCreate />);
 
@@ -34,40 +35,42 @@ export function BusinessCreate() {
   return (
     <UserLayout section="business">
       <RPPermissionGuard permission="websiteCreateBusiness">
-        <Container>
-          <Row>
-            <div className="col-12">
-              <Link to="/businesses">
-                <Icon
-                  className="fa-4x text-white"
-                  style={{cursor: 'pointer'}}
-                  type="caret-left"
+        <UserIsOfflineGuard>
+          <Container>
+            <Row>
+              <div className="col-12">
+                <Link to="/businesses">
+                  <Icon
+                    className="fa-4x text-white"
+                    style={{cursor: 'pointer'}}
+                    type="caret-left"
+                  />
+                </Link>
+              </div>
+            </Row>
+            <Row>
+              <MiniJumbotron>
+                <h2>Business Creator</h2>
+                <p>Kickstart your new business today!</p>
+              </MiniJumbotron>
+            </Row>
+            <Row>
+              <div style={{width: '100%'}}>
+                <BusinessEditor
+                  onSubmit={toggleConfirmation}
+                  editorOnly={false}
                 />
-              </Link>
-            </div>
-          </Row>
-          <Row>
-            <MiniJumbotron>
-              <h2>Business Creator</h2>
-              <p>Kickstart your new business today!</p>
-            </MiniJumbotron>
-          </Row>
-          <Row>
-            <div style={{width: '100%'}}>
-              <BusinessEditor
-                onSubmit={toggleConfirmation}
-                editorOnly={false}
-              />
-              {confirmation && (
-                <ConfirmBusinessCreationModal
-                  businessDTO={confirmation}
-                  isOpen
-                  onToggle={toggleConfirmation}
-                />
-              )}
-            </div>
-          </Row>
-        </Container>
+                {confirmation && (
+                  <ConfirmBusinessCreationModal
+                    businessDTO={confirmation}
+                    isOpen
+                    onToggle={toggleConfirmation}
+                  />
+                )}
+              </div>
+            </Row>
+          </Container>
+        </UserIsOfflineGuard>
       </RPPermissionGuard>
     </UserLayout>
   );

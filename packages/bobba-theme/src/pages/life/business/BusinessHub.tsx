@@ -18,6 +18,7 @@ import {
   setURL,
 } from '@instinct-web/core';
 import {businessRegistrationFee} from './Business.const';
+import {UserIsOfflineGuard} from '../../../components/guard/user-is-offline-guard/UserIsOfflineGuard';
 
 setURL('businesses', <BusinessHub />);
 
@@ -47,19 +48,21 @@ export function BusinessHub() {
                   <p>Elevate your career to the next level</p>
                 </div>
                 <div className="col-6 text-right">
-                  {user!.credits >= businessRegistrationFee && (
-                    <RPPermissionGuard
-                      permission="websiteCreateBusiness"
-                      redirect={false}
-                    >
-                      <Link to="/business/creator">
-                        <button className="btn btn-success btn-lg">
-                          <Icon type="plus-circle" />
-                          Create A Business
-                        </button>
-                      </Link>
-                    </RPPermissionGuard>
-                  )}
+                  <UserIsOfflineGuard hideWarning>
+                    {user!.credits >= businessRegistrationFee && (
+                      <RPPermissionGuard
+                        permission="websiteCreateBusiness"
+                        redirect={false}
+                      >
+                        <Link to="/business/creator">
+                          <button className="btn btn-success btn-lg">
+                            <Icon type="plus-circle" />
+                            Create A Business
+                          </button>
+                        </Link>
+                      </RPPermissionGuard>
+                    )}
+                  </UserIsOfflineGuard>
                 </div>
               </div>
             </MiniJumbotron>
