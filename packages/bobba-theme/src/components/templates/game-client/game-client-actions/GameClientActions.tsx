@@ -1,18 +1,13 @@
 import './GameClientActions.scss';
 import {useLocation} from 'wouter';
 import React, {useContext, useState} from 'react';
-import {
-  healthContext,
-  themeContext,
-  Icon,
-  sessionContext,
-} from '@instinct-web/core';
+import {healthContext, themeContext, Icon} from '@instinct-web/core';
+import {GameClientRestartTimer} from '../game-client-restart-timer/GameClientRestartTimer';
 
 export function GameClientActions() {
   const [location, setLocation] = useLocation();
   const {health} = useContext(healthContext);
-  const {setSSO} = useContext(sessionContext);
-  const {showClient, setStore} = useContext(themeContext);
+  const {setStore} = useContext(themeContext);
   const [isExpanded, setExpanded] = useState<boolean>(false);
 
   function toggleWebView(): void {
@@ -28,11 +23,6 @@ export function GameClientActions() {
     await action;
     setExpanded(!isExpanded);
   }
-
-  function reloadPage(): void {
-    setSSO(null as any);
-  }
-
   return (
     <div className="actions">
       <button onClick={toggleWebView}>Web</button>
@@ -43,9 +33,9 @@ export function GameClientActions() {
           type={isExpanded ? 'compress' : 'expand'}
         />
       </button>
-      <button onClick={reloadPage}>
+      <GameClientRestartTimer className="">
         <Icon className="mr-0" family="fas" type="sync" />
-      </button>
+      </GameClientRestartTimer>
       <button style={{cursor: 'default'}}>
         <Icon family="fas" type="user" />
         <b>{health.usersOnline}</b>

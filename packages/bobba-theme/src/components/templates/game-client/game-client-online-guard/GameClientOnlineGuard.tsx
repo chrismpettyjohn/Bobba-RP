@@ -4,16 +4,11 @@ import {UserLayout} from '../../../layout/user/UserLayout';
 import {Container} from '../../../generic/container/Container';
 import {sessionContext, themeContext} from '@instinct-web/core';
 import {GameClientOnlineGuardProps} from './GameClientOnlineGuard.types';
+import {GameClientRestartTimer} from '../game-client-restart-timer/GameClientRestartTimer';
 
 export function GameClientOnlineGuard({children}: GameClientOnlineGuardProps) {
   const {showClient} = useContext(themeContext);
-  const {online, user, setSSO, setOnline, setUser} = useContext(sessionContext);
-
-  const onEndClientSession = async () => {
-    setSSO(null as any);
-    setUser({online: false});
-    setOnline(true);
-  };
+  const {online, user} = useContext(sessionContext);
 
   if (showClient && user?.online && !online) {
     return (
@@ -33,12 +28,9 @@ export function GameClientOnlineGuard({children}: GameClientOnlineGuardProps) {
                 You can use the button below to generate a new token regardless
                 and end the existing session.
               </p>
-              <button
-                className="btn btn-danger btn-block"
-                onClick={onEndClientSession}
-              >
+              <GameClientRestartTimer className="btn btn-danger btn-block">
                 End Client Session
-              </button>
+              </GameClientRestartTimer>
             </div>
           </div>
         </Container>
