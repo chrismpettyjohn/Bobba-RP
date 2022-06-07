@@ -3,6 +3,7 @@ import {useLocation} from 'wouter';
 import React, {useContext, useState} from 'react';
 import {healthContext, themeContext, Icon} from '@instinct-web/core';
 import {GameClientRestartTimer} from '../game-client-restart-timer/GameClientRestartTimer';
+import {ExitGameClientButton} from './exit-game-client-button/ExitGameClientButton';
 
 export function GameClientActions() {
   const [location, setLocation] = useLocation();
@@ -23,6 +24,7 @@ export function GameClientActions() {
     await action;
     setExpanded(!isExpanded);
   }
+
   return (
     <div className="actions">
       <button onClick={toggleWebView}>Web</button>
@@ -40,6 +42,7 @@ export function GameClientActions() {
         <Icon family="fas" type="user" />
         <b>{health.usersOnline}</b>
       </button>
+      <ExitGameClientButton />
     </div>
   );
 }

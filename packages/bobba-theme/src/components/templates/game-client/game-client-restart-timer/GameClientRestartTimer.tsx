@@ -7,6 +7,8 @@ import {GameClientRestartTimerProps} from './GameClientRestartTimer.types';
 export function GameClientRestartTimer({
   children,
   className,
+  onComplete,
+  style,
 }: GameClientRestartTimerProps) {
   const {setSSO, setUser, setOnline} = useContext(sessionContext);
   const [isReloading, setIsReloading] = useState(false);
@@ -19,15 +21,6 @@ export function GameClientRestartTimer({
   }
 
   function renderTimer({seconds}: {seconds: number}) {
-    function renderTimer({seconds}: {seconds: number}) {
-      return (
-        <>
-          <Icon className="mr-2 fa-spin" type="spinner" />
-          Reloading in {seconds}s
-        </>
-      );
-    }
-
     return (
       <>
         <Icon className="fa-spin" type="spinner" />
@@ -36,18 +29,26 @@ export function GameClientRestartTimer({
     );
   }
 
+  function onLoadingComplete() {
+    setIsReloading(false);
+    if (onComplete) {
+      onComplete();
+    }
+  }
+
   return (
     <button
       className={className}
       disabled={isReloading}
       onClick={onReload}
+      style={style}
       type="button"
     >
       {isReloading ? (
         <Countdown
           date={Date.now() + LOG_OUT_DELAY}
           renderer={renderTimer}
-          onComplete={() => setIsReloading(false)}
+          onComplete={onLoadingComplete}
         />
       ) : (
         children
