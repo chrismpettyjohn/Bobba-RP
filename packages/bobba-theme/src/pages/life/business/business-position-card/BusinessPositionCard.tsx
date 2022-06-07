@@ -6,6 +6,7 @@ import {Row} from '../../../../components/generic/row/Row';
 import {Card} from '../../../../components/generic/card/Card';
 import {businessService} from '@bobba-rp/web';
 import {BusinessPositionCardProps} from './BusinessPositionCard.types';
+import {UserIsOfflineGuard} from '../../../../components/guard/user-is-offline-guard/UserIsOfflineGuard';
 
 export function BusinessPositionCard({
   business,
@@ -85,14 +86,16 @@ export function BusinessPositionCard({
                 <b>{business.owner.username}</b>
               </Link>
             </p>
-            <button
-              className={`btn btn-block btn-${buttonColor}`}
-              disabled={user?.online}
-              onBlur={() => setShowConfirm(false)}
-              onClick={acceptPosition}
-            >
-              <Icon type={buttonIcon} /> {buttonText}
-            </button>
+            <UserIsOfflineGuard>
+              <button
+                className={`btn btn-block btn-${buttonColor}`}
+                disabled={user?.online}
+                onBlur={() => setShowConfirm(false)}
+                onClick={acceptPosition}
+              >
+                <Icon type={buttonIcon} /> {buttonText}
+              </button>
+            </UserIsOfflineGuard>
           </div>
           {showConfirm && (
             <div className="col-12 mt-2">

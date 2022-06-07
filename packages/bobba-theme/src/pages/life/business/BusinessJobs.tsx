@@ -25,16 +25,6 @@ export function JobMarket() {
   return (
     <UserLayout>
       <Container>
-        {user?.online && (
-          <Row>
-            <div className="col-12">
-              <div className="alert alert-danger">
-                <b className="mr-2">Notice:</b>
-                <span>You must be offline to use this feature</span>
-              </div>
-            </div>
-          </Row>
-        )}
         <Row>
           <div className="col-12">
             <MiniJumbotron>
