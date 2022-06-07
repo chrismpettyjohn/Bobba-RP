@@ -53,7 +53,11 @@ export function BusinessPositionCard({
         <Row>
           <div className="col-6">
             <img
-              style={{width: 100, height: 100}}
+              style={{
+                height: '75%',
+                imageRendering: 'crisp-edges',
+                marginTop: '7.5%',
+              }}
               src={`${config.swfBadgeURL}/${business.badge}.gif`}
               onError={(event: any) => (event.target.style.display = 'none')}
             />

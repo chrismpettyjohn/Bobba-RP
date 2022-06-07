@@ -10,9 +10,7 @@ export function UserIsOfflineGuard({
 
   if (user?.online) {
     return !hideWarning ? (
-      <div className="alert alert-danger text-center">
-        You must be offline to use this feature
-      </div>
+      <div className="alert alert-danger text-center">Offline Use Only</div>
     ) : null;
   }
 
