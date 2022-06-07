@@ -1,16 +1,17 @@
+import {useRoute} from 'wouter';
 import React, {useContext} from 'react';
 import {Card} from '../../../generic/card/Card';
+import {sessionContext} from '@instinct-web/core';
 import {UserLayout} from '../../../layout/user/UserLayout';
 import {Container} from '../../../generic/container/Container';
-import {sessionContext, themeContext} from '@instinct-web/core';
 import {GameClientOnlineGuardProps} from './GameClientOnlineGuard.types';
 import {GameClientRestartTimer} from '../game-client-restart-timer/GameClientRestartTimer';
 
 export function GameClientOnlineGuard({children}: GameClientOnlineGuardProps) {
-  const {showClient} = useContext(themeContext);
+  const [userIsOnClient] = useRoute('/play');
   const {online, user} = useContext(sessionContext);
 
-  if (showClient && user?.online && !online) {
+  if (userIsOnClient && user?.online && !online) {
     return (
       <UserLayout>
         <Container>

@@ -1,21 +1,22 @@
 import './GameClient.scss';
+import React from 'react';
+import {useRoute} from 'wouter';
 import {useRenewSSO} from './renew-sso.hook';
-import React, {useContext} from 'react';
+import {UserGuard} from '@instinct-web/core';
 import {NitroClient} from '@instinct-web/nitro-client';
-import {themeContext, UserGuard} from '@instinct-web/core';
 import {GameClientActions} from './game-client-actions/GameClientActions';
 import {GameClientOnlineGuard} from './game-client-online-guard/GameClientOnlineGuard';
 
 export function GameClient() {
+  const [userIsOnClient] = useRoute('/play');
   useRenewSSO();
-  const {showClient} = useContext(themeContext);
 
   return (
     <UserGuard redirect={false}>
       <GameClientOnlineGuard>
         <div
           className={`hotel-container ${
-            showClient ? 'visible' : 'not-visible'
+            userIsOnClient ? 'visible' : 'not-visible'
           }`}
         >
           <GameClientActions />
