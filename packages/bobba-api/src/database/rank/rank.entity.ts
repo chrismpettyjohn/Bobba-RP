@@ -64,6 +64,9 @@ export class RPRankEntity extends RankEntity implements RPRankEntityStruct {
   @Column({name: 'website_has_presidential_power', type: 'enum', default: '0'})
   websiteHasPresidentialPower!: PermissionStatus;
 
+  @Column({name: 'website_create_gangs', type: 'enum', default: '0'})
+  websiteCreateGangs!: PermissionStatus;
+
   @Column({
     name: 'website_register_political_party',
     type: 'enum',

@@ -51,6 +51,8 @@ export function rpRankWire(
         entity.websiteManageProperties === PermissionStatus.Enabled,
       websiteHasPresidentialPower:
         entity.websiteHasPresidentialPower === PermissionStatus.Enabled,
+      websiteManageGangs:
+        entity.websiteManageGangs === PermissionStatus.Enabled,
     },
   };
 }

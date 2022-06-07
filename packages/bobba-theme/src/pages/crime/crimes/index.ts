@@ -1,1 +1,2 @@
+import './CreateGang';
 import './ListCrimes';
