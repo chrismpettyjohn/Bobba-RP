@@ -10,10 +10,7 @@ export function NavBar() {
 
   return (
     <nav className="navigation-container">
-      <ul
-        className="navigation-menu flex-container"
-        style={{width: '100%', maxWidth: 1200, margin: '0 auto'}}
-      >
+      <ul className="navigation-menu flex-container">
         {!!user && (
           <>
             <NavBarLink to="/me">Home</NavBarLink>

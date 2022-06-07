@@ -4,7 +4,7 @@
 @import "./theme.responsive.css";
 @import "./ThemeColors.scss";
 
-$pageWidth: 1600px;
+$pageWidth: 1600px !important;
 
 body {
   background: $backgroundOne;
@@ -285,4 +285,15 @@ input {
 
 .member-container .member-content .member-details .details-username {
   color: $primaryFontColor;
+}
+
+.header-container {
+  width: 100% !important;
+  max-width: $pageWidth !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+
+  .header-content {
+    width: 100% !important;
+  }
 }
