@@ -13,7 +13,7 @@ export function BusinessHeader({business}: {business?: Business}) {
       <div className="row">
         <div className="col-8">
           <BusinessSearchBar
-            onSelectBusiness={e => setLocation(`/businesses/${business.id}`)}
+            onSelectBusiness={e => setLocation(`/businesses/${business?.id}`)}
             business={business}
           />
           <p>{business?.desc ?? <Skeleton width={200} />}</p>
