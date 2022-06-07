@@ -22,7 +22,7 @@ export function GameClientRestartTimer({
     function renderTimer({seconds}: {seconds: number}) {
       return (
         <>
-          <Icon className="mr-0 fa-spin" type="spinner" />
+          <Icon className="mr-2 fa-spin" type="spinner" />
           Reloading in {seconds}s
         </>
       );
